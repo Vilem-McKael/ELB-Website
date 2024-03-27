@@ -1,0 +1,153 @@
+$flaticon_elb_website-font: "flaticon_elb_website";
+
+@font-face {
+    font-family: $flaticon_elb_website-font;
+    src: url("./flaticon_elb_website.woff2?03f0217095ad267ffc42f14ebcc4f8ae") format("woff2"),
+url("./flaticon_elb_website.woff?03f0217095ad267ffc42f14ebcc4f8ae") format("woff"),
+url("./flaticon_elb_website.eot?03f0217095ad267ffc42f14ebcc4f8ae#iefix") format("embedded-opentype"),
+url("./flaticon_elb_website.ttf?03f0217095ad267ffc42f14ebcc4f8ae") format("truetype"),
+url("./flaticon_elb_website.svg?03f0217095ad267ffc42f14ebcc4f8ae#flaticon_elb_website") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon_elb_website !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$flaticon_elb_website-map: (
+    "home": "\f101",
+    "home-1": "\f102",
+    "home-2": "\f103",
+    "home-icon-silhouette": "\f104",
+    "information": "\f105",
+    "info": "\f106",
+    "information-button": "\f107",
+    "about": "\f108",
+    "list": "\f109",
+    "clipboard": "\f10a",
+    "to-do-list": "\f10b",
+    "to-do-list-1": "\f10c",
+    "files": "\f10d",
+    "list-1": "\f10e",
+    "speak": "\f10f",
+    "contact-mail": "\f110",
+    "contact-us": "\f111",
+    "email": "\f112",
+    "email-1": "\f113",
+    "email-2": "\f114",
+    "follow-up": "\f115",
+    "home-3": "\f116",
+    "home-4": "\f117",
+    "info-1": "\f118",
+    "about-1": "\f119",
+    "image-gallery": "\f11a",
+    "image-gallery-1": "\f11b",
+    "portrait": "\f11c",
+    "person": "\f11d",
+    "person-1": "\f11e",
+    "personal-information": "\f11f",
+    "review": "\f120",
+);
+
+.flaticon-home:before {
+    content: map-get($flaticon_elb_website-map, "home");
+}
+.flaticon-home-1:before {
+    content: map-get($flaticon_elb_website-map, "home-1");
+}
+.flaticon-home-2:before {
+    content: map-get($flaticon_elb_website-map, "home-2");
+}
+.flaticon-home-icon-silhouette:before {
+    content: map-get($flaticon_elb_website-map, "home-icon-silhouette");
+}
+.flaticon-information:before {
+    content: map-get($flaticon_elb_website-map, "information");
+}
+.flaticon-info:before {
+    content: map-get($flaticon_elb_website-map, "info");
+}
+.flaticon-information-button:before {
+    content: map-get($flaticon_elb_website-map, "information-button");
+}
+.flaticon-about:before {
+    content: map-get($flaticon_elb_website-map, "about");
+}
+.flaticon-list:before {
+    content: map-get($flaticon_elb_website-map, "list");
+}
+.flaticon-clipboard:before {
+    content: map-get($flaticon_elb_website-map, "clipboard");
+}
+.flaticon-to-do-list:before {
+    content: map-get($flaticon_elb_website-map, "to-do-list");
+}
+.flaticon-to-do-list-1:before {
+    content: map-get($flaticon_elb_website-map, "to-do-list-1");
+}
+.flaticon-files:before {
+    content: map-get($flaticon_elb_website-map, "files");
+}
+.flaticon-list-1:before {
+    content: map-get($flaticon_elb_website-map, "list-1");
+}
+.flaticon-speak:before {
+    content: map-get($flaticon_elb_website-map, "speak");
+}
+.flaticon-contact-mail:before {
+    content: map-get($flaticon_elb_website-map, "contact-mail");
+}
+.flaticon-contact-us:before {
+    content: map-get($flaticon_elb_website-map, "contact-us");
+}
+.flaticon-email:before {
+    content: map-get($flaticon_elb_website-map, "email");
+}
+.flaticon-email-1:before {
+    content: map-get($flaticon_elb_website-map, "email-1");
+}
+.flaticon-email-2:before {
+    content: map-get($flaticon_elb_website-map, "email-2");
+}
+.flaticon-follow-up:before {
+    content: map-get($flaticon_elb_website-map, "follow-up");
+}
+.flaticon-home-3:before {
+    content: map-get($flaticon_elb_website-map, "home-3");
+}
+.flaticon-home-4:before {
+    content: map-get($flaticon_elb_website-map, "home-4");
+}
+.flaticon-info-1:before {
+    content: map-get($flaticon_elb_website-map, "info-1");
+}
+.flaticon-about-1:before {
+    content: map-get($flaticon_elb_website-map, "about-1");
+}
+.flaticon-image-gallery:before {
+    content: map-get($flaticon_elb_website-map, "image-gallery");
+}
+.flaticon-image-gallery-1:before {
+    content: map-get($flaticon_elb_website-map, "image-gallery-1");
+}
+.flaticon-portrait:before {
+    content: map-get($flaticon_elb_website-map, "portrait");
+}
+.flaticon-person:before {
+    content: map-get($flaticon_elb_website-map, "person");
+}
+.flaticon-person-1:before {
+    content: map-get($flaticon_elb_website-map, "person-1");
+}
+.flaticon-personal-information:before {
+    content: map-get($flaticon_elb_website-map, "personal-information");
+}
+.flaticon-review:before {
+    content: map-get($flaticon_elb_website-map, "review");
+}

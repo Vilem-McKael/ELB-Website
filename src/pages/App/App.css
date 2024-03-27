@@ -1,0 +1,34 @@
+main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+
+#sidebar {
+  display: flex;
+  flex-direction: column;
+}
+
+#rightbar {
+  display: flex;
+}
+
+#header {
+  display: flex;
+  align-items: center;
+  /* grid-area: 1 / 1 / 2 / 3; */
+}
+
+#main-view {
+  display: flex;
+  /* margin-right: 20px;
+  margin-left: 20px; */
+}
+
+/* By Page */
+
+#homepage {
+  background-image: url('/public/edieImages/edieplaceholder.jpeg');
+  background-position: center;
+  background-size: cover;
+}
