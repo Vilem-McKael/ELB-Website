@@ -6,9 +6,14 @@
 
 :root {
   color: black;
-  background-color: white;
+  /* background: linear-gradient(); */
   background-size: cover;
   background-position: center;
+}
+
+img {
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
 }
 
 /* :root {

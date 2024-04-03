@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        'homepage': "url('/edieImages/edieplaeholder.jpeg')"
+        'homepage': "url('/pebbleBackground.jpeg')"
       },
       fontFamily: {
         'inter': ['Inter', 'sans-serif'],

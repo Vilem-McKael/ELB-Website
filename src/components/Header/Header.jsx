@@ -4,7 +4,7 @@ import facebook from '../../assets/socialLogos/facebookLogo.png'
 import instagram from '../../assets/socialLogos/instagramLogo.png'
 import linkedIn from '../../assets/socialLogos/linkedInLogo.png'
 import mail from '../../assets/socialLogos/mail.png'
-import SocialButton from './SocialButton/SocialButton'
+import SocialButton from '../SideBar/SocialButton/SocialButton'
 
 export default function Header() {
   return (

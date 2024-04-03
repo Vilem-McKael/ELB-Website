@@ -2,11 +2,11 @@ $flaticon_elb_website-font: "flaticon_elb_website";
 
 @font-face {
     font-family: $flaticon_elb_website-font;
-    src: url("./flaticon_elb_website.woff2?03f0217095ad267ffc42f14ebcc4f8ae") format("woff2"),
-url("./flaticon_elb_website.woff?03f0217095ad267ffc42f14ebcc4f8ae") format("woff"),
-url("./flaticon_elb_website.eot?03f0217095ad267ffc42f14ebcc4f8ae#iefix") format("embedded-opentype"),
-url("./flaticon_elb_website.ttf?03f0217095ad267ffc42f14ebcc4f8ae") format("truetype"),
-url("./flaticon_elb_website.svg?03f0217095ad267ffc42f14ebcc4f8ae#flaticon_elb_website") format("svg");
+    src: url("./flaticon_elb_website.woff2?162dd8516141b18d646370f4e9ecd532") format("woff2"),
+url("./flaticon_elb_website.woff?162dd8516141b18d646370f4e9ecd532") format("woff"),
+url("./flaticon_elb_website.eot?162dd8516141b18d646370f4e9ecd532#iefix") format("embedded-opentype"),
+url("./flaticon_elb_website.ttf?162dd8516141b18d646370f4e9ecd532") format("truetype"),
+url("./flaticon_elb_website.svg?162dd8516141b18d646370f4e9ecd532#flaticon_elb_website") format("svg");
 }
 
 i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
@@ -53,6 +53,19 @@ $flaticon_elb_website-map: (
     "person-1": "\f11e",
     "personal-information": "\f11f",
     "review": "\f120",
+    "youtube": "\f121",
+    "video": "\f122",
+    "video-1": "\f123",
+    "online-video": "\f124",
+    "cam-recorder": "\f125",
+    "volume": "\f126",
+    "sound": "\f127",
+    "volume-1": "\f128",
+    "volume-2": "\f129",
+    "audio-waves": "\f12a",
+    "sound-bars": "\f12b",
+    "microphone": "\f12c",
+    "microphone-1": "\f12d",
 );
 
 .flaticon-home:before {
@@ -150,4 +163,43 @@ $flaticon_elb_website-map: (
 }
 .flaticon-review:before {
     content: map-get($flaticon_elb_website-map, "review");
+}
+.flaticon-youtube:before {
+    content: map-get($flaticon_elb_website-map, "youtube");
+}
+.flaticon-video:before {
+    content: map-get($flaticon_elb_website-map, "video");
+}
+.flaticon-video-1:before {
+    content: map-get($flaticon_elb_website-map, "video-1");
+}
+.flaticon-online-video:before {
+    content: map-get($flaticon_elb_website-map, "online-video");
+}
+.flaticon-cam-recorder:before {
+    content: map-get($flaticon_elb_website-map, "cam-recorder");
+}
+.flaticon-volume:before {
+    content: map-get($flaticon_elb_website-map, "volume");
+}
+.flaticon-sound:before {
+    content: map-get($flaticon_elb_website-map, "sound");
+}
+.flaticon-volume-1:before {
+    content: map-get($flaticon_elb_website-map, "volume-1");
+}
+.flaticon-volume-2:before {
+    content: map-get($flaticon_elb_website-map, "volume-2");
+}
+.flaticon-audio-waves:before {
+    content: map-get($flaticon_elb_website-map, "audio-waves");
+}
+.flaticon-sound-bars:before {
+    content: map-get($flaticon_elb_website-map, "sound-bars");
+}
+.flaticon-microphone:before {
+    content: map-get($flaticon_elb_website-map, "microphone");
+}
+.flaticon-microphone-1:before {
+    content: map-get($flaticon_elb_website-map, "microphone-1");
 }

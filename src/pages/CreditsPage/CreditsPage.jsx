@@ -26,7 +26,7 @@ export default function CreditsPage() {
             <CategoryButton title={CreditCategory.TV} selectedCategory={selectedCategory} updateSelectedCategory={updateSelectedCategory}/>
         </div>
 
-        <div className='flex flex-col mt-8'>
+        <div className='flex flex-col items-center mt-8'>
             <MediaGrid selectedCategory={selectedCategory} data={AllMedia[selectedCategory]}/>
         </div>
     </div>

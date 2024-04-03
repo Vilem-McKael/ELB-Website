@@ -9,6 +9,21 @@ export default function ContactPage() {
       <div className='mx-16 mt-4'>
         Get in touch with Edie regarding vocal contracting, recording sessions, conducting, (more depending on what she'd like listed here)
       </div>
+
+      <div>
+        <input>
+
+        </input>
+        <input>
+
+        </input>
+        <input>
+
+        </input>
+        <input>
+
+        </input>
+      </div>
     </div>
   )
 }

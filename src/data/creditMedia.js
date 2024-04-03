@@ -1,4 +1,3 @@
-import CreditsPage from "../pages/CreditsPage/CreditsPage"
 
 export const CreditCategory = {
     Artists: 'Artists',

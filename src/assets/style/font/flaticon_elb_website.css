@@ -11,11 +11,11 @@
 
 @font-face {
     font-family: "flaticon_elb_website";
-    src: url("./flaticon_elb_website.woff2?03f0217095ad267ffc42f14ebcc4f8ae") format("woff2"),
-url("./flaticon_elb_website.woff?03f0217095ad267ffc42f14ebcc4f8ae") format("woff"),
-url("./flaticon_elb_website.eot?03f0217095ad267ffc42f14ebcc4f8ae#iefix") format("embedded-opentype"),
-url("./flaticon_elb_website.ttf?03f0217095ad267ffc42f14ebcc4f8ae") format("truetype"),
-url("./flaticon_elb_website.svg?03f0217095ad267ffc42f14ebcc4f8ae#flaticon_elb_website") format("svg")
+    src: url("./flaticon_elb_website.woff2?162dd8516141b18d646370f4e9ecd532") format("woff2"),
+url("./flaticon_elb_website.woff?162dd8516141b18d646370f4e9ecd532") format("woff"),
+url("./flaticon_elb_website.eot?162dd8516141b18d646370f4e9ecd532#iefix") format("embedded-opentype"),
+url("./flaticon_elb_website.ttf?162dd8516141b18d646370f4e9ecd532") format("truetype"),
+url("./flaticon_elb_website.svg?162dd8516141b18d646370f4e9ecd532#flaticon_elb_website") format("svg")
 }
 
 i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
@@ -124,5 +124,44 @@ i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
 }
 .flaticon-review:before {
     content: "\f120";
+}
+.flaticon-youtube:before {
+    content: "\f121";
+}
+.flaticon-video:before {
+    content: "\f122";
+}
+.flaticon-video-1:before {
+    content: "\f123";
+}
+.flaticon-online-video:before {
+    content: "\f124";
+}
+.flaticon-cam-recorder:before {
+    content: "\f125";
+}
+.flaticon-volume:before {
+    content: "\f126";
+}
+.flaticon-sound:before {
+    content: "\f127";
+}
+.flaticon-volume-1:before {
+    content: "\f128";
+}
+.flaticon-volume-2:before {
+    content: "\f129";
+}
+.flaticon-audio-waves:before {
+    content: "\f12a";
+}
+.flaticon-sound-bars:before {
+    content: "\f12b";
+}
+.flaticon-microphone:before {
+    content: "\f12c";
+}
+.flaticon-microphone-1:before {
+    content: "\f12d";
 }
 

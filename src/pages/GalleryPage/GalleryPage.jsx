@@ -1,7 +1,8 @@
 import React, { useState } from 'react'
-import LookPage from './GallerySubPages/LookPage';
-import ListenPage from './GallerySubPages/ListenPage';
-import WatchPage from './GallerySubPages/WatchPage';
+import LookPage from '../LookPage/LookPage';
+import ListenPage from '../ListenPage/ListenPage';
+import WatchPage from '../WatchPage/WatchPage';
+import SubpageButton from '../../components/Gallery/SubpageButton';
 
 export default function GalleryPage() {
 
@@ -20,7 +21,11 @@ export default function GalleryPage() {
   }
 
   return (
-    <div>
+    <div className='w-full h-full flex flex-col'>
+      
+    <div className='flex flex-row w-full justify-center'>
+      <SubpageButton title="Look"/>
+    </div>
       {subpage}
     </div>
   )

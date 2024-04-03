@@ -1,9 +1,10 @@
 import React from 'react'
+import Footer from '../../components/Footer/Footer'
 
 export default function AboutPage() {
   return (
     <div className='w-full h-full flex flex-col items-center text-justify'>
-      <div className='mt-16 w-[200px] text-sm sm:w-[400px] md:w-[500px] lg:w-[700px] leading-relaxed'>
+      <div className='mt-16 w-[300px] text-sm sm:w-[400px] md:w-[600px] lg:w-[800px] leading-relaxed'>
         <div>
           <div className='text-2xl mb-2 font-medium'>
             Who is Edie Lehmann Boddicker?
@@ -48,6 +49,7 @@ export default function AboutPage() {
 
           </div>
         </div>
+        <Footer />
       </div>
     </div>
   )
