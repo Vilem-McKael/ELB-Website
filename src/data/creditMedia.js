@@ -3,6 +3,8 @@ export const CreditCategory = {
     Artists: 'Artists',
     Film: 'Film',
     TV: 'TV',
+    Interactives: 'Interactives',
+    Live: 'Live'
     // All: 'All'
 }
 
@@ -10,6 +12,8 @@ export const r = { // Roles
     Contractor: 'Vocal Contractor',
     Vocalist: 'Vocalist',
     Conductor: 'Conductor',
+    Coach: 'Vocal Coach',
+    Musician: 'Musician'
 }
 
 /*
@@ -194,6 +198,12 @@ export const AllMedia = {
             notes: ""
         },
     ],
+    Interactives: [
+
+    ],
+    Live: [
+
+    ]
     // All: [
     //     {
     //         title: "",

@@ -10,19 +10,46 @@ export default function ContactPage() {
         Get in touch with Edie regarding vocal contracting, recording sessions, conducting, (more depending on what she'd like listed here)
       </div>
 
-      <div>
-        <input>
+      <div className='flex flex-col items-center justify-center pt-12 w-[600px]'>
+        <div className='flex justify-between items-center w-[600px] pb-4'>
+          <div className='flex flex-col items-leading'>
+            <label>
+              Name
+            </label>
+            <input className='h-[40px] border-black border-[1px] p-2'>
 
-        </input>
-        <input>
+            </input>
+          </div>
+          <div className='flex flex-col items-leading'>
+            <label>
+              E-Mail
+            </label>
+            <input className='h-[40px] border-black border-[1px] p-2'>
 
-        </input>
-        <input>
+            </input>
+          </div>
+          <div className='flex flex-col items-leading'>
+            <label>
+              Company / Org
+            </label>
+            <input className='h-[40px] border-black border-[1px] p-2'>
 
-        </input>
-        <input>
+            </input>
+          </div>
+        </div>
+        <div className='flex justify-start w-full'>
+          <label className='pb-1 items'>
+            Please leave your message below :
+          </label>
+        </div>
+        <textarea className='h-[400px] w-[600px] p-2 text-sm border-black  border-[1px]'>
 
-        </input>
+        </textarea>
+        <div className='flex w-full justify-end items-center'>
+          <button className='h-[40px] bg-black text-white mt-2 p-2 rounded-lg transform hover:scale-110 duration-75'>
+            <i className='flaticon-email h-[20px] w-[20px] pr-2'></i>Send
+          </button>
+        </div>
       </div>
     </div>
   )

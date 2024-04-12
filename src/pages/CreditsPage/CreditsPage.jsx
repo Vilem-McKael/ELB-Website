@@ -13,9 +13,11 @@ export default function CreditsPage() {
     }
 
   return (
-    <div className='flex flex-col w-full h-full'>
-
-        <div className='mt-16 text-center'>
+    <div className='flex flex-col w-full items-center bg-light7'>
+        <div className='text-4xl font-semibold pt-16'>
+            Credits
+        </div>
+        <div className='mt-8 text-center'>
             Short blurb about Edie's impact on the music industry
         </div>
 
@@ -24,6 +26,15 @@ export default function CreditsPage() {
             <CategoryButton title={CreditCategory.Artists} selectedCategory={selectedCategory} updateSelectedCategory={updateSelectedCategory}/>
             <CategoryButton title={CreditCategory.Film} selectedCategory={selectedCategory} updateSelectedCategory={updateSelectedCategory}/>
             <CategoryButton title={CreditCategory.TV} selectedCategory={selectedCategory} updateSelectedCategory={updateSelectedCategory}/>
+            <CategoryButton title={CreditCategory.Interactives} selectedCategory={selectedCategory} updateSelectedCategory={updateSelectedCategory}/>
+            <CategoryButton title={CreditCategory.Live} selectedCategory={selectedCategory} updateSelectedCategory={updateSelectedCategory}/>
+        </div>
+
+        <div className='flex items-center justify-evenly'>
+
+        </div>
+        <div>
+
         </div>
 
         <div className='flex flex-col items-center mt-8'>

@@ -4,6 +4,7 @@ main {
   display: flex;
 }
 
+
 #sidebar {
   display: flex;
   flex-direction: column;

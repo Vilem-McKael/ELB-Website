@@ -19,8 +19,8 @@ export default function SideBar2({currentPage, updateCurrentPage}) {
           <div className='flex flex-row mt-4'>
             <SocialButton to={"https://www.linkedin.com/in/edie-lehmann-boddicker-31625a14/"} logo={linkedIn}/>
             <SocialButton to={"https://www.facebook.com/e.lehbod"} logo={facebook}/>
-            <SocialButton name={"https://www.instagram.com/edielehbod/"} logo={instagram}/>
-            <SocialButton name={"https://www.imdb.com/name/nm0090798/"} logo={imdb}/>
+            <SocialButton to={"https://www.instagram.com/edielehbod/"} logo={instagram}/>
+            <SocialButton to={"https://www.imdb.com/name/nm0090798/"} logo={imdb}/>
             {/* <SocialButton name={"mailto:elbsing@aol.com?"} logo={mail}/> */}
           </div>
         {/* <div className='text-2xl'>
@@ -35,7 +35,7 @@ export default function SideBar2({currentPage, updateCurrentPage}) {
       </div>
 
         <div className='flex flex-col items-start mt-8'>
-            <div className='w-full border-y-[1px] pl-8 py-2 hover:bg-black bg-gradient-to-b border-black from-white via-white to-gray-100 hover:text-white hover:bg-black'>
+            <div className='w-full border-y-[1px] pl-8 py-2 bg-gradient-to-b border-black from-white via-white to-gray-100 hover:text-white hover:bg-black'>
                 <NavLink title={"Home"} to={"/"} iconName={"home"} currentPage={currentPage} updateCurrentPage={updateCurrentPage}/>
             </div>
             <div className='w-full border-b-[1px] pl-8 py-2 bg-gradient-to-b border-black from-white to-gray-200 hover:text-white hover:bg-black'>

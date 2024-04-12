@@ -2,11 +2,11 @@ $flaticon_elb_website-font: "flaticon_elb_website";
 
 @font-face {
     font-family: $flaticon_elb_website-font;
-    src: url("./flaticon_elb_website.woff2?162dd8516141b18d646370f4e9ecd532") format("woff2"),
-url("./flaticon_elb_website.woff?162dd8516141b18d646370f4e9ecd532") format("woff"),
-url("./flaticon_elb_website.eot?162dd8516141b18d646370f4e9ecd532#iefix") format("embedded-opentype"),
-url("./flaticon_elb_website.ttf?162dd8516141b18d646370f4e9ecd532") format("truetype"),
-url("./flaticon_elb_website.svg?162dd8516141b18d646370f4e9ecd532#flaticon_elb_website") format("svg");
+    src: url("./flaticon_elb_website.woff2?27fab21a4f841de77cc0df72c46a6cfc") format("woff2"),
+url("./flaticon_elb_website.woff?27fab21a4f841de77cc0df72c46a6cfc") format("woff"),
+url("./flaticon_elb_website.eot?27fab21a4f841de77cc0df72c46a6cfc#iefix") format("embedded-opentype"),
+url("./flaticon_elb_website.ttf?27fab21a4f841de77cc0df72c46a6cfc") format("truetype"),
+url("./flaticon_elb_website.svg?27fab21a4f841de77cc0df72c46a6cfc#flaticon_elb_website") format("svg");
 }
 
 i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
@@ -21,185 +21,273 @@ i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
 }
 
 $flaticon_elb_website-map: (
-    "home": "\f101",
-    "home-1": "\f102",
-    "home-2": "\f103",
-    "home-icon-silhouette": "\f104",
-    "information": "\f105",
-    "info": "\f106",
-    "information-button": "\f107",
-    "about": "\f108",
-    "list": "\f109",
-    "clipboard": "\f10a",
-    "to-do-list": "\f10b",
-    "to-do-list-1": "\f10c",
-    "files": "\f10d",
-    "list-1": "\f10e",
-    "speak": "\f10f",
-    "contact-mail": "\f110",
-    "contact-us": "\f111",
-    "email": "\f112",
-    "email-1": "\f113",
-    "email-2": "\f114",
-    "follow-up": "\f115",
-    "home-3": "\f116",
-    "home-4": "\f117",
-    "info-1": "\f118",
-    "about-1": "\f119",
-    "image-gallery": "\f11a",
-    "image-gallery-1": "\f11b",
-    "portrait": "\f11c",
-    "person": "\f11d",
-    "person-1": "\f11e",
-    "personal-information": "\f11f",
-    "review": "\f120",
-    "youtube": "\f121",
+    "menu-2": "\f101",
+    "menu-1": "\f102",
+    "menu": "\f103",
+    "more": "\f104",
+    "back-1": "\f105",
+    "next-1": "\f106",
+    "next": "\f107",
+    "right-arrow-1": "\f108",
+    "arrow": "\f109",
+    "back": "\f10a",
+    "left-arrow": "\f10b",
+    "right-arrow": "\f10c",
+    "stop-button-1": "\f10d",
+    "stop": "\f10e",
+    "stop-button": "\f10f",
+    "pause-3": "\f110",
+    "pause-2": "\f111",
+    "pause-1": "\f112",
+    "pause": "\f113",
+    "play": "\f114",
+    "play-button": "\f115",
+    "play-button-arrowhead": "\f116",
+    "microphone-1": "\f117",
+    "microphone": "\f118",
+    "sound-bars": "\f119",
+    "audio-waves": "\f11a",
+    "volume-2": "\f11b",
+    "volume-1": "\f11c",
+    "sound": "\f11d",
+    "volume": "\f11e",
+    "cam-recorder": "\f11f",
+    "online-video": "\f120",
+    "video-1": "\f121",
     "video": "\f122",
-    "video-1": "\f123",
-    "online-video": "\f124",
-    "cam-recorder": "\f125",
-    "volume": "\f126",
-    "sound": "\f127",
-    "volume-1": "\f128",
-    "volume-2": "\f129",
-    "audio-waves": "\f12a",
-    "sound-bars": "\f12b",
-    "microphone": "\f12c",
-    "microphone-1": "\f12d",
+    "youtube": "\f123",
+    "review": "\f124",
+    "personal-information": "\f125",
+    "person-1": "\f126",
+    "person": "\f127",
+    "portrait": "\f128",
+    "image-gallery-1": "\f129",
+    "image-gallery": "\f12a",
+    "about-1": "\f12b",
+    "info-1": "\f12c",
+    "home-4": "\f12d",
+    "home-3": "\f12e",
+    "follow-up": "\f12f",
+    "email-2": "\f130",
+    "email-1": "\f131",
+    "email": "\f132",
+    "contact-us": "\f133",
+    "contact-mail": "\f134",
+    "speak": "\f135",
+    "list-1": "\f136",
+    "files": "\f137",
+    "to-do-list-1": "\f138",
+    "to-do-list": "\f139",
+    "clipboard": "\f13a",
+    "list": "\f13b",
+    "about": "\f13c",
+    "information-button": "\f13d",
+    "info": "\f13e",
+    "information": "\f13f",
+    "home-icon-silhouette": "\f140",
+    "home-2": "\f141",
+    "home-1": "\f142",
+    "home": "\f143",
 );
 
-.flaticon-home:before {
-    content: map-get($flaticon_elb_website-map, "home");
+.flaticon-menu-2:before {
+    content: map-get($flaticon_elb_website-map, "menu-2");
 }
-.flaticon-home-1:before {
-    content: map-get($flaticon_elb_website-map, "home-1");
+.flaticon-menu-1:before {
+    content: map-get($flaticon_elb_website-map, "menu-1");
 }
-.flaticon-home-2:before {
-    content: map-get($flaticon_elb_website-map, "home-2");
+.flaticon-menu:before {
+    content: map-get($flaticon_elb_website-map, "menu");
 }
-.flaticon-home-icon-silhouette:before {
-    content: map-get($flaticon_elb_website-map, "home-icon-silhouette");
+.flaticon-more:before {
+    content: map-get($flaticon_elb_website-map, "more");
 }
-.flaticon-information:before {
-    content: map-get($flaticon_elb_website-map, "information");
+.flaticon-back-1:before {
+    content: map-get($flaticon_elb_website-map, "back-1");
 }
-.flaticon-info:before {
-    content: map-get($flaticon_elb_website-map, "info");
+.flaticon-next-1:before {
+    content: map-get($flaticon_elb_website-map, "next-1");
 }
-.flaticon-information-button:before {
-    content: map-get($flaticon_elb_website-map, "information-button");
+.flaticon-next:before {
+    content: map-get($flaticon_elb_website-map, "next");
 }
-.flaticon-about:before {
-    content: map-get($flaticon_elb_website-map, "about");
+.flaticon-right-arrow-1:before {
+    content: map-get($flaticon_elb_website-map, "right-arrow-1");
 }
-.flaticon-list:before {
-    content: map-get($flaticon_elb_website-map, "list");
+.flaticon-arrow:before {
+    content: map-get($flaticon_elb_website-map, "arrow");
 }
-.flaticon-clipboard:before {
-    content: map-get($flaticon_elb_website-map, "clipboard");
+.flaticon-back:before {
+    content: map-get($flaticon_elb_website-map, "back");
 }
-.flaticon-to-do-list:before {
-    content: map-get($flaticon_elb_website-map, "to-do-list");
+.flaticon-left-arrow:before {
+    content: map-get($flaticon_elb_website-map, "left-arrow");
 }
-.flaticon-to-do-list-1:before {
-    content: map-get($flaticon_elb_website-map, "to-do-list-1");
+.flaticon-right-arrow:before {
+    content: map-get($flaticon_elb_website-map, "right-arrow");
 }
-.flaticon-files:before {
-    content: map-get($flaticon_elb_website-map, "files");
+.flaticon-stop-button-1:before {
+    content: map-get($flaticon_elb_website-map, "stop-button-1");
 }
-.flaticon-list-1:before {
-    content: map-get($flaticon_elb_website-map, "list-1");
+.flaticon-stop:before {
+    content: map-get($flaticon_elb_website-map, "stop");
 }
-.flaticon-speak:before {
-    content: map-get($flaticon_elb_website-map, "speak");
+.flaticon-stop-button:before {
+    content: map-get($flaticon_elb_website-map, "stop-button");
 }
-.flaticon-contact-mail:before {
-    content: map-get($flaticon_elb_website-map, "contact-mail");
+.flaticon-pause-3:before {
+    content: map-get($flaticon_elb_website-map, "pause-3");
 }
-.flaticon-contact-us:before {
-    content: map-get($flaticon_elb_website-map, "contact-us");
+.flaticon-pause-2:before {
+    content: map-get($flaticon_elb_website-map, "pause-2");
 }
-.flaticon-email:before {
-    content: map-get($flaticon_elb_website-map, "email");
+.flaticon-pause-1:before {
+    content: map-get($flaticon_elb_website-map, "pause-1");
 }
-.flaticon-email-1:before {
-    content: map-get($flaticon_elb_website-map, "email-1");
+.flaticon-pause:before {
+    content: map-get($flaticon_elb_website-map, "pause");
 }
-.flaticon-email-2:before {
-    content: map-get($flaticon_elb_website-map, "email-2");
+.flaticon-play:before {
+    content: map-get($flaticon_elb_website-map, "play");
 }
-.flaticon-follow-up:before {
-    content: map-get($flaticon_elb_website-map, "follow-up");
+.flaticon-play-button:before {
+    content: map-get($flaticon_elb_website-map, "play-button");
 }
-.flaticon-home-3:before {
-    content: map-get($flaticon_elb_website-map, "home-3");
+.flaticon-play-button-arrowhead:before {
+    content: map-get($flaticon_elb_website-map, "play-button-arrowhead");
 }
-.flaticon-home-4:before {
-    content: map-get($flaticon_elb_website-map, "home-4");
-}
-.flaticon-info-1:before {
-    content: map-get($flaticon_elb_website-map, "info-1");
-}
-.flaticon-about-1:before {
-    content: map-get($flaticon_elb_website-map, "about-1");
-}
-.flaticon-image-gallery:before {
-    content: map-get($flaticon_elb_website-map, "image-gallery");
-}
-.flaticon-image-gallery-1:before {
-    content: map-get($flaticon_elb_website-map, "image-gallery-1");
-}
-.flaticon-portrait:before {
-    content: map-get($flaticon_elb_website-map, "portrait");
-}
-.flaticon-person:before {
-    content: map-get($flaticon_elb_website-map, "person");
-}
-.flaticon-person-1:before {
-    content: map-get($flaticon_elb_website-map, "person-1");
-}
-.flaticon-personal-information:before {
-    content: map-get($flaticon_elb_website-map, "personal-information");
-}
-.flaticon-review:before {
-    content: map-get($flaticon_elb_website-map, "review");
-}
-.flaticon-youtube:before {
-    content: map-get($flaticon_elb_website-map, "youtube");
-}
-.flaticon-video:before {
-    content: map-get($flaticon_elb_website-map, "video");
-}
-.flaticon-video-1:before {
-    content: map-get($flaticon_elb_website-map, "video-1");
-}
-.flaticon-online-video:before {
-    content: map-get($flaticon_elb_website-map, "online-video");
-}
-.flaticon-cam-recorder:before {
-    content: map-get($flaticon_elb_website-map, "cam-recorder");
-}
-.flaticon-volume:before {
-    content: map-get($flaticon_elb_website-map, "volume");
-}
-.flaticon-sound:before {
-    content: map-get($flaticon_elb_website-map, "sound");
-}
-.flaticon-volume-1:before {
-    content: map-get($flaticon_elb_website-map, "volume-1");
-}
-.flaticon-volume-2:before {
-    content: map-get($flaticon_elb_website-map, "volume-2");
-}
-.flaticon-audio-waves:before {
-    content: map-get($flaticon_elb_website-map, "audio-waves");
-}
-.flaticon-sound-bars:before {
-    content: map-get($flaticon_elb_website-map, "sound-bars");
+.flaticon-microphone-1:before {
+    content: map-get($flaticon_elb_website-map, "microphone-1");
 }
 .flaticon-microphone:before {
     content: map-get($flaticon_elb_website-map, "microphone");
 }
-.flaticon-microphone-1:before {
-    content: map-get($flaticon_elb_website-map, "microphone-1");
+.flaticon-sound-bars:before {
+    content: map-get($flaticon_elb_website-map, "sound-bars");
+}
+.flaticon-audio-waves:before {
+    content: map-get($flaticon_elb_website-map, "audio-waves");
+}
+.flaticon-volume-2:before {
+    content: map-get($flaticon_elb_website-map, "volume-2");
+}
+.flaticon-volume-1:before {
+    content: map-get($flaticon_elb_website-map, "volume-1");
+}
+.flaticon-sound:before {
+    content: map-get($flaticon_elb_website-map, "sound");
+}
+.flaticon-volume:before {
+    content: map-get($flaticon_elb_website-map, "volume");
+}
+.flaticon-cam-recorder:before {
+    content: map-get($flaticon_elb_website-map, "cam-recorder");
+}
+.flaticon-online-video:before {
+    content: map-get($flaticon_elb_website-map, "online-video");
+}
+.flaticon-video-1:before {
+    content: map-get($flaticon_elb_website-map, "video-1");
+}
+.flaticon-video:before {
+    content: map-get($flaticon_elb_website-map, "video");
+}
+.flaticon-youtube:before {
+    content: map-get($flaticon_elb_website-map, "youtube");
+}
+.flaticon-review:before {
+    content: map-get($flaticon_elb_website-map, "review");
+}
+.flaticon-personal-information:before {
+    content: map-get($flaticon_elb_website-map, "personal-information");
+}
+.flaticon-person-1:before {
+    content: map-get($flaticon_elb_website-map, "person-1");
+}
+.flaticon-person:before {
+    content: map-get($flaticon_elb_website-map, "person");
+}
+.flaticon-portrait:before {
+    content: map-get($flaticon_elb_website-map, "portrait");
+}
+.flaticon-image-gallery-1:before {
+    content: map-get($flaticon_elb_website-map, "image-gallery-1");
+}
+.flaticon-image-gallery:before {
+    content: map-get($flaticon_elb_website-map, "image-gallery");
+}
+.flaticon-about-1:before {
+    content: map-get($flaticon_elb_website-map, "about-1");
+}
+.flaticon-info-1:before {
+    content: map-get($flaticon_elb_website-map, "info-1");
+}
+.flaticon-home-4:before {
+    content: map-get($flaticon_elb_website-map, "home-4");
+}
+.flaticon-home-3:before {
+    content: map-get($flaticon_elb_website-map, "home-3");
+}
+.flaticon-follow-up:before {
+    content: map-get($flaticon_elb_website-map, "follow-up");
+}
+.flaticon-email-2:before {
+    content: map-get($flaticon_elb_website-map, "email-2");
+}
+.flaticon-email-1:before {
+    content: map-get($flaticon_elb_website-map, "email-1");
+}
+.flaticon-email:before {
+    content: map-get($flaticon_elb_website-map, "email");
+}
+.flaticon-contact-us:before {
+    content: map-get($flaticon_elb_website-map, "contact-us");
+}
+.flaticon-contact-mail:before {
+    content: map-get($flaticon_elb_website-map, "contact-mail");
+}
+.flaticon-speak:before {
+    content: map-get($flaticon_elb_website-map, "speak");
+}
+.flaticon-list-1:before {
+    content: map-get($flaticon_elb_website-map, "list-1");
+}
+.flaticon-files:before {
+    content: map-get($flaticon_elb_website-map, "files");
+}
+.flaticon-to-do-list-1:before {
+    content: map-get($flaticon_elb_website-map, "to-do-list-1");
+}
+.flaticon-to-do-list:before {
+    content: map-get($flaticon_elb_website-map, "to-do-list");
+}
+.flaticon-clipboard:before {
+    content: map-get($flaticon_elb_website-map, "clipboard");
+}
+.flaticon-list:before {
+    content: map-get($flaticon_elb_website-map, "list");
+}
+.flaticon-about:before {
+    content: map-get($flaticon_elb_website-map, "about");
+}
+.flaticon-information-button:before {
+    content: map-get($flaticon_elb_website-map, "information-button");
+}
+.flaticon-info:before {
+    content: map-get($flaticon_elb_website-map, "info");
+}
+.flaticon-information:before {
+    content: map-get($flaticon_elb_website-map, "information");
+}
+.flaticon-home-icon-silhouette:before {
+    content: map-get($flaticon_elb_website-map, "home-icon-silhouette");
+}
+.flaticon-home-2:before {
+    content: map-get($flaticon_elb_website-map, "home-2");
+}
+.flaticon-home-1:before {
+    content: map-get($flaticon_elb_website-map, "home-1");
+}
+.flaticon-home:before {
+    content: map-get($flaticon_elb_website-map, "home");
 }
