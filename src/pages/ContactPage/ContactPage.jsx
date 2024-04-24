@@ -61,7 +61,7 @@ export default function ContactPage() {
 
         </textarea>
         <div className='flex w-full justify-end items-center'>
-          <button className='h-[40px] bg-black text-white mt-2 p-2 rounded-lg transform hover:scale-110 duration-75' onClick={handleSubmit}>
+          <button type='submit' className='h-[40px] bg-black text-white mt-2 p-2 rounded-lg transform hover:scale-110 duration-75' onClick={handleSubmit}>
             <i className='flaticon-email h-[20px] w-[20px] pr-2'></i>Send
           </button>
         </div>
