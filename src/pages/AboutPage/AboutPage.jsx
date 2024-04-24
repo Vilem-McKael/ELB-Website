@@ -7,10 +7,10 @@ export default function AboutPage() {
         <div className='text-4xl font-semibold pt-16'>
           Who is Edie Lehmann Boddicker?
         </div>
-        <div className='text-md my-4 italic text-center'>
+        <div className='text-md my-4 italic text-center font-barlow'>
           Chances are, you've already heard her voice or felt her impact in one of<br />hundreds of movies, songs, games, TV shows, or live performances.
         </div>
-      <div className='mt-8 w-[300px] text-sm font-medium sm:w-[400px] md:w-[600px] lg:w-[800px] leading-relaxed indent-8'>
+      <div className='mt-8 w-[300px] text-sm sm:w-[400px] md:w-[600px] lg:w-[800px] leading-relaxed indent-8 font-barlow'>
         <div>
           <img src='/edieImages/edieicon.jpg' className='w-[200px] h-[200px] float-right ml-6 mb-4'/>
           <div>

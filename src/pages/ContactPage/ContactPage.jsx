@@ -10,13 +10,13 @@ export default function ContactPage() {
         Get in touch with Edie regarding vocal contracting, recording sessions, conducting, (more depending on what she'd like listed here)
       </div>
 
-      <div className='flex flex-col items-center justify-center pt-12 w-[600px]'>
+      <form className='flex flex-col items-center justify-center pt-12 w-[600px]' name='contact' method='POST' data-netlify='true'>
         <div className='flex justify-between items-center w-[600px] pb-4'>
           <div className='flex flex-col items-leading'>
-            <label>
+            <label >
               Name
             </label>
-            <input className='h-[40px] border-black border-[1px] p-2'>
+            <input type='text' name='name' className='h-[40px] border-black border-[1px] p-2'>
 
             </input>
           </div>
@@ -24,15 +24,15 @@ export default function ContactPage() {
             <label>
               E-Mail
             </label>
-            <input className='h-[40px] border-black border-[1px] p-2'>
+            <input type='text' name='email' className='h-[40px] border-black border-[1px] p-2'>
 
             </input>
           </div>
           <div className='flex flex-col items-leading'>
             <label>
-              Company / Org
+              Company / Org (optional)
             </label>
-            <input className='h-[40px] border-black border-[1px] p-2'>
+            <input type='text' name='company' className='h-[40px] border-black border-[1px] p-2'>
 
             </input>
           </div>
@@ -42,7 +42,7 @@ export default function ContactPage() {
             Please leave your message below :
           </label>
         </div>
-        <textarea className='h-[400px] w-[600px] p-2 text-sm border-black  border-[1px]'>
+        <textarea name='message' className='h-[400px] w-[600px] p-2 text-sm border-black  border-[1px]'>
 
         </textarea>
         <div className='flex w-full justify-end items-center'>
@@ -50,7 +50,7 @@ export default function ContactPage() {
             <i className='flaticon-email h-[20px] w-[20px] pr-2'></i>Send
           </button>
         </div>
-      </div>
+      </form>
     </div>
   )
 }

@@ -6,12 +6,15 @@
 
 :root {
   color: black;
-  background-image: url('/backgrounds/cream background2.jpeg');
+  /* background-image: url('/backgrounds/cream background2.jpeg');
   background-position-x: left;
-  background-position-y: top;
-  background-size: 1000px 1000px;
-  /* background-position: center;
-  background-color: #F8F8F1; */
+  background-position-y: top; */
+  /* background-size: 1000px 1000px; */
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  /* background-position: center; */
+  background-color: #F8F8F1;
 }
 
 img {

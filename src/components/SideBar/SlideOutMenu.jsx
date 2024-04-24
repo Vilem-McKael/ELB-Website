@@ -10,7 +10,7 @@ export default function SlideOutMenu({currentPage, updateCurrentPage, isVisible,
   return (
     <>
     {isVisible ?
-    <div className='h-full w-[150px] bg-light7 flex flex-col px-4 text-black pt-[150px] fixed right-0 z-40 border-l-[1px] border-black'>
+    <div className={`h-full w-[150px] bg-light7 flex flex-col px-4 text-black pt-[150px] fixed right-0 z-40 border-l-[1px] border-black ${isVisible ? '' : 'slideOutMenuHidden'}`}>
         <div className='mt-8 border-y-[1px] border-black w-full'>
         <NavBarLink title={"Home"} to={"/"} iconName={"home"} currentPage={currentPage} updateCurrentPage={updateCurrentPage} updateIsShowingSlideOutMenu={updateIsShowingSlideOutMenu}/>
         </div>

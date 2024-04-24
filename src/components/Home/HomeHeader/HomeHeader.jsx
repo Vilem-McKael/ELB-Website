@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function HomeHeader() {
   return (
-    <div id="home-header" className='h-[160px] sm:h-[240px] md:h-[320px] lg:h-[400px] w-full grid grid-cols-2'>
+    <div id="home-header" className='section h-[160px] sm:h-[240px] md:h-[320px] lg:h-[400px] w-full grid grid-cols-2'>
       
       <div className='flex flex-col items-start justify-center h-full w-full'>
         <div className='text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-black text-leading bg-opacity-95 font-normal px-8 py-8 w-full'>

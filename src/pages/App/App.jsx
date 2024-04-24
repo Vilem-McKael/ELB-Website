@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useState, useCallback } from 'react'
 import './App.css'
 import { Routes, Route } from 'react-router-dom'
 
@@ -6,6 +6,7 @@ import { Routes, Route } from 'react-router-dom'
 import SideBar2 from '../../components/SideBar/SideBar2'
 import Header from '../../components/Header/Header'
 import HomePage from '../../pages/HomePage/HomePage'
+import HomePage2 from '../../pages/HomePage/HomePage2'
 import AboutPage from '../AboutPage/AboutPage'
 import CreditsPage from '../../pages/CreditsPage/CreditsPage'
 import GalleryPage from '../GalleryPage2/GalleryPage2'
@@ -17,32 +18,61 @@ import NavBar from '../../components/NavBar/NavBar'
 import Footer from '../../components/Footer/Footer'
 import BurgerBar from '../../components/NavBar/BurgerBar'
 import SlideOutMenu from '../../components/SideBar/SlideOutMenu'
+import MobileBurgerMenu from '../../components/NavBar/MobileBurgerMenu'
 
 function App() {
 
-  // const [isShowingHomePage, setIsShowingHomePage] = useState(true)
   const [currentPage, setCurrentPage] = useState("Home")
-  const [isShowingBurgerMenu, setIsShowingBurgerMenu] = useState(false)
   const [isShowingSlideOutMenu, setIsShowingSlideOutMenu] = useState(false)
+  const [screenSize, setScreenSize] = useState('large')
 
-  const widthBoundary = 960
+  const burgerWidthBoundary = 960
+  const mobileWidthBoundary = 450
 
-  function updateCurrentPage(newPage) {
+  const updateCurrentPage = useCallback((newPage) => {
     setCurrentPage(newPage)
-  }
+  }, [currentPage])
 
-  function updateIsShowingSlideOutMenu(bool) {
+  const updateIsShowingSlideOutMenu = useCallback((bool) => {
     setIsShowingSlideOutMenu(bool)
+  }, [isShowingSlideOutMenu])
+
+
+
+  const checkScreenSize = useCallback(() => {
+      const width = document.documentElement.clientWidth
+      console.log("Window width: ", window.innerWidth)
+      console.log("CSS Width: ", document.documentElement.clientWidth)
+      console.log("Device pixel ratio: ", window.devicePixelRatio)
+      console.log("Effective css width: ", width / window.devicePixelRatio)
+      if (width > burgerWidthBoundary) {
+        setScreenSize('large')
+        if (isShowingSlideOutMenu) {
+          setIsShowingSlideOutMenu(false)
+        }
+      } else if (width <= burgerWidthBoundary && width > mobileWidthBoundary)  {
+        setScreenSize('medium')
+
+      } else if (width <= mobileWidthBoundary) {
+        setScreenSize('mobile')
+      }
+  }, [burgerWidthBoundary, mobileWidthBoundary])
+
+  function getNavBar() {
+    console.log(screenSize)
+    switch(screenSize) {
+      case 'large':
+        return <NavBar currentPage={currentPage} updateCurrentPage={updateCurrentPage}/>
+      case 'medium':
+        return <BurgerBar currentPage={currentPage} updateCurrentPage={updateCurrentPage} isShowingSlideOutMenu={isShowingSlideOutMenu}updateIsShowingSlideOutMenu={updateIsShowingSlideOutMenu}/>
+      case 'mobile':
+        return <MobileBurgerMenu currentPage={currentPage} updateCurrentPage={updateCurrentPage} isShowingSlideOutMenu={isShowingSlideOutMenu} updateIsShowingSlideOutMenu={updateIsShowingSlideOutMenu}/>
+      default:
+        return null
+    }
+   
   }
 
-  function checkScreenSize(width) {
-      if (width > widthBoundary && isShowingBurgerMenu) {
-        setIsShowingBurgerMenu(false)
-        setIsShowingSlideOutMenu(false)
-      } else if (!isShowingBurgerMenu && width <= widthBoundary)  {
-        setIsShowingBurgerMenu(true)
-      }
-  }
 
   function closeSlideOutMenu() {
     if (isShowingSlideOutMenu) {
@@ -52,45 +82,27 @@ function App() {
 
   useEffect(() => {
 
-    const width = window.innerWidth
-    if (width > widthBoundary && isShowingBurgerMenu) {
-      setIsShowingBurgerMenu(false)
-      setIsShowingSlideOutMenu(false)
-    } else if (!isShowingBurgerMenu && width <= widthBoundary)  {
-      setIsShowingBurgerMenu(true)
-    }  
+    checkScreenSize()
 
-      const listener = () => checkScreenSize(window.innerWidth)
-      window.addEventListener('resize', listener)
+    const listener = () => checkScreenSize()
+    window.addEventListener('resize', listener)
 
-      return () => window.removeEventListener('resize', listener)
-  })
+    return () => window.removeEventListener('resize', listener)
+  }, [checkScreenSize])
 
   return (
     <div className='h-full w-full'>
       <main className='App font-zilla'>
       {/* bg-gradient-to-b from-white to-[#eeeeee] */}
         <div>
-
+        {getNavBar()}
         </div>
         <div className='h-full w-full'>
-          {isShowingBurgerMenu ?
-          <div id="burgerBar">
-            <BurgerBar currentPage={currentPage} updateCurrentPage={updateCurrentPage} isShowingSlideOutMenu={isShowingSlideOutMenu} updateIsShowingSlideOutMenu={updateIsShowingSlideOutMenu}/>
-          </div>
-          :
-          <div id="navbar">
-            <NavBar currentPage={currentPage} updateCurrentPage={updateCurrentPage}/>
-          </div>
-          }
-          {/* <div id="sidebar">
-            <SideBar2 currentPage={currentPage} updateCurrentPage={updateCurrentPage}/>
-            <div className='w-[160px] h-full'></div>
-          </div> */}
           <div className='h-full w-full flex flex-row justify-center'>
-            <div className='h-full w-[400px] sm:w-[600px] md:w-[800px] lg:w-[1000px] max-w-[1200px] pt-[150px]' onClick={closeSlideOutMenu}>
+          {/*  sm:w-[600px] md:w-[1000px] max-w-[1200px] */}
+            <div className={`h-full w-full sm:pt-[150px]`} onClick={closeSlideOutMenu}>
               <Routes>
-                <Route path='/*' element={<HomePage />}/>
+                <Route path='/*' element={<HomePage2 />}/>
                 <Route path='/about' element={<AboutPage />}/>
                 <Route path='/credits' element={<CreditsPage />}/>
                 <Route path='/audio' element={<ListenPage />} />

@@ -26,10 +26,41 @@ main {
   margin-left: 20px; */
 }
 
+.sectionContainer {
+  width: 100%;
+}
+
+.sectionContent {
+  width: 1000px;
+}
+
+@media (max-width: 1200px) {
+  .sectionContent {
+    width: 1000px;
+  }
+}
+
+.wlg {
+  width: 1100px;
+}
+
+.wmd {
+  width: 800px;
+}
+
+.wm {
+  width: 400px;
+}
+
 /* By Page */
 
 #homepage {
   background-image: url('/public/edieImages/edieplaceholder.jpeg');
   background-position: center;
   background-size: cover;
+}
+
+.slideOutMenuHidden {
+  transform: translateX(100%);
+  transition-duration: 100ms;
 }
