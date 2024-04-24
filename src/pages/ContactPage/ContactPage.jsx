@@ -1,6 +1,8 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 export default function ContactPage() {
+
+  const [hasSubmitted, setHasSubmitted] = useState(false)
 
   const handleSubmit = (event) => {
     event.preventDefault()
@@ -12,8 +14,8 @@ export default function ContactPage() {
       headers: {"Content-Type": "application/x-www-form-urlencoded"},
       body: new URLSearchParams(formData).toString()
     })
-    .then(() => console.log("Form successfully submitted")
-    .catch((error) => alert(error)))
+    .then(() => console.log("Form successfully submitted"))
+    .catch((error) => alert(error))
   }
 
   return (
@@ -25,7 +27,42 @@ export default function ContactPage() {
         Get in touch with Edie regarding vocal contracting, recording sessions, conducting, (more depending on what she'd like listed here)
       </div>
 
-      <form className='flex flex-col items-center justify-center pt-12 w-[600px]' name='contact' method='POST' data-netlify='true' netlify>
+      <form name='contact' method='POST' netlify>
+        <div >
+          <label >
+            Name
+            <input type='text' name='name'/>
+          </label>
+          
+        </div>
+        <div >
+          <label>
+            E-Mail
+            <input type='text' name='email'/>
+          </label>
+          
+        </div>
+        <div>
+          <label>
+            Company / Org (optional)
+            <input type='text' name='company'/>
+          </label>
+          
+        </div>
+        <div>
+          <label>
+            Please leave your message below :
+            <textarea name='message'/>
+          </label>
+        </div>
+        
+          <div >
+          <button type='submit' onClick={handleSubmit}>
+            Send
+          </button>
+        </div>
+
+      {/* <form className='flex flex-col items-center justify-center pt-12 w-[600px]' name='contact' method='POST' netlify>
         <div className='flex justify-between items-center w-[600px] pb-4'>
           <div className='flex flex-col items-leading'>
             <label >
@@ -64,7 +101,7 @@ export default function ContactPage() {
           <button type='submit' className='h-[40px] bg-black text-white mt-2 p-2 rounded-lg transform hover:scale-110 duration-75' onClick={handleSubmit}>
             <i className='flaticon-email h-[20px] w-[20px] pr-2'></i>Send
           </button>
-        </div>
+        </div> */}
       </form>
     </div>
   )
