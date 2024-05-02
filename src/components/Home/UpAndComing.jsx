@@ -58,7 +58,7 @@ export default function UpAndComing() {
                     Thelma the Unicorn
                 </div>
                 <div className='pt-1 text-xl italic font-medium ml-4'>
-                    Vocal Contractor & Conductor
+                    Vocal Contractor & Vocalist
                 </div>
                 <div className='pt-2 text-md italic w-[500px] ml-8'>
                     <span className='font-bold'>IMDB: </span>When a rare pink and glitter-filled moment of fate makes Thelma the Pony's wish of being a unicorn come true, she rises to instant international pop-superstar stardom, but at an unexpected cost.

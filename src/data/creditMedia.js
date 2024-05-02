@@ -13,7 +13,11 @@ export const r = { // Roles
     Vocalist: 'Vocalist',
     Conductor: 'Conductor',
     Coach: 'Vocal Coach',
-    Musician: 'Musician'
+    Musician: 'Musician',
+    Arranger: 'Arranger',
+    Producer: 'Vocal Producer',
+    Consultant: 'Vocal Consultant',
+    Vocoder: 'Vocoder'
 }
 
 

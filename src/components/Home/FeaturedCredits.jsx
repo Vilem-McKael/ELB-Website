@@ -3,27 +3,27 @@ import FeaturedWorkCardHome from './FeaturedWorkCardHome'
 
 // recents
 import dune2 from '/creditImages/dune2.webp'
-import michaelBuble from '/creditImages/michaelBuble.webp'
-import harryStyles from '/creditImages/harryStyles.jpeg'
+import michaelBuble from '/creditImages/smile.png'
+import harryStyles from '/creditImages/signOfTheTimes2.webp'
 import avatar2 from '/creditImages/avatar2.webp'
 import rosalia from '/creditImages/rosalia.jpeg'
-import katyPerry from '/creditImages/katyPerry.jpeg'
-import thirtySeconds from '/creditImages/30seconds.jpg'
+import katyPerry from '/creditImages/pendulum.jpeg'
+import thirtySeconds from '/creditImages/walkOnWater.jpeg'
 import nope from '/creditImages/nope2.jpeg'
 import encanto from '/creditImages/encanto.webp'
 import endgame from '/creditImages/endgame.jpeg'
 
 // classics
 
-import madonna from '/creditImages/madonna.jpeg'
-import quincyJones from '/creditImages/quincyJones.webp'
-import michaelJackson from '/creditImages/michaelJackson.jpeg'
-import belindaCarlisle from '/creditImages/belindaCarlisle.avif'
-import arethaFranklin from '/creditImages/arethaFranklin.webp'
-import barbraStreisand from '/creditImages/barbraStreisand.jpeg'
-import lindaRonstadt from '/creditImages/lindaRonstadt.jpeg'
-import billWithers from '/creditImages/billWithers.webp'
-import herbieHancock from '/creditImages/herbieHancock2.jpeg'
+import madonna from '/creditImages/trueBlue.jpg'
+import quincyJones from '/creditImages/backOnTheBlock.png'
+import michaelJackson from '/creditImages/invincible.jpg'
+import belindaCarlisle from '/creditImages/heavenOnEarth.webp'
+import arethaFranklin from '/creditImages/unitedTogether.png'
+import barbraStreisand from '/creditImages/memories.jpg'
+import lindaRonstadt from '/creditImages/getCloser.jpeg'
+import billWithers from '/creditImages/watchingYouWatchingMe.jpeg'
+import herbieHancock from '/creditImages/liteMeUp.jpg'
 import matthewWilder from '/creditImages/matthewWilder.webp'
 
 
@@ -40,35 +40,35 @@ export default function FeaturedCredits() {
                 </div>
             </div>
             {/* <div className='w-full flex flex-row justify-evenly px-4 pb-4'></div> */}
-            <div className='wlg grid grid-cols-2 sm:grid-cols-3 justify-center items-center px-4 pb-12 gap-y-8'>
-                <FeaturedWorkCardHome key={0} image={dune2} title={'Dune 2'} roles={[r.Vocalist]}/>
-                <FeaturedWorkCardHome key={1} image={avatar2} title={'Avatar: The Way of Water'} roles={[r.Vocalist]}/>
-                <FeaturedWorkCardHome key={2} image={harryStyles} title={'Harry Styles'} roles={[r.Conductor]}/>
-                <FeaturedWorkCardHome key={3} image={rosalia} title={'Rosalia'} roles={[r.Vocalist]}/>
-                <FeaturedWorkCardHome key={4} image={michaelBuble} title={'Michael Bublé'} roles={[r.Vocalist]}/>
-                <FeaturedWorkCardHome key={5} image={katyPerry} title={'Katy Perry'} roles={[r.Vocalist]}/>
-                <FeaturedWorkCardHome key={6} image={thirtySeconds} title={'30 Seconds to Mars'} roles={[r.Vocalist]}/>
-                <FeaturedWorkCardHome key={7} image={nope} title={'Nope'} roles={[r.Conductor]}/>
-                <FeaturedWorkCardHome key={8} image={encanto} title={'Encanto'} roles={[r.Vocalist]}/>
+            <div className='wlg grid grid-cols-2 sm:grid-cols-3 justify-center items-start px-4 pb-12 gap-y-8'>
+                <FeaturedWorkCardHome key={0} image={dune2} title={'Dune 2'} roles={[r.Vocalist, r.Contractor]}/>
+                <FeaturedWorkCardHome key={1} image={avatar2} title={'Avatar: The Way of Water'} roles={[r.Vocalist, r.Contractor, r.Contractor]}/>
+                <FeaturedWorkCardHome key={2} image={harryStyles} title={'Harry Styles'} work={'Sign of the Times'}  roles={[r.Contractor, r.Conductor]}/>
+                <FeaturedWorkCardHome key={3} image={rosalia} title={'Rosalia'} roles={[r.Contractor, r.Conductor]}/>
+                <FeaturedWorkCardHome key={4} image={michaelBuble} title={'Michael Bublé'} work={'Smile'}  roles={[r.Vocalist, r.Contractor]}/>
+                <FeaturedWorkCardHome key={5} image={katyPerry} title={'Katy Perry'} work={'Pendulum'}  roles={[r.Contractor, r.Arranger, r.Vocalist, r.Conductor]}/>
+                <FeaturedWorkCardHome key={6} image={thirtySeconds} title={'30 Seconds to Mars'} work={'Walk on Water'}  roles={[r.Contractor, r.Vocalist, r.Arranger]}/>
+                <FeaturedWorkCardHome key={7} image={nope} title={'Nope'} roles={[r.Contractor, r.Conductor]}/>
+                <FeaturedWorkCardHome key={8} image={encanto} title={'Encanto'} roles={[r.Contractor, r.Conductor]}/>
                 {/* <FeaturedWorkCardHome image={endgame} title={'Avengers: Endgame'} roles={[r.Vocalist]}/> */}
             </div>
         </div>
-        <div id='classic-credits' className='w-full flex flex-col items-center bg-gold/10 text-black'>
+        <div id='classic-credits' className='w-full flex flex-col items-start bg-gold/10 text-black'>
             <div className='flex px-16 py-4 mb-12 w-full items-center justify-center border-y-[8px] border-gold'>
                 <div className='wlg text-4xl pl-8 flex justify-start text-start text-black font-semibold'>
                     Classic Credits
                 </div>
             </div>
             <div className='wlg grid grid-cols-2 sm:grid-cols-3 justify-evenly px-4 pb-12 gap-y-8'>
-                <FeaturedWorkCardHome key={0} image={madonna} title={'Madonna'} roles={[r.Vocalist]}/>
-                <FeaturedWorkCardHome key={1} image={quincyJones} title={'Quincy Jones'} roles={[r.Vocalist]}/>
-                <FeaturedWorkCardHome key={2} image={michaelJackson} title={'Michael Jackson'} roles={[r.Vocalist]}/>
-                <FeaturedWorkCardHome key={3} image={belindaCarlisle} title={'Belinda Carlisle'} roles={[r.Vocalist]}/>
-                <FeaturedWorkCardHome key={4} image={arethaFranklin} title={'Aretha Franklin'} roles={[r.Vocalist]}/>
-                <FeaturedWorkCardHome key={5} image={barbraStreisand} title={'Barbra Streisand'} roles={[r.Vocalist]}/>
-                <FeaturedWorkCardHome key={6} image={lindaRonstadt} title={'Linda Ronstadt'} roles={[r.Vocalist]}/>
-                <FeaturedWorkCardHome key={7} image={billWithers} title={'Bill Withers'} roles={[r.Vocalist]}/>
-                <FeaturedWorkCardHome key={8} image={herbieHancock} title={'Herbie Hancock'} roles={[r.Vocalist]}/>
+                <FeaturedWorkCardHome key={0} image={madonna} title={'Madonna'} work={'True Blue'} roles={[r.Vocalist, r.Arranger]}/>
+                <FeaturedWorkCardHome key={1} image={quincyJones} title={'Quincy Jones'} work={'Back On the Block'} roles={[r.Vocalist]}/>
+                <FeaturedWorkCardHome key={2} image={michaelJackson} title={'Michael Jackson'} work={'Invincible'}  roles={[r.Vocalist]}/>
+                <FeaturedWorkCardHome key={3} image={belindaCarlisle} title={'Belinda Carlisle'} work={'Heaven is a Place on Earth'}  roles={[r.Vocalist]}/>
+                <FeaturedWorkCardHome key={4} image={arethaFranklin} title={'Aretha Franklin'} work={'United Together'}  roles={[r.Vocalist, r.Contractor, r.Arranger]}/>
+                <FeaturedWorkCardHome key={5} image={barbraStreisand} title={'Barbra Streisand'} work={'Memories'}  roles={[r.Vocalist]}/>
+                <FeaturedWorkCardHome key={6} image={lindaRonstadt} title={'Linda Ronstadt'} work={'Get Closer'}  roles={[r.Vocalist]}/>
+                <FeaturedWorkCardHome key={7} image={billWithers} title={'Bill Withers'} work={'Watching You Watching Me'}  roles={[r.Vocalist]}/>
+                <FeaturedWorkCardHome key={8} image={herbieHancock} title={'Herbie Hancock'} work={'Lite Me Up'}  roles={[r.Vocalist, r.Vocoder]}/>
                 {/* <FeaturedWorkCardHome image={matthewWilder} title={'Matthew Wilder'} roles={[r.Vocalist]}/> */}
             </div>
         </div>

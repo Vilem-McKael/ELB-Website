@@ -143,12 +143,12 @@ export const selectedWorks = {
     ],
     "musician": [
         {
-            image: jimMessina,
-            title: "Jim Messina"
+            image: hiddenFigures,
+            title: "Hidden Figures"
         },
         {
-            image: vondaShepard,
-            title: "Vonda Shepard"
+            image: hiddenFigures,
+            title: "hiddenFigures"
         },
         {
             image: victorBorge,
@@ -159,12 +159,12 @@ export const selectedWorks = {
             title: "General Hospital"
         },
         {
-            image: solo,
-            title: "Solo"
+            image: theVoice,
+            title: "The Voice - Natural Woman"
         },
         {
-            image: solo,
-            title: "Solo"
+            image: theVoice,
+            title: "The Voice"
         },
     ],
     "vocal-coach": [
