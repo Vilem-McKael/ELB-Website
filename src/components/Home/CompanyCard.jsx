@@ -1,10 +1,10 @@
 import React from 'react'
 
-export default function CompanyCard({children}) {
+export default function CompanyCard({children, img}) {
   return (
-    <div className='flex flex-col items-center justify-center'>
-        <div className='bg-gray-500 rounded-xl h-[60px] w-[100px]'></div>
-        <div className='h-[80px] text-center'>{children}</div>
+    <div className='flex flex-col items-center justify-center mx-4'>
+        <img src={img} className='w-[160px] h-[120px] object-contain' />
+        {/* <div className='h-[80px] text-center'>{children}</div> */}
     </div>
   )
 }

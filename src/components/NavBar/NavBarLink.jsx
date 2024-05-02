@@ -1,18 +1,21 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 
 export default function NavBarLink({title, to, iconName, tabColor, tabClass, currentPage, updateCurrentPage, updateIsShowingSlideOutMenu}) {
+
+  const navigate = useNavigate();
 
     function handleOnClick() {
         updateIsShowingSlideOutMenu(false)
         updateCurrentPage(title)
+        navigate(to)
     }
     // className='flex flex-row items-center'
     
   return (
-    <div className={`font-regular flex flex-col justify-between items-center w-full h-[50px] ${tabClass}`}>
-        <Link to={to} onClick={handleOnClick} className='flex flex-row items-center mt-2'><i className={`flaticon-${iconName} h-[28px] pt-1 pr-2`}/><div className='transform origin-center'>{title}</div></Link>
-        <div className='w-full h-[4px] rounded-t-full' style={{backgroundColor: tabColor}}></div>
-    </div>
+    <button className={`font-regular flex flex-col justify-between items-center w-full h-[50px] rounded-t-xl ${tabClass}`} onClick={handleOnClick}>
+        <div className='flex flex-row items-center mt-2'><i className={`flaticon-${iconName} h-[28px] pt-1 pr-2`}/><div className='transform origin-center'>{title}</div></div>
+        <div className='w-full rounded-t-full' style={{backgroundColor: tabColor, height: currentPage === title ? '12px' : '4px'}}></div>
+    </button>
   )
 }

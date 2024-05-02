@@ -33,8 +33,8 @@ export default function HomePage2() {
         <RolesAndHighlights />
         
         <div className='w-full h-[300px] flex flex-col justify-center items-center'>
-            <div className='pb-4'>Some more information about Edie!</div>
-            <div className='pb-4'>Follow or reach out to Edie on the following platforms:</div>
+            <div className='pb-4 text-xl italic w-[500px]'>"Beautiful music is the art of the prophets that can calm the agitations of the soul; it is one of the most magnificent and delightful presents God has given us."</div>
+            {/* <div className='pb-4'>Follow or reach out to Edie on the following platforms:</div>
             <div className='flex flex-row w-full px-12 justify-evenly'>
                 <div>
                     
@@ -61,7 +61,7 @@ export default function HomePage2() {
             <div className='flex flex-col items-center mt-4'>
                 Or send a message by clicking below:<br />
                 <Link to={"/contact"} className='mt-2 p-2 bg-black text-white rounded-lg'>Contact Edie</Link>
-            </div>
+            </div> */}
             
         </div>
         <HashLink smooth to="/#home-header" className='text-black bg-gray-100 hover:text-white hover:bg-black w-full h-[80px] flex items-center justify-center border-black border-t-[1px]'>

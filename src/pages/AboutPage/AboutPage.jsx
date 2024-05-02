@@ -5,6 +5,9 @@ export default function AboutPage() {
   return (
     <div className='w-full flex flex-col items-center text-justify bg-light7'>
         <div className='text-4xl font-semibold pt-16'>
+          About Edie
+        </div>
+        <div className='text-2xl font-semibold mt-12'>
           Who is Edie Lehmann Boddicker?
         </div>
         <div className='text-md my-4 italic text-center font-barlow'>
@@ -12,7 +15,7 @@ export default function AboutPage() {
         </div>
       <div className='mt-8 w-[300px] text-sm sm:w-[400px] md:w-[600px] lg:w-[800px] leading-relaxed indent-8 font-barlow'>
         <div>
-          <img src='/edieImages/edieicon.jpg' className='w-[200px] h-[200px] float-right ml-6 mb-4'/>
+          <img src='/edieImages/edie11.jpeg' className='h-[300px] float-right ml-6 mb-4'/>
           <div>
             Edie Lehmann Boddicker was born to John and Edith Lehmann, German/Hungarian immigrants who fled to Buffalo, New York in 1950, escaping Russian extermination after World War II. John was a Baptist preacher at the German-speaking Austin Street Baptist Church, and Edith worked as a fashion buyer at Hengerer’s. The couple were deeply involved in the Grand Island/Buffalo immigrant community, sponsoring over two-hundred German/Hungarian refugees.<br />
           </div>
@@ -30,7 +33,7 @@ export default function AboutPage() {
               It was during this time she realized that her love of teamwork was greater than the prospect of the solitary life and practice of a solo concert pianist.<br />
           </div>
           <div>
-            <img src='/edieImages/edieAngry.jpeg' className='w-[240px] float-left mr-6 my-3'/>
+            <img src='/edieImages/edie9.jpeg' className='h-[200px] float-left mr-6 my-3'/>
             In her teens, Edie began singing in earnest, performing at her church of 11,000 members. The music programs and performances were of the highest quality, giving her the necessary stylistic vocal training for group singing. Edie maintains that churches still produce some of the best vocal talent (evident on shows like The Voice).<br />
           </div>
           <div>

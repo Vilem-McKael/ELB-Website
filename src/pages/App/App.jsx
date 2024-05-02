@@ -31,11 +31,11 @@ function App() {
 
   const updateCurrentPage = useCallback((newPage) => {
     setCurrentPage(newPage)
-  }, [currentPage])
+  }, [])
 
   const updateIsShowingSlideOutMenu = useCallback((bool) => {
     setIsShowingSlideOutMenu(bool)
-  }, [isShowingSlideOutMenu])
+  }, [])
 
 
 
@@ -62,9 +62,10 @@ function App() {
     console.log(screenSize)
     switch(screenSize) {
       case 'large':
-        return <NavBar currentPage={currentPage} updateCurrentPage={updateCurrentPage}/>
+        closeSlideOutMenu()
+        return <NavBar currentPage={currentPage} updateCurrentPage={updateCurrentPage} updateIsShowingSlideOutMenu={updateIsShowingSlideOutMenu}/>
       case 'medium':
-        return <BurgerBar currentPage={currentPage} updateCurrentPage={updateCurrentPage} isShowingSlideOutMenu={isShowingSlideOutMenu}updateIsShowingSlideOutMenu={updateIsShowingSlideOutMenu}/>
+        return <BurgerBar currentPage={currentPage} updateCurrentPage={updateCurrentPage} isShowingSlideOutMenu={isShowingSlideOutMenu} updateIsShowingSlideOutMenu={updateIsShowingSlideOutMenu}/>
       case 'mobile':
         return <MobileBurgerMenu currentPage={currentPage} updateCurrentPage={updateCurrentPage} isShowingSlideOutMenu={isShowingSlideOutMenu} updateIsShowingSlideOutMenu={updateIsShowingSlideOutMenu}/>
       default:

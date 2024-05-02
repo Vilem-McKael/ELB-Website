@@ -193,7 +193,7 @@ export const selectedWorks = {
             title: "Leo"
         },
     ],
-    "something": [
+    "arranger": [
         {
             image: glee,
             title: "glee"

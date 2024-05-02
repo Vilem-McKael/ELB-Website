@@ -15,6 +15,8 @@ export default function VideoPage() {
         <VideoCard title={"Vocal Journey into Hollywood Music with Edie Lehmann Boddicker | Passionate Living"} description={`Edie Lehmann Boddicker returns to Passionate Living for part 2 of an in-depth look into her vocal life and star-filled journey into hollywood music!\n
   If you're a fan of big blockbusters like Dune or Encanto, you won't want to miss this behind-the-scenes action.`} videoId={"NSisNc8nZT4"} />
         <VideoCard title={"Edie Lehmann Boddicker Buffalo Music Hall of Fame Class of 2021"} description={`The Official video marking Edie's induction into the Buffalo Music Hall of Fame.`} videoId={"98zVwebpScU"} />
+        <VideoCard title={"Edie Lehmann - Hit And Run Lovers (Soundtrack Unreleased)"} description={`From the movie "Windy City" (1984).`} videoId={"ys5C7lsf5S4"} />
+        <VideoCard title={"Living with a Genius"} description={`From the movie "Windy City" (1984).`} videoId={"0JKbHNXpq3M"} />
       </div>
       <Footer />
     </div>

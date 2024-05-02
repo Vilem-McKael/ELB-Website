@@ -9,7 +9,7 @@ export default function FeaturedWorkCardHome({image, title, roles}) {
           {title}
         </div>
         <div className='text-md'>
-          {roles.map((role) => <div className='italic'>{role}</div>)}
+          {roles.map((role, index) => <div key={index} className='italic'>{role}</div>)}
         </div>
       </div>
       

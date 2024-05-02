@@ -9,7 +9,7 @@ import instagram from '../../assets/socialLogos/instagramLogo.png'
 import linkedIn from '../../assets/socialLogos/linkedInLogo.png'
 import imdb from '../../assets/socialLogos/imdbLogo.webp'
 
-export default function NavBar({currentPage, updateCurrentPage}) {
+export default function NavBar({currentPage, updateCurrentPage, updateIsShowingSlideOutMenu}) {
   return (
     <div id="top" className='flex w-full sm:h-[150px] justify-between items-end fixed bg-light7 border-b-[1px] border-black text-black pl-8 pr-7 z-50'>
 
@@ -42,25 +42,25 @@ export default function NavBar({currentPage, updateCurrentPage}) {
             </div>
             <div className='flex flex-row w-full gap-2'>
                 <div className='w-[92px] hover:bg-yellow rounded-t-lg hover:text-light7/90'>
-                    <NavBarLink title={"Home"} to={"/"} iconName={"home"} tabColor={'#D2AD25'} tabClass={'bgYellow'} currentPage={currentPage} updateCurrentPage={updateCurrentPage}/>
+                    <NavBarLink title={"Home"} to={"/"} iconName={"home"} tabColor={'#D2AD25'} tabClass={'bgYellow'} currentPage={currentPage} updateCurrentPage={updateCurrentPage} updateIsShowingSlideOutMenu={updateIsShowingSlideOutMenu}/>
                 </div>
                 <div className='w-[92px] hover:bg-gold rounded-t-lg hover:text-light7/90'>
-                    <NavBarLink title={"About"} to={"/about"} iconName={"info-1"} tabColor={'#D2912D'} tabClass={'bgGold'} currentPage={currentPage} updateCurrentPage={updateCurrentPage}/>
+                    <NavBarLink title={"About"} to={"/about"} iconName={"info-1"} tabColor={'#D2912D'} tabClass={'bgGold'} currentPage={currentPage} updateCurrentPage={updateCurrentPage} updateIsShowingSlideOutMenu={updateIsShowingSlideOutMenu}/>
                 </div>
                 <div className='w-[92px] hover:bg-terracotta rounded-t-lg hover:text-light7/90'>
-                    <NavBarLink title={"Credits"} to={"/credits"} iconName={"person-1"} tabColor={'#A34726'} tabClass={'bgTerracotta'} currentPage={currentPage} updateCurrentPage={updateCurrentPage}/>
+                    <NavBarLink title={"Credits"} to={"/credits"} iconName={"person-1"} tabColor={'#A34726'} tabClass={'bgTerracotta'} currentPage={currentPage} updateCurrentPage={updateCurrentPage} updateIsShowingSlideOutMenu={updateIsShowingSlideOutMenu}/>
                 </div>
                 <div className='w-[92px] hover:bg-teal4 rounded-t-lg hover:text-light7/90'>
-                    <NavBarLink title={"Audio"} to={"/audio"} iconName={"microphone-1"} tabColor={'#3E8483'} tabClass={'bgTeal'} currentPage={currentPage} updateCurrentPage={updateCurrentPage}/>
+                    <NavBarLink title={"Audio"} to={"/audio"} iconName={"microphone-1"} tabColor={'#3E8483'} tabClass={'bgTeal'} currentPage={currentPage} updateCurrentPage={updateCurrentPage} updateIsShowingSlideOutMenu={updateIsShowingSlideOutMenu}/>
                 </div>
                 <div className='w-[92px] hover:bg-green rounded-t-lg hover:text-light7/90'>
-                    <NavBarLink title={"Videos"} to={"/videos"} iconName={"online-video"} tabColor={'#566632'} tabClass={'bgGreen'} currentPage={currentPage} updateCurrentPage={updateCurrentPage}/>
+                    <NavBarLink title={"Videos"} to={"/videos"} iconName={"online-video"} tabColor={'#566632'} tabClass={'bgGreen'} currentPage={currentPage} updateCurrentPage={updateCurrentPage} updateIsShowingSlideOutMenu={updateIsShowingSlideOutMenu}/>
                 </div>
                 <div className='w-[92px] hover:bg-blue1 rounded-t-lg hover:text-light7/90'>
-                    <NavBarLink title={"Gallery"} to={"/gallery"} iconName={"image-gallery-1"} tabColor={'#526693'} tabClass={'bgBlue'} currentPage={currentPage} updateCurrentPage={updateCurrentPage}/>
+                    <NavBarLink title={"Gallery"} to={"/gallery"} iconName={"image-gallery-1"} tabColor={'#526693'} tabClass={'bgBlue'} currentPage={currentPage} updateCurrentPage={updateCurrentPage} updateIsShowingSlideOutMenu={updateIsShowingSlideOutMenu}/>
                 </div>
                 <div className='w-[92px] hover:bg-darkBlue3 rounded-t-lg hover:text-light7/90'>
-                    <NavBarLink title={"Contact"} to={"/contact"} iconName={"contact-mail"} tabColor={'#263053'} tabClass={'bgDarkBlue'} currentPage={currentPage} updateCurrentPage={updateCurrentPage}/>
+                    <NavBarLink title={"Contact"} to={"/contact"} iconName={"contact-mail"} tabColor={'#263053'} tabClass={'bgDarkBlue'} currentPage={currentPage} updateCurrentPage={updateCurrentPage} updateIsShowingSlideOutMenu={updateIsShowingSlideOutMenu}/>
                 </div>
             </div>
         </div>

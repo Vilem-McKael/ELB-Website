@@ -41,15 +41,15 @@ export default function FeaturedCredits() {
             </div>
             {/* <div className='w-full flex flex-row justify-evenly px-4 pb-4'></div> */}
             <div className='wlg grid grid-cols-2 sm:grid-cols-3 justify-center items-center px-4 pb-12 gap-y-8'>
-                <FeaturedWorkCardHome image={dune2} title={'Dune 2'} roles={[r.Vocalist]}/>
-                <FeaturedWorkCardHome image={avatar2} title={'Avatar: The Way of Water'} roles={[r.Vocalist]}/>
-                <FeaturedWorkCardHome image={harryStyles} title={'Harry Styles'} roles={[r.Conductor]}/>
-                <FeaturedWorkCardHome image={rosalia} title={'Rosalia'} roles={[r.Vocalist]}/>
-                <FeaturedWorkCardHome image={michaelBuble} title={'Michael Bublé'} roles={[r.Vocalist]}/>
-                <FeaturedWorkCardHome image={katyPerry} title={'Katy Perry'} roles={[r.Vocalist]}/>
-                <FeaturedWorkCardHome image={thirtySeconds} title={'30 Seconds to Mars'} roles={[r.Vocalist]}/>
-                <FeaturedWorkCardHome image={nope} title={'Nope'} roles={[r.Conductor]}/>
-                <FeaturedWorkCardHome image={encanto} title={'Encanto'} roles={[r.Vocalist]}/>
+                <FeaturedWorkCardHome key={0} image={dune2} title={'Dune 2'} roles={[r.Vocalist]}/>
+                <FeaturedWorkCardHome key={1} image={avatar2} title={'Avatar: The Way of Water'} roles={[r.Vocalist]}/>
+                <FeaturedWorkCardHome key={2} image={harryStyles} title={'Harry Styles'} roles={[r.Conductor]}/>
+                <FeaturedWorkCardHome key={3} image={rosalia} title={'Rosalia'} roles={[r.Vocalist]}/>
+                <FeaturedWorkCardHome key={4} image={michaelBuble} title={'Michael Bublé'} roles={[r.Vocalist]}/>
+                <FeaturedWorkCardHome key={5} image={katyPerry} title={'Katy Perry'} roles={[r.Vocalist]}/>
+                <FeaturedWorkCardHome key={6} image={thirtySeconds} title={'30 Seconds to Mars'} roles={[r.Vocalist]}/>
+                <FeaturedWorkCardHome key={7} image={nope} title={'Nope'} roles={[r.Conductor]}/>
+                <FeaturedWorkCardHome key={8} image={encanto} title={'Encanto'} roles={[r.Vocalist]}/>
                 {/* <FeaturedWorkCardHome image={endgame} title={'Avengers: Endgame'} roles={[r.Vocalist]}/> */}
             </div>
         </div>
@@ -60,15 +60,15 @@ export default function FeaturedCredits() {
                 </div>
             </div>
             <div className='wlg grid grid-cols-2 sm:grid-cols-3 justify-evenly px-4 pb-12 gap-y-8'>
-                <FeaturedWorkCardHome image={madonna} title={'Madonna'} roles={[r.Vocalist]}/>
-                <FeaturedWorkCardHome image={quincyJones} title={'Quincy Jones'} roles={[r.Vocalist]}/>
-                <FeaturedWorkCardHome image={michaelJackson} title={'Michael Jackson'} roles={[r.Vocalist]}/>
-                <FeaturedWorkCardHome image={belindaCarlisle} title={'Belinda Carlisle'} roles={[r.Vocalist]}/>
-                <FeaturedWorkCardHome image={arethaFranklin} title={'Aretha Franklin'} roles={[r.Vocalist]}/>
-                <FeaturedWorkCardHome image={barbraStreisand} title={'Barbra Streisand'} roles={[r.Vocalist]}/>
-                <FeaturedWorkCardHome image={lindaRonstadt} title={'Linda Ronstadt'} roles={[r.Vocalist]}/>
-                <FeaturedWorkCardHome image={billWithers} title={'Bill Withers'} roles={[r.Vocalist]}/>
-                <FeaturedWorkCardHome image={herbieHancock} title={'Herbie Hancock'} roles={[r.Vocalist]}/>
+                <FeaturedWorkCardHome key={0} image={madonna} title={'Madonna'} roles={[r.Vocalist]}/>
+                <FeaturedWorkCardHome key={1} image={quincyJones} title={'Quincy Jones'} roles={[r.Vocalist]}/>
+                <FeaturedWorkCardHome key={2} image={michaelJackson} title={'Michael Jackson'} roles={[r.Vocalist]}/>
+                <FeaturedWorkCardHome key={3} image={belindaCarlisle} title={'Belinda Carlisle'} roles={[r.Vocalist]}/>
+                <FeaturedWorkCardHome key={4} image={arethaFranklin} title={'Aretha Franklin'} roles={[r.Vocalist]}/>
+                <FeaturedWorkCardHome key={5} image={barbraStreisand} title={'Barbra Streisand'} roles={[r.Vocalist]}/>
+                <FeaturedWorkCardHome key={6} image={lindaRonstadt} title={'Linda Ronstadt'} roles={[r.Vocalist]}/>
+                <FeaturedWorkCardHome key={7} image={billWithers} title={'Bill Withers'} roles={[r.Vocalist]}/>
+                <FeaturedWorkCardHome key={8} image={herbieHancock} title={'Herbie Hancock'} roles={[r.Vocalist]}/>
                 {/* <FeaturedWorkCardHome image={matthewWilder} title={'Matthew Wilder'} roles={[r.Vocalist]}/> */}
             </div>
         </div>
