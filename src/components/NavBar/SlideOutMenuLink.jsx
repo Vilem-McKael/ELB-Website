@@ -17,7 +17,7 @@ export default function SlideOutMenuLink({title, to, iconName, tabColor, tabClas
   return (
     <button className={`font-regular flex flex-row justify-between items-center w-full h-[50px] hover:text-light7 ${tabClass}`} onClick={handleOnClick}>
         <div className='h-[42px]' style={{backgroundColor: tabColor, width: currentPage === title ? '12px' : '4px'}}></div>
-        <div className='w-[80px] mr-2'>
+        <div className='w-[80px] mr-3'>
           <div className='flex flex-row items-center'><i className={`flaticon-${iconName} h-[28px] pt-1 pr-2`}/>
             <div className='transform origin-center'>{title}</div>
           </div>
