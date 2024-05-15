@@ -23,7 +23,7 @@ export default function AboutPage() {
           <div className='w-full flex flex-col items-center bg-light7 bg-opacity-85'>
           <div className='mt-16 text-md w-full px-4 sm:px-0 sm:w-[600px] md:w-[800px] leading-relaxed indent-8 font-barlow'>
             <div>
-              <img src='/edieImages/edie21.jpeg' className='h-[214px] float-right ml-6 my-4'/>
+              <img src='/edieImages/edie21.jpeg' className='sm:h-[214px] w-full sm:w-auto sm:float-right sm:ml-6 my-4'/>
               <div>
                 <span className='font-semibold text-xl'>Edie Lehmann Boddicker</span> was born to John and Edith Lehmann, German/Hungarian immigrants who fled to Buffalo, New York in 1950, escaping Russian extermination after World War II. John was a Baptist preacher at the German-speaking Austin Street Baptist Church, and Edith worked as a fashion buyer at Hengerer’s. The couple were deeply involved in the Grand Island/Buffalo immigrant community, sponsoring over two-hundred German/Hungarian refugees.<br />
               </div>
@@ -41,7 +41,7 @@ export default function AboutPage() {
                   It was during this time she realized that her love of teamwork was greater than the prospect of the solitary life and practice of a solo concert pianist.<br />
               </div>
               <div>
-                <img src='/edieImages/edie9.jpeg' className='h-[240px] float-right ml-6 my-4'/>
+                <img src='/edieImages/edie9.jpeg' className='w-full sm:w-auto sm:h-[240px] float-right sm:ml-6 my-4'/>
                 In her teens, Edie began singing in earnest, performing at her church of 11,000 members. The music programs and performances were of the highest quality, giving her the necessary stylistic vocal training for group singing. Edie maintains that churches still produce some of the best vocal talent (evident on shows like The Voice).<br />
               </div>
               <div>
@@ -51,7 +51,7 @@ export default function AboutPage() {
                 At age eighteen, Edie started singing in recording studios. One of her earliest sessions was for Kathie Lee Epstein (Gifford) who recorded one of Edie’s original songs. This led to more session singing and she was soon recording jingles and performing on various television shows including Donny & Marie and The Carol Burnett Show.<br />
               </div>
               <div>
-                <img src='/edieImages/Soap Star pic.jpeg' className='w-full sm:w-auto sm:h-[300px] sm:float-left mr-6 my-4'/>
+                <img src='/edieImages/Soap Star pic.jpeg' className='w-full sm:w-auto sm:h-[300px] sm:float-left sm:mr-6 my-4'/>
                 On The Big Show in 1980, even though initially hired as a singer, Edie subbed as a pianist at the last minute, performing in a Victor Borge sketch as a makeup artist who nails Borge’s “struggling” version of Chopin’s “C# minor Waltz”, learning the piece in one day.<br />
                 </div>
                 <div>
@@ -62,7 +62,7 @@ export default function AboutPage() {
 
               </div>
               <div>
-                <img src='/edieImages/Gospel Choir w_Jordan of The Voice.jpeg' className='h-[240px] float-right ml-6 my-4'/>
+                <img src='/edieImages/Gospel Choir w_Jordan of The Voice.jpeg' className='w-full sm:w-auto sm:h-[240px] sm:float-right sm:ml-6 my-4'/>
                 After General Hospital, Edie returned to session work and began vocal contracting - helping composers, producers and songwriters find and cast singers for films, television, albums, and live work. Her earliest contracting and conducting jobs were for film composers Shirley Walker (Quest for Camelot, Batman: Mask of the Phantasm) and John Powell (Happy Feet 1&2, Rio 1&2, Ice Ages 2,3 & 4, etc.).<br />
                 </div>
                 <div>
@@ -85,7 +85,7 @@ export default function AboutPage() {
                 Edie gives all glory to God for the rich experiences she has had, and continues to have, in her life, her family and her community, and the opportunities to use His gifts of her musical artistry and abilities.<br/>
               </div>
             </div>
-            <img src='/edieImages/Sick New World DE.jpeg' className='w-full sm:w-auto sm:h-[200px] mr-6 my-4 mb-12'/>
+            <img src='/edieImages/Sick New World DE.jpeg' className='w-full sm:w-auto sm:h-[200px] my-4 mb-12'/>
 
             {/* ADD AN IMAGE AT THE BOTTOM */}
             <img />
