@@ -4,12 +4,17 @@ import CompanyCard from './CompanyCard'
 export default function StudioCollaborations() {
   return (
     <div id='studio-collaborations' className='w-full flex flex-col items-center bg-darkBlue3/40'>
-        <div className='flex px-16 py-4 mb-12 w-full items-center justify-center border-y-[8px] border-darkBlue3  bg-light7/50'>
+
+        {/* SECTION TITLE: STUDIO COLLABORATIONS */}
+        <div className='flex px-4 sm:px-16 py-4 mb-12 w-full items-center justify-center border-y-[8px] border-darkBlue3 bg-light7/50'>
+          
             <div className='wlg text-4xl pl-8 flex justify-start text-start text-black font-semibold'>
                 Studio Collaborations
             </div>
         </div>
-        <div className='grid grid-cols-4 px-16 py-16 w-[1100px] gap-y-8'>
+
+        {/* LIST OF STUDIOS COLLABORATED WITH */}
+        <div className='grid grid-cols-2 sm:grid-cols-4 sm:py-16 w-full md:w-[800px] xl:w-[1100px] gap-y-8'>
             <CompanyCard img={'/studioLogos/netflix2.png'}>Netflix</CompanyCard>
             <CompanyCard img={'/studioLogos/hbo.png'}>HBO</CompanyCard>
             <CompanyCard img={'/studioLogos/activisionBlizzard.png'}>Activision/Blizzard</CompanyCard>

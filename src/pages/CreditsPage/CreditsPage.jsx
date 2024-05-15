@@ -5,6 +5,7 @@ import MediaGrid from '../../components/Credits/MediaGrid'
 import { CreditCategory, AllMedia, FeaturedMedia } from '../../data/creditMedia'
 import AllMediaList from '../../components/Credits/AllMediaList'
 import FeaturedCreditsList from '../../components/Credits/FeaturedCreditsList'
+import Footer from '../../components/Footer/Footer'
 
 
 const emptyFilters = {
@@ -278,20 +279,20 @@ export default function CreditsPage() {
     }
 
   return (
-    <div className='flex flex-col w-full items-center bg-light7'>
-        <div className='text-4xl font-semibold pt-16'>
+    <div id="credits-top" className='flex flex-col w-full items-center bg-light7'>
+        {/* <div className='text-4xl font-semibold pt-16'>
             Credits
-        </div>
+        </div> */}
         {/* <div className='mt-8 text-center'>
             Short blurb about Edie's impact on the music industry
         </div> */}
 
-        <div className='flex flex-row w-full justify-center mt-8 gap-8 text-xl'>
-            <button className={`w-[120px] h-[60px] border-black flex items-center justify-center transform hover:scale-105 hover:font-semibold duration-150 origin-top ${selectedSubpage === 'Featured' ? 'border-2' : ''}`} onClick={() => updateSubpage("Featured")}><span className='border-b-[1px] border-black'>Featured</span></button>
-            <button className={`w-[120px] h-[60px] border-black flex items-center justify-center transform hover:scale-105 hover:font-semibold duration-150 origin-top ${selectedSubpage === 'All' ? 'border-2' : ''}`} onClick={() => updateSubpage("All")}><span className='border-b-[1px] border-black'>All</span></button>
+        <div className='flex flex-row w-full justify-center items-center mt-8 sm:mt-16 gap-8 text-lg sm:text-xl px-4'>
+            <button className={`w-[180px] h-[60px] border-2 flex items-center justify-center transform sm:hover:scale-105 sm:hover:font-semibold duration-150 origin-top ${selectedSubpage === 'Featured' ? 'border-black' : 'border-gray-300'}`} onClick={() => updateSubpage("Featured")}><span className='border-b-[1px] border-black'>Featured Credits</span></button>
+            <button className={`w-[180px] h-[60px] flex border-2 items-center justify-center transform sm:hover:scale-105 sm:hover:font-semibold duration-150 origin-top ${selectedSubpage === 'All' ? ' border-black' : 'border-gray-300'}`} onClick={() => updateSubpage("All")}><span className='border-b-[1px] border-black'>All Credits</span></button>
         </div>
 
-        <div className='flex flex-col items-center mt-8 mb-16'>
+        <div className='flex flex-col items-center mt-8 sm:mb-16'>
             {isLoadingCredits ? 
             <></>
             :
@@ -301,6 +302,7 @@ export default function CreditsPage() {
             <AllMediaList filters={creditFilters} viewedCredits={viewedCredits} updateFilters={filterCredits} sortPreference={sortPreference} sortCredits={sortCredits}/>
             }
         </div>
+        <Footer />
     </div>
   )
 }

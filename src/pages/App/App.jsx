@@ -3,30 +3,25 @@ import './App.css'
 import { Routes, Route } from 'react-router-dom'
 
 // Components
-import SideBar2 from '../../components/SideBar/SideBar2'
-import Header from '../../components/Header/Header'
-import HomePage from '../../pages/HomePage/HomePage'
-import HomePage2 from '../../pages/HomePage/HomePage2'
+import HomePage from '../HomePage/HomePage'
 import AboutPage from '../AboutPage/AboutPage'
 import CreditsPage from '../../pages/CreditsPage/CreditsPage'
-import GalleryPage from '../GalleryPage2/GalleryPage2'
 import ContactPage from '../../pages/ContactPage/ContactPage'
-import WatchPage from '../VideoPage/VideoPage'
-import LookPage from '../GalleryPage/GalleryPage'
-import ListenPage from '../AudioPage/AudioPage'
 import NavBar from '../../components/NavBar/NavBar'
-import Footer from '../../components/Footer/Footer'
 import BurgerBar from '../../components/NavBar/BurgerBar'
-import SlideOutMenu from '../../components/SideBar/SlideOutMenu'
+import SlideOutMenu from '../../components/SlideOutMenu/SlideOutMenu'
 import MobileBurgerMenu from '../../components/NavBar/MobileBurgerMenu'
+import MediaPage from '../MediaPage/MediaPage'
 
 function App() {
 
   const [currentPage, setCurrentPage] = useState("Home")
   const [isShowingSlideOutMenu, setIsShowingSlideOutMenu] = useState(false)
-  const [screenSize, setScreenSize] = useState('large')
+  const [screenSize, setScreenSize] = useState(null)
 
-  const burgerWidthBoundary = 960
+  
+
+  const burgerWidthBoundary = 800
   const mobileWidthBoundary = 450
 
   const updateCurrentPage = useCallback((newPage) => {
@@ -45,20 +40,24 @@ function App() {
       console.log("CSS Width: ", document.documentElement.clientWidth)
       console.log("Device pixel ratio: ", window.devicePixelRatio)
       console.log("Effective css width: ", width / window.devicePixelRatio)
-      if (width > burgerWidthBoundary) {
+      if (width > burgerWidthBoundary && screenSize != 'large') {
         setScreenSize('large')
+        // setNavBar(<NavBar currentPage={currentPage} updateCurrentPage={updateCurrentPage} updateIsShowingSlideOutMenu={updateIsShowingSlideOutMenu}/>)
         if (isShowingSlideOutMenu) {
+          
           setIsShowingSlideOutMenu(false)
         }
-      } else if (width <= burgerWidthBoundary && width > mobileWidthBoundary)  {
+      } else if (width <= burgerWidthBoundary && width > mobileWidthBoundary && screenSize != 'medium')  {
+        // setNavBar(<BurgerBar currentPage={currentPage} updateCurrentPage={updateCurrentPage} isShowingSlideOutMenu={isShowingSlideOutMenu} updateIsShowingSlideOutMenu={updateIsShowingSlideOutMenu}/>)
         setScreenSize('medium')
 
-      } else if (width <= mobileWidthBoundary) {
+      } else if (width <= mobileWidthBoundary && screenSize != 'mobile') {
+        // setNavBar(<MobileBurgerMenu currentPage={currentPage} updateCurrentPage={updateCurrentPage} isShowingSlideOutMenu={isShowingSlideOutMenu} updateIsShowingSlideOutMenu={updateIsShowingSlideOutMenu}/>)
         setScreenSize('mobile')
       }
   }, [burgerWidthBoundary, mobileWidthBoundary])
 
-  function getNavBar() {
+  const NavBarComponent = () => {
     console.log(screenSize)
     switch(screenSize) {
       case 'large':
@@ -73,6 +72,8 @@ function App() {
     }
    
   }
+
+  const [navBar, setNavBar] = useState(<NavBar currentPage={currentPage} updateCurrentPage={updateCurrentPage} updateIsShowingSlideOutMenu={updateIsShowingSlideOutMenu}/>)
 
 
   function closeSlideOutMenu() {
@@ -89,26 +90,24 @@ function App() {
     window.addEventListener('resize', listener)
 
     return () => window.removeEventListener('resize', listener)
-  }, [checkScreenSize])
+  }, [])
 
   return (
-    <div className='h-full w-full'>
+    <div className='h-full w-full bar'>
       <main className='App font-zilla'>
       {/* bg-gradient-to-b from-white to-[#eeeeee] */}
         <div>
-        {getNavBar()}
+        {<NavBarComponent />}
         </div>
         <div className='h-full w-full'>
           <div className='h-full w-full flex flex-row justify-center'>
           {/*  sm:w-[600px] md:w-[1000px] max-w-[1200px] */}
-            <div className={`h-full w-full sm:pt-[150px]`} onClick={closeSlideOutMenu}>
+            <div className={`h-full w-full pt-[80px] sm:pt-[150px]`} onClick={closeSlideOutMenu}>
               <Routes>
-                <Route path='/*' element={<HomePage2 />}/>
+                <Route path='/*' element={<HomePage />}/>
                 <Route path='/about' element={<AboutPage />}/>
                 <Route path='/credits' element={<CreditsPage />}/>
-                <Route path='/audio' element={<ListenPage />} />
-                <Route path='/videos' element={<WatchPage />} />
-                <Route path='/gallery' element={<LookPage />} />
+                <Route path='/media' element={<MediaPage screenSize={screenSize}/>}/> 
                 <Route path='/contact' element={<ContactPage />} />
               </Routes>
             </div>

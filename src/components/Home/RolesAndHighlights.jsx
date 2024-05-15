@@ -12,11 +12,15 @@ import JobTitleCard from './JobTitleCard'
 export default function RolesAndHighlights() {
   return (
     <div id='roles-&-highlights'>
-        <div className='flex px-16 py-4 w-full items-center justify-center border-y-[8px] border-terracotta'>
-            <div className='wlg text-4xl pl-8 flex justify-start text-start text-black font-semibold'>
+
+      {/* SECTION TITLE: ROLES & HIGHLIGHTS */}
+        <div className='flex px-4 sm:px-16 py-4 w-full items-center justify-center border-y-[8px] border-terracotta'>
+            <div className='xl:wlg text-4xl sm:pl-8 flex justify-start text-start text-black font-semibold'>
                 Roles & Highlights
             </div>
         </div>
+        
+        {/* SECTION BODY: INDIVIDUAL ROLE CARDS */}
         <JobTitleCard bgColor={"#5C8E5C"} alignment={'left'} title={"Vocal Contractor"} tag={"vocal-contractor"} description={"Edie organizes custom groups of singers for any and all styles of music; from pop to classical, gospel to gregorian chant. Her deep connection to the vast network of incredible session singers that Los Angeles has to offer to ensure every choir is perfectly tailored for every project."} image={vocalContracting} imageDescription={"A short and descriptive section describing the above picture, its context and relation to the relevant job title"} featuredWorks={[]} />
         <JobTitleCard bgColor={"#BB602F"} alignment={'right'} title={"Vocalist"} tag={"vocalist"} description={"Edie's vocals have been featured on best selling albums and live on tour with some of the top artists of all time. Her voice has also contributed to the scores & soundtracks of hundreds of movies, TV shows, and video games."} image={singing} imageDescription={"A short and descriptive section describing the above picture, its context and relation to the relevant job title"} featuredWorks={[]} />
         
