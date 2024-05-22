@@ -32,7 +32,7 @@ import overTheMoon from '/creditImages/overTheMoon2.jpeg'
 import happyFeet2 from '/creditImages/happyFeet2.jpeg'
 import theMonkeyKing from '/creditImages/theMonkeyKing.jpeg'
 import theCasagrandes from '/creditImages/theCasagrandes.jpg'
-import babysittersGuide from '/creditImages/babysittersGuide.jpg'
+import iceAge4 from '/creditImages/iceAge4.jpeg'
 import leo from '/creditImages/leo.jpeg'
 
 import glee from '/creditImages/glee.jpeg'
@@ -147,8 +147,8 @@ export const selectedWorks = {
             title: "Hidden Figures"
         },
         {
-            image: hiddenFigures,
-            title: "hiddenFigures"
+            image: iceAge4,
+            title: "Ice Age: Continental Drift"
         },
         {
             image: victorBorge,

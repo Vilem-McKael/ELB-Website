@@ -8,7 +8,7 @@ export default function AudioList({updateSelectedAudioIndex}) {
     })
 
   return (
-    <table className='h-full w-full font-barlow justify-start sm:w-[800px] lg:w-[1100px] border-t border-black'>
+    <table className='h-full w-full font-barlow justify-start sm:w-[800px] lg:w-[1100px] border-t mt-16 border-black'>
         <tbody>
 
         {/* AUDIO DATA MAP */}

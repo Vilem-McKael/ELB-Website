@@ -11,12 +11,15 @@ import JobTitleCard from './JobTitleCard'
 
 export default function RolesAndHighlights() {
   return (
-    <div id='roles-&-highlights'>
+    <div id='roles-&-highlights' className='flex flex-col w-full items-center'>
 
       {/* SECTION TITLE: ROLES & HIGHLIGHTS */}
-        <div className='flex px-4 sm:px-16 py-4 w-full items-center justify-center border-y-[8px] border-terracotta'>
-            <div className='xl:wlg text-4xl sm:pl-8 flex justify-start text-start text-black font-semibold'>
-                Roles & Highlights
+        <div className='flex py-4 w-full justify-center border-b-[8px] border-teal4'>
+          <div className='flex items-center text-start text-4xl w-full max-w-[1100px] px-4 sm:px-16 h-full bg-light7/90'>
+              <div className='h-[20px] w-[20px] rounded-full border-teal4 border-[2px] bg-teal4/50 shrink-0 mr-4'></div>
+              <div className='xl:wlg text-4xl flex justify-start text-start text-black font-semibold'>
+                  Roles & Highlights
+              </div>
             </div>
         </div>
         

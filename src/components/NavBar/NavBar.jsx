@@ -10,7 +10,7 @@ import imdb from '../../assets/socialLogos/imdbLogo.webp'
 
 export default function NavBar({currentPage, updateCurrentPage, updateIsShowingSlideOutMenu}) {
   return (
-    <div className='flex w-full sm:h-[150px] justify-between items-end fixed bg-light7 border-b-[1px] border-black text-black pl-8 pr-7 z-50'>
+    <div className='flex w-full h-[150px] justify-between items-end fixed bg-light7 border-b-[1px] border-black text-black pl-8 pr-7 z-50'>
         
         {/* LEFT SIDE - NAME AND DECORATIVE TILE */}
         <Link to='/' className='flex flex-row items-end pb-4'>

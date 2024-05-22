@@ -1,7 +1,7 @@
 import React from 'react'
 import SlideOutMenuLink from './SlideOutMenuLink'
 
-export default function SlideOutMenu({currentPage, updateCurrentPage, isVisible, updateIsShowingSlideOutMenu}) {
+export default function SlideOutMenu({screenSize, currentPage, updateCurrentPage, isVisible, updateIsShowingSlideOutMenu}) {
 
     function handleCloseMenu() {
         updateIsShowingSlideOutMenu(false)
@@ -10,7 +10,7 @@ export default function SlideOutMenu({currentPage, updateCurrentPage, isVisible,
   return (
     <>
     {isVisible ?
-    <div className={`h-full w-[150px] bg-light7 flex flex-col px-4 text-black pt-[150px] fixed right-0 z-40 border-l-[1px] border-black ${isVisible ? '' : 'slideOutMenuHidden'}`}>
+    <div className={`h-full w-[150px] bg-light7 flex flex-col px-4 text-black pt-[150px]  mobileLandscape:pt-0 fixed right-0 z-40 border-l-[1px] border-black ${isVisible ? '' : 'slideOutMenuHidden'}`}>
         <div className='mt-8 border-y-[1px] border-black w-full'>
             <SlideOutMenuLink title={"Home"} to={"/"} iconName={"home"} tabColor={'#D2AD25'} tabClass={'bgYellow'} currentPage={currentPage} updateCurrentPage={updateCurrentPage} updateIsShowingSlideOutMenu={updateIsShowingSlideOutMenu}/>
         </div>
@@ -32,11 +32,12 @@ export default function SlideOutMenu({currentPage, updateCurrentPage, isVisible,
         <div className='border-b-[1px] border-black w-full'>
             <SlideOutMenuLink title={"Contact"} to={"/contact"} iconName={"contact-mail"} tabColor={'#263053'} tabClass={'bgDarkBlue'} currentPage={currentPage} updateCurrentPage={updateCurrentPage} updateIsShowingSlideOutMenu={updateIsShowingSlideOutMenu}/>
         </div>
-        <div className='text-center pt-8 cursor-pointer group' onClick={handleCloseMenu}>
+        <div className='text-center pt-8 landscape:pt-4 cursor-pointer group' onClick={handleCloseMenu}>
             <i className='flaticon-next-1 text-black text-2xl transform group-hover:text-3xl duration-100'></i>
             <div className='text-black text-sm'>Close Menu</div>
         </div>
     </div>
+
     :
     <></>
     }

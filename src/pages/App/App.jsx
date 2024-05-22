@@ -12,6 +12,7 @@ import BurgerBar from '../../components/NavBar/BurgerBar'
 import SlideOutMenu from '../../components/SlideOutMenu/SlideOutMenu'
 import MobileBurgerMenu from '../../components/NavBar/MobileBurgerMenu'
 import MediaPage from '../MediaPage/MediaPage'
+import LandscapeMobileMenu from '../../components/NavBar/LandscapeMobileMenu'
 
 function App() {
 
@@ -22,7 +23,8 @@ function App() {
   
 
   const burgerWidthBoundary = 800
-  const mobileWidthBoundary = 450
+  const mobileWidthBoundary = 640
+  const mobileLandscapeHeightBoundary = 500
 
   const updateCurrentPage = useCallback((newPage) => {
     setCurrentPage(newPage)
@@ -36,26 +38,27 @@ function App() {
 
   const checkScreenSize = useCallback(() => {
       const width = document.documentElement.clientWidth
-      console.log("Window width: ", window.innerWidth)
-      console.log("CSS Width: ", document.documentElement.clientWidth)
+      const height = document.documentElement.clientHeight
+      console.log("Window sizes: ", window.innerWidth, window.innerHeight)
+      console.log("CSS sizes: ", document.documentElement.clientWidth, document.documentElement.clientHeight)
       console.log("Device pixel ratio: ", window.devicePixelRatio)
       console.log("Effective css width: ", width / window.devicePixelRatio)
-      if (width > burgerWidthBoundary && screenSize != 'large') {
-        setScreenSize('large')
-        // setNavBar(<NavBar currentPage={currentPage} updateCurrentPage={updateCurrentPage} updateIsShowingSlideOutMenu={updateIsShowingSlideOutMenu}/>)
-        if (isShowingSlideOutMenu) {
-          
-          setIsShowingSlideOutMenu(false)
+      if (height < mobileLandscapeHeightBoundary && screenSize != 'mobileLandscape') {
+        setScreenSize('mobileLandscape')
+      } else if (height >= mobileLandscapeHeightBoundary) {
+        if (width > burgerWidthBoundary && screenSize != 'large') {
+          setScreenSize('large')
+          if (isShowingSlideOutMenu) {
+            
+            setIsShowingSlideOutMenu(false)
+          }
+        } else if (width <= burgerWidthBoundary && width > mobileWidthBoundary && height > mobileLandscapeHeightBoundary && screenSize != 'medium')  {
+          setScreenSize('medium')
+        } else if (width <= mobileWidthBoundary && screenSize != 'mobile') {
+          setScreenSize('mobile')
         }
-      } else if (width <= burgerWidthBoundary && width > mobileWidthBoundary && screenSize != 'medium')  {
-        // setNavBar(<BurgerBar currentPage={currentPage} updateCurrentPage={updateCurrentPage} isShowingSlideOutMenu={isShowingSlideOutMenu} updateIsShowingSlideOutMenu={updateIsShowingSlideOutMenu}/>)
-        setScreenSize('medium')
-
-      } else if (width <= mobileWidthBoundary && screenSize != 'mobile') {
-        // setNavBar(<MobileBurgerMenu currentPage={currentPage} updateCurrentPage={updateCurrentPage} isShowingSlideOutMenu={isShowingSlideOutMenu} updateIsShowingSlideOutMenu={updateIsShowingSlideOutMenu}/>)
-        setScreenSize('mobile')
       }
-  }, [burgerWidthBoundary, mobileWidthBoundary])
+    }, [burgerWidthBoundary, mobileWidthBoundary, mobileLandscapeHeightBoundary])
 
   const NavBarComponent = () => {
     console.log(screenSize)
@@ -65,6 +68,8 @@ function App() {
         return <NavBar currentPage={currentPage} updateCurrentPage={updateCurrentPage} updateIsShowingSlideOutMenu={updateIsShowingSlideOutMenu}/>
       case 'medium':
         return <BurgerBar currentPage={currentPage} updateCurrentPage={updateCurrentPage} isShowingSlideOutMenu={isShowingSlideOutMenu} updateIsShowingSlideOutMenu={updateIsShowingSlideOutMenu}/>
+      case 'mobileLandscape':
+        return <LandscapeMobileMenu currentPage={currentPage} updateCurrentPage={updateCurrentPage} isShowingSlideOutMenu={isShowingSlideOutMenu} updateIsShowingSlideOutMenu={updateIsShowingSlideOutMenu}/>
       case 'mobile':
         return <MobileBurgerMenu currentPage={currentPage} updateCurrentPage={updateCurrentPage} isShowingSlideOutMenu={isShowingSlideOutMenu} updateIsShowingSlideOutMenu={updateIsShowingSlideOutMenu}/>
       default:
@@ -84,13 +89,13 @@ function App() {
 
   useEffect(() => {
 
-    checkScreenSize()
-
     const listener = () => checkScreenSize()
     window.addEventListener('resize', listener)
 
+    checkScreenSize()
+
     return () => window.removeEventListener('resize', listener)
-  }, [])
+  }, [checkScreenSize])
 
   return (
     <div className='h-full w-full bar'>
@@ -102,7 +107,7 @@ function App() {
         <div className='h-full w-full'>
           <div className='h-full w-full flex flex-row justify-center'>
           {/*  sm:w-[600px] md:w-[1000px] max-w-[1200px] */}
-            <div className={`h-full w-full pt-[80px] sm:pt-[150px]`} onClick={closeSlideOutMenu}>
+            <div className='h-full w-full pt-[80px] mobileLandscape:pt-0 sm:pt-[150px]' onClick={closeSlideOutMenu}>
               <Routes>
                 <Route path='/*' element={<HomePage />}/>
                 <Route path='/about' element={<AboutPage />}/>
@@ -111,7 +116,7 @@ function App() {
                 <Route path='/contact' element={<ContactPage />} />
               </Routes>
             </div>
-            <SlideOutMenu currentPage={currentPage} updateCurrentPage={updateCurrentPage} isVisible={isShowingSlideOutMenu} updateIsShowingSlideOutMenu={updateIsShowingSlideOutMenu} />
+            <SlideOutMenu screenSize={screenSize} currentPage={currentPage} updateCurrentPage={updateCurrentPage} isVisible={isShowingSlideOutMenu} updateIsShowingSlideOutMenu={updateIsShowingSlideOutMenu} />
           </div>
         </div>
       </main>

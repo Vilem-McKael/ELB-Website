@@ -21,7 +21,7 @@ export default function ImageList({updateSelectedImageIndex}) {
     }
 
   return (
-    <div className='grid grid-cols-2 sm:grid-cols-4 w-full gap-y-6 sm:gap-2 place-items-center'>
+    <div className='grid grid-cols-2 landscape:grid-cols-3 sm:grid-cols-4 w-full gap-y-6 sm:gap-2 place-items-center'>
 
         {/* IMAGES MAP */}
         {edieImages.map((img, index) => {

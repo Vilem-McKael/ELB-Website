@@ -1,8 +1,8 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { edieImages } from '../../../data/mediaData'
 import { HashLink } from 'react-router-hash-link'
 
-export default function ImageViewer({imgIndex, updateSelectedImageIndex}) {
+export default function ImageViewer({imgIndex, updateSelectedImageIndex, updateIsShowingImageFullScreen }) {
 
     // SHOW NEXT IMAGE
     const handleShowNext = () => {
@@ -13,6 +13,10 @@ export default function ImageViewer({imgIndex, updateSelectedImageIndex}) {
     const handleShowPrev = () => {
         updateSelectedImageIndex(((imgIndex - 1) + edieImages.length) % edieImages.length)
       }
+
+    const handleOnClick = () => {
+        updateIsShowingImageFullScreen(true)
+    }
 
   return (
     <div id='image-viewer' className=''>
@@ -26,7 +30,7 @@ export default function ImageViewer({imgIndex, updateSelectedImageIndex}) {
             </button>
 
             {/* MAIN IMAGE BODY */}
-            <div className='flex flex-col items-center justify-center'>
+            <div className='flex flex-col items-center justify-center cursor-pointer' onClick={handleOnClick}>
                 <img src={edieImages[imgIndex].image} className='max-h-[500px] sm:max-h-[600px]'/>
                 <div>{edieImages[imgIndex].description}</div>
             </div>

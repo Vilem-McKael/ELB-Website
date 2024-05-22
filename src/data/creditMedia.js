@@ -7612,7 +7612,7 @@ export const FeaturedMedia = {
         {
             title: "Madonna",
             img: '/creditImages/madonna.jpeg',
-            roles: [r.Vocalist],
+            roles: [r.Vocalist, r.Arranger],
             notes: "",
             year: '',
             link: ''
@@ -8058,6 +8058,14 @@ export const FeaturedMedia = {
             link: ''
         },
         { 
+            title: "End Of The Spear",
+            img: '/creditImages/endOfTheSpear2.jpeg',
+            roles: [],
+            notes: '',
+            year: '',
+            link: ''
+        },
+        { 
             title: "Hidden Figures",
             img: '/creditImages/hiddenFigures.jpeg',
             roles: [],
@@ -8462,8 +8470,8 @@ export const FeaturedMedia = {
             link: ''
         },
         {
-            title: "Annie Live!",
-            img: '/creditImages/annieLive.jpg',
+            title: "Annie!",
+            img: '/creditImages/annieTvMovie.jpg',
             roles: [],
             notes: '',
             year: '',

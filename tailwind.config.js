@@ -1,11 +1,12 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ["./index.html", "./src/**/*.{html,jsx}"],
+  content: ["./index.html", "./src/**/*.{html,jsx}", "./src/tailwind.css"],
   theme: {
     extend: {
       backgroundImage: {
         'homepage': "url('/pebbleBackground.jpeg')",
         'conducting1': "url('/edieImages/2sfh.6.14.13_1991.jpg')",
+        'searchlights': "url('/other/searchlights.jpeg')"
       },
       fontFamily: {
         'inter': ['Inter', 'sans-serif'],
@@ -57,6 +58,23 @@ export default {
         'terracotta4': '#A1432A',
       }
     },
+    screens: {
+      'mobileLandscape': {'raw' : '(orientation: landscape) and (max-height: 500px) and (max-width: 950px)'},
+      'sm': {'raw' : '(min-height: 500px) and (min-width: 640px)'},
+      // => @media (min-width: 640px) { ... }
+
+      'md': '768px',
+      // => @media (min-width: 768px) { ... }
+
+      'lg': '1024px',
+      // => @media (min-width: 1024px) { ... }
+
+      'xl': '1280px',
+      // => @media (min-width: 1280px) { ... }
+
+      '2xl': '1536px',
+      // => @media (min-width: 1536px) { ... }
+    }
   },
   plugins: [],
 }
