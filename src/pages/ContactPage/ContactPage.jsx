@@ -1,8 +1,16 @@
 import React, { useState } from 'react'
+import { NetlifyForm, Honeypot } from 'react-netlify-forms'
 
 export default function ContactPage() {
 
   const [hasSubmitted, setHasSubmitted] = useState(false)
+
+  const [formDetails, setFormDetails] = useState({
+    name: "",
+    email: "",
+    company: "",
+    message: ""
+  })
 
   const handleSubmit = (event) => {
     event.preventDefault()
@@ -18,6 +26,10 @@ export default function ContactPage() {
     .catch((error) => alert(error))
   }
 
+  const handleChange = (event) => {
+    setFormDetails({...formDetails, [event.target.name]: event.target.value})
+  }
+
   return (
     <div className='w-full h-full flex flex-col items-center'>
       <div className='text-center text-4xl mt-16 font-bold'>
@@ -27,32 +39,32 @@ export default function ContactPage() {
         Get in touch with Edie regarding vocal contracting, recording sessions, conducting, (more depending on what she'd like listed here)
       </div>
 
-      <form name='contact' method='POST' netlify>
+      <NetlifyForm name='contact' method='POST' honeypotName='bot-field' netlify>
         <div >
           <label >
             Name
-            <input type='text' name='name'/>
+            <input type='text' name='name' value={formDetails.name} onChange={handleChange}/>
           </label>
           
         </div>
         <div >
           <label>
             E-Mail
-            <input type='text' name='email'/>
+            <input type='text' name='email' value={formDetails.email} onChange={handleChange}/>
           </label>
           
         </div>
         <div>
           <label>
             Company / Org (optional)
-            <input type='text' name='company'/>
+            <input type='text' name='company' value={formDetails.company} onChange={handleChange}/>
           </label>
           
         </div>
         <div>
           <label>
             Please leave your message below :
-            <textarea name='message'/>
+            <textarea name='message' value={formDetails.message} onChange={handleChange}/>
           </label>
         </div>
         
@@ -102,7 +114,7 @@ export default function ContactPage() {
             <i className='flaticon-email h-[20px] w-[20px] pr-2'></i>Send
           </button>
         </div> */}
-      </form>
+      </NetlifyForm>
     </div>
   )
 }
