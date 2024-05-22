@@ -41,51 +41,7 @@ export default function ContactPage() {
         Get in touch with Edie regarding vocal contracting, recording sessions, conducting, (more depending on what she'd like listed here)
       </div>
 
-      <NetlifyForm name='contact' method='POST' action='/thanks' honeypotName='bot-field' netlify>
-      {({handleChange, success, error}) => (
-        <>
-          <div >
-            <label >
-              Name
-              <input type='text' name='name' value={formDetails.name} onChange={handleChange}/>
-            </label>
-            
-          </div>
-          <div >
-            <label>
-              E-Mail
-              <input type='text' name='email' value={formDetails.email} onChange={handleChange}/>
-            </label>
-            
-          </div>
-          <div>
-            <label>
-              Company / Org (optional)
-              <input type='text' name='company' value={formDetails.company} onChange={handleChange}/>
-            </label>
-            
-          </div>
-          <div>
-            <label>
-              Please leave your message below :
-              <textarea name='message' value={formDetails.message} onChange={handleChange}/>
-            </label>
-          </div>
-          
-            <div >
-            <button type='submit' onClick={handleSubmit}>
-              Send
-            </button>
-          </div>
-        </>
-      
-        )}
-      </NetlifyForm>
-    </div>
-  )
-}
-
-{/* <form className='flex flex-col items-center justify-center pt-12 w-[600px]' name='contact' method='POST' netlify>
+      <form className='flex flex-col items-center justify-center pt-12 w-[600px]' name='contact' method='POST' netlify>
         <div className='flex justify-between items-center w-[600px] pb-4'>
           <div className='flex flex-col items-leading'>
             <label >
@@ -124,4 +80,52 @@ export default function ContactPage() {
           <button type='submit' className='h-[40px] bg-black text-white mt-2 p-2 rounded-lg transform hover:scale-110 duration-75' onClick={handleSubmit}>
             <i className='flaticon-email h-[20px] w-[20px] pr-2'></i>Send
           </button>
-        </div> */}
+        </div>
+      </form>
+
+    </div>
+  )
+}
+
+
+
+        {/* {/* <NetlifyForm name='contact' method='POST' action='/thanks' honeypotName='bot-field' netlify>
+      {({handleChange, success, error}) => (
+        <>
+          <div >
+            <label >
+              Name
+              <input type='text' name='name' value={formDetails.name} onChange={handleChange}/>
+            </label>
+            
+          </div>
+          <div >
+            <label>
+              E-Mail
+              <input type='text' name='email' value={formDetails.email} onChange={handleChange}/>
+            </label>
+            
+          </div>
+          <div>
+            <label>
+              Company / Org (optional)
+              <input type='text' name='company' value={formDetails.company} onChange={handleChange}/>
+            </label>
+            
+          </div>
+          <div>
+            <label>
+              Please leave your message below :
+              <textarea name='message' value={formDetails.message} onChange={handleChange}/>
+            </label>
+          </div>
+          
+            <div >
+            <button type='submit' onClick={handleSubmit}>
+              Send
+            </button>
+          </div>
+    //     </> */}
+      
+    //   )}
+    // </NetlifyForm> */}
