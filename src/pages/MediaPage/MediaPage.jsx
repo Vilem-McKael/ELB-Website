@@ -57,7 +57,7 @@ export default function MediaPage({screenSize}) {
             <>
               {!isShowingImageFullScreen ?
                 <>
-                  <div className='flex flex-col items-center sm:w-[640px] md:w-[800px] lg:w-[1100px] my-4 sm:my-16'>
+                  <div className='flex flex-col items-center sm:w-[640px] md:w-[800px] lg:w-[1100px]'>
                     <MediaSelector selectedMediaType={selectedMediaType} handleUpdateSelectedMediaType={handleUpdateSelectedMediaType} />
                     <ImageViewer imgIndex={selectedImageIndex} updateSelectedImageIndex={updateSelectedImageIndex} updateIsShowingImageFullScreen={updateIsShowingImageFullScreen}/>
                     <button className='w-[200px] hover:bg-black hover:text-light7 py-2 my-8 border-black border rounded-md' onClick={toggleIsShowingAllImages}>{isShowingAllImages ? 'Hide All' : 'Show All'}</button>
