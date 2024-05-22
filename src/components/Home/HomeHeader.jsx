@@ -77,7 +77,7 @@ export default function HomeHeader() {
         </div>
 
         {/* HASHLINKS TO SECTIONS OF HOMEPAGE */}
-        <div className='w-full sm:h-[150px] max-w-[1100px] flex flex-col gap-4 sm:flex-row items-center justify-evenly text-sm font-barlow pt-4 font-default mb-8'>
+        <div className='w-full sm:h-[150px] md:h-[150px] max-w-[1100px] flex flex-col gap-4 sm:flex-row md:flex-row items-center justify-evenly text-sm font-barlow pt-4 font-default mb-8'>
 
             {/* STUDIO COLLABORATIONS */}
             <HashLink to={'/#studio-collaborations'} scroll={element => scrollWithNavbarOffset(element, document.documentElement.clientWidth >= 640 ? 150 : 80)} className='border-teal4 border-b-[4px] flex flex-col items-center justify-center text-sm sm:text-lg group' >

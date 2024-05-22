@@ -13,7 +13,7 @@ export default function JobTitleCard({bgColor, alignment, title, tag, descriptio
 
             {/* DESCRIPTION BODY */}
             <div className='w-full flex justify-end'>
-                <div className='flex flex-col h-full w-full md:w-[400px] lg:w-[500px] xl:w-[600px] flex-shrink-0 justify-between items-end p-8 mb-16 sm:mb-0'>
+                <div className='flex flex-col h-full w-full md:w-[400px] lg:w-[500px] xl:w-[600px] flex-shrink-0 justify-between items-center md:items-end p-8 mb-16 sm:mb-0'>
 
                     {/* ROLE TITLE AND DESCRIPTION */}
                     <div className='mb-4 sm:mb-0'>
@@ -54,7 +54,7 @@ export default function JobTitleCard({bgColor, alignment, title, tag, descriptio
 
             {/* DESCRIPTION BODY */}
             <div className='w-full flex justify-start'>
-                <div className='flex flex-col h-full w-full md:w-[400px] lg:w-[500px] xl:w-[600px] justify-between flex-shrink-0 items-start p-8 mb-16 sm:mb-0'>
+                <div className='flex flex-col h-full w-full md:w-[400px] lg:w-[500px] xl:w-[600px] justify-between flex-shrink-0 items-center md:items-start p-8 mb-16 sm:mb-0'>
 
                     {/* ROLE TITLE AND DESCRIPTION */}
                     <div className='mb-4 sm:mb-0'>
