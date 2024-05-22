@@ -46,7 +46,7 @@ export default function FeaturedCredits() {
             </div>
 
             {/* RECENT WORK CARDS */}
-            <div className='w-full md:w-[750px] lg:w-[1000px] grid grid-cols-1 md:grid-cols-3 justify-center items-start pb-12 gap-y-8 place-items-center'>
+            <div className='w-full md:w-[750px] lg:w-[1000px] grid grid-cols-1 md:grid-cols-3 justify-center items-center pb-12 gap-y-8 place-items-center'>
                 <FeaturedWorkCardHome key={0} image={dune2} title={'Dune 2'} roles={[r.Vocalist, r.Contractor]}/>
                 <FeaturedWorkCardHome key={1} image={avatar2} title={'Avatar: The Way of Water'} roles={[r.Vocalist, r.Contractor, r.Contractor]}/>
                 <FeaturedWorkCardHome key={2} image={harryStyles} title={'Harry Styles'} work={'Sign of the Times'}  roles={[r.Contractor, r.Conductor]}/>

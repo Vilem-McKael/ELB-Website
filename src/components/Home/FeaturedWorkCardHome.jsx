@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function FeaturedWorkCardHome({image, title, work, roles}) {
   return (
-    <div className='flex flex-col w-full sm:w-[360px] md:w-[240px] lg:w-[300px] justify-start items-start font-medium'>
+    <div className='flex flex-col w-full sm:w-[360px] md:w-[240px] lg:w-[300px] justify-start items-center font-medium'>
 
       {/* WORK IMAGE */}
       <img src={image} className='w-[360px] h-[360px] md:w-[240px] md:h-[240px] lg:h-[300px] lg:w-[300px] object-cover'/>
