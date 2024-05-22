@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { NetlifyForm, Honeypot } from 'react-netlify-forms'
+import Footer from '../../components/Footer/Footer'
 
 export default function ContactPage() {
 
@@ -13,11 +14,11 @@ export default function ContactPage() {
   })
 
   const handleSubmit = (event) => {
-    event.preventDefault()
+    // event.preventDefault()
 
     const contactForm = event.target;
     const formData = new FormData(contactForm);
-    fetch('/', {
+    fetch('/contact', {
       method: "POST",
       headers: {"Content-Type": "application/x-www-form-urlencoded"},
       body: new URLSearchParams(formData).toString()
@@ -25,8 +26,12 @@ export default function ContactPage() {
     .then(() => console.log("Form successfully submitted"))
     .catch((error) => alert(error))
 
+    event.preventDefault()
+
     setHasSubmitted(true)
   }
+
+  // document.querySelector("form").addEventListener("submit", handleSubmit)
 
   const handleChange = (event) => {
     setFormDetails({...formDetails, [event.target.name]: event.target.value})
@@ -38,10 +43,11 @@ export default function ContactPage() {
         Contact
       </div>
       <div className='mx-16 mt-4'>
-        Get in touch with Edie regarding vocal contracting, recording sessions, conducting, (more depending on what she'd like listed here)
+        {hasSubmitted ? "Thank you for your message. Edie will be in touch with you as soon as possible!" : "Get in touch with Edie regarding vocal contracting, recording sessions, conducting, (more depending on what she'd like listed here"}
       </div>
-
-      <form className='flex flex-col items-center justify-center pt-12 w-[600px]' name='contact' method='POST' netlify>
+      
+      <form className='flex flex-col items-center justify-center pt-12 w-[600px]' name='contact' method='POST' data-netlify="true" onSubmit={handleSubmit}>
+        <input type="hidden" name="form-name" value="contact" />
         <div className='flex justify-between items-center w-[600px] pb-4'>
           <div className='flex flex-col items-leading'>
             <label >
@@ -77,12 +83,13 @@ export default function ContactPage() {
 
         </textarea>
         <div className='flex w-full justify-end items-center'>
-          <button type='submit' className='h-[40px] bg-black text-white mt-2 p-2 rounded-lg transform hover:scale-110 duration-75' onClick={handleSubmit}>
+          <button type='submit' className='h-[40px] bg-black text-white mt-2 p-2 rounded-lg transform hover:scale-110 duration-75'>
             <i className='flaticon-email h-[20px] w-[20px] pr-2'></i>Send
           </button>
         </div>
       </form>
 
+      <Footer />
     </div>
   )
 }
