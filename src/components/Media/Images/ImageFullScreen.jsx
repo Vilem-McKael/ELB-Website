@@ -21,17 +21,15 @@ export default function ImageFullScreen({imgIndex, updateSelectedImageIndex, upd
     }
 
     const updateDimensions = () => {
-        const width = document.documentElement.clientWidth
-        const height = document.documentElement.clientHeight
+        const width = window.innerWidth
+        const height = window.innerHeight
         setDeviceWidth(width)
+        setDeviceHeight(height)
         if (height < 500) {
-            setDeviceHeight(document.documentElement.clientHeight)
             setHeightOffset(0)
         } else if (width < 640) {
-            setDeviceHeight(height - 80)
             setHeightOffset(80)
         } else {
-            setDeviceHeight(height - 150)
             setHeightOffset(150)
         }
     }

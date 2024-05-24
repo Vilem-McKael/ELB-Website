@@ -14,7 +14,7 @@ export default function MobileBurgerMenu({currentPage, updateCurrentPage, isShow
     //         <i className='flaticon-menu text-light7' onClick={handleOnCLick}></i>
     //     </div>
     // </div>//nice
-    <div id="top" className='w-full h-[80px] bg-light7 fixed flex flex-row justify-between items-center px-2 z-50 border-b border-black'>
+    <div className='w-full h-[80px] bg-light7 fixed flex flex-row justify-between items-center px-2 z-50 border-b border-black'>
       <Link to='/' className='flex flex-row items-end'>
             <img src={'/deruta/deruta tile.webp'} className='w-[58px] h-[58px]'/>
             <div className='flex-col justify-end text-md text-black text-leading leading-[0.7] bg-opacity-95 font-normal pl-4 w-full h-[55px]'>
