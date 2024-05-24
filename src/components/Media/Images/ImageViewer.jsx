@@ -22,7 +22,7 @@ export default function ImageViewer({imgIndex, updateSelectedImageIndex, updateI
     <div id='image-viewer' className='z-10'>
         
         {/* VIEWER */}
-        <div className='flex flex-row justify-center items-center w-full h-[500px] mobileLandscape:w-full sm:w-[800px] sm:h-[600px] bg-black/10 sm:bg-black/100 relative mb-8 mt-4 sm:mt-16'>
+        <div className='flex flex-row justify-center items-center w-full h-[500px] sm:w-[800px] sm:h-[600px] bg-black/10 sm:bg-black/100 relative mb-8 mt-4 sm:mt-16'>
 
             {/* PREVIOUS IMAGE BUTTON */}
             <button className='flex flex-col items-center justify-center w-[50px] h-[60px] sm:h-[100px] sm:w-[80px] rounded-r-full bg-black bg-opacity-60 border border-light7/20 sm:hover:bg-opacity-100 text-light7 absolute left-0' onClick={handleShowPrev}>

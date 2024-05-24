@@ -43,9 +43,9 @@ export default function ImageFullScreen({imgIndex, updateSelectedImageIndex, upd
         return () => window.removeEventListener('resize', listener)
     })
     
-
+//  style={{minHeight: deviceHeight, width: deviceWidth}}
   return (
-    <div className='h-full flex justify-center z-50 bg-black' style={{minHeight: deviceHeight, width: deviceWidth}}>
+    <div className='mobileLandscape:h-full mobileLandscape:w-full flex justify-center z-50 bg-black'>
         <button className='bg-white text-black p-2 px-4 absolute right-0 rounded-lg' onClick={handleOnClick} style={{top: 4 + heightOffset, right: 4}}>X</button>
         <div className='w-full flex items-center justify-between'>
             <button className='flex flex-col items-center justify-center w-[80px] h-[100px] sm:h-[100px] sm:w-[80px] rounded-r-full bg-black bg-opacity-60 border border-light7/20 sm:hover:bg-opacity-100 text-light7 absolute left-0' onClick={handleShowPrev}>
