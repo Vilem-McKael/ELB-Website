@@ -35,6 +35,12 @@ export default function StudioCollaborations() {
               <CompanyCard img={'/studioLogos/miramax.webp'}>Miramax Films</CompanyCard>
               <CompanyCard img={'/studioLogos/lucasfilm2.png'}>Lucasfilm</CompanyCard>
               <CompanyCard img={'/studioLogos/marvel.png'}>Marvel Studios</CompanyCard>
+              <CompanyCard img={'/studioLogos/formosaGroup.png'}>Formosa Group</CompanyCard>
+              <CompanyCard img={'/studioLogos/appleTvPlus.png'}>AppleTV+</CompanyCard>
+              <CompanyCard img={'/studioLogos/hannaBarbera.webp'}>Hanna-Barbera</CompanyCard>
+              <CompanyCard img={'/studioLogos/studioCanal.png'}>Le Studio Canal</CompanyCard>
+              <CompanyCard img={'/studioLogos/dcLogo.png'}>DC Studios</CompanyCard>
+
           </div>
         </div>
     </div>

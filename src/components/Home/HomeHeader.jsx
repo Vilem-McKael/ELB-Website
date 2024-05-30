@@ -20,7 +20,7 @@ export default function HomeHeader() {
             <div className='w-full h-full flex justify-center md:justify-end bg-green/25 px-8'>
                 <div className='w-full sm:w-[400px] md:w-[300px] flex flex-col justify-start items-center md:items-end'>
                     <img src={'/edieImages/elbHeadshot2.jpeg'} className='object-cover object-left-top h-[500px] w-[400px] md:h-[400px] md:w-[300px] lg:h-[500px] lg:w-[400px]  mt-12'/>
-                    <div className='font-light text-md text-gray-500 italic mt-4 sm:w-[400px] text-center md:text-end pb-4 md:pb-0'>Edie Lehmann Boddicker in her backyard<br />c. 2024, photo by Somebody</div>
+                    <div className='font-light text-md text-gray-500 italic mt-4 sm:w-[400px] text-center md:text-end pb-4 md:pb-0'>Edie Lehmann Boddicker in her backyard<br />photo by Cody Burdette</div>
                 </div>
             </div>
 

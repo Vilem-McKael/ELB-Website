@@ -19,7 +19,7 @@ export default function ImageViewer({imgIndex, updateSelectedImageIndex, updateI
     }
 
   return (
-    <div id='image-viewer' className='z-10'>
+    <div id='image-viewer' className=''>
         
         {/* VIEWER */}
         <div className='flex flex-row justify-center items-center w-full h-[500px] sm:w-[800px] sm:h-[600px] bg-black/10 sm:bg-black/100 relative mb-8 mt-4 sm:mt-16'>
@@ -30,7 +30,7 @@ export default function ImageViewer({imgIndex, updateSelectedImageIndex, updateI
             </button>
 
             {/* MAIN IMAGE BODY */}
-            <div className='flex flex-col items-center justify-center cursor-pointer' onClick={handleOnClick}>
+            <div className='flex flex-col w-full h-full items-center justify-center cursor-pointer' onClick={handleOnClick}>
                 <img src={edieImages[imgIndex].image} className='max-h-[500px] sm:max-h-[600px]'/>
                 <div>{edieImages[imgIndex].description}</div>
             </div>

@@ -287,10 +287,10 @@ export default function CreditsPage() {
             Short blurb about Edie's impact on the music industry
         </div> */}
 
-        <div className='flex flex-row w-full justify-center items-center mt-8 sm:mt-16 gap-8 text-lg sm:text-xl px-4'>
+        {/* <div className='flex flex-row w-full justify-center items-center mt-8 sm:mt-16 gap-8 text-lg sm:text-xl px-4'>
             <button className={`w-[180px] h-[60px] border-2 flex items-center justify-center transform sm:hover:scale-105 sm:hover:font-semibold duration-150 origin-top ${selectedSubpage === 'Featured' ? 'border-black' : 'border-gray-300'}`} onClick={() => updateSubpage("Featured")}><span className='border-b-[1px] border-black'>Featured Credits</span></button>
             <button className={`w-[180px] h-[60px] flex border-2 items-center justify-center transform sm:hover:scale-105 sm:hover:font-semibold duration-150 origin-top ${selectedSubpage === 'All' ? ' border-black' : 'border-gray-300'}`} onClick={() => updateSubpage("All")}><span className='border-b-[1px] border-black'>All Credits</span></button>
-        </div>
+        </div> */}
 
         <div className='flex flex-col items-center mt-8 sm:mb-16'>
             {isLoadingCredits ? 

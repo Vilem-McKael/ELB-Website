@@ -54,7 +54,7 @@ export default function ContactPage() {
             <label >
               Name
             </label>
-            <input type='text' name='name' className='h-[40px] border-black border-[1px] sp-2'>
+            <input type='text' name='name' className='h-[40px] border-black border-[1px] p-2'>
 
             </input>
           </div>

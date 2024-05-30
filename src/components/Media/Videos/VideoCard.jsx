@@ -13,17 +13,18 @@ export default function VideoCard({title, description, videoId, screenSize}) {
     // YOUTUBE PLAYER OPTIONS
     useEffect(() => {
       console.log(screenSize)
-      if (screenSize === 'mobile') {
+      if (screenSize === 'mobile' || screenSize === 'mobileLandscape') {
         setOpts(
           {
             height: '300',
-            width: document.documentElement.clientWidth,
+            width: '350',
             playerVars: {
               autoplay: 1,
             }
           }
         )
-      } else { setOpts(
+      } else { 
+        setOpts(
         {
           height: '500',
           width: '792',

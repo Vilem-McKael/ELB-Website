@@ -45,14 +45,14 @@ export default function ImageFullScreen({imgIndex, updateSelectedImageIndex, upd
     
 //  style={{minHeight: deviceHeight, width: deviceWidth}}
   return (
-    <div className='mobileLandscape:h-full mobileLandscape:w-full flex justify-center z-50 bg-black'>
+    <div className='h-full w-full flex justify-center bg-black z-10'>
         <button className='bg-white text-black p-2 px-4 absolute right-0 rounded-lg' onClick={handleOnClick} style={{top: 4 + heightOffset, right: 4}}>X</button>
         <div className='w-full h-full flex items-center justify-between'>
-            <button className='flex flex-col items-center justify-center w-[80px] h-[100px] sm:h-[100px] sm:w-[80px] rounded-r-full bg-black bg-opacity-60 border border-light7/20 sm:hover:bg-opacity-100 text-light7 absolute left-0' onClick={handleShowPrev}>
+            <button className='flex flex-col items-center justify-center w-[80px] h-[100px] sm:h-[100px] sm:w-[80px] rounded-r-full bg-black bg-opacity-60 border border-light7/20 sm:hover:bg-opacity-100 text-light7 absolute left-0 z-10' onClick={handleShowPrev}>
                 <i className='flaticon-left-arrow text-2xl sm:text-4xl'></i>
             </button>
-            <img src={edieImages[imgIndex].image} className='h-full w-full object-contain'  style={{maxWidth: deviceWidth, maxHeight: deviceHeight}}/>
-            <button className='flex flex-col items-center justify-center w-[80px] h-[100px] sm:h-[100px] sm:w-[80px] rounded-l-full bg-black bg-opacity-60 border border-light7/20 sm:hover:bg-opacity-100 text-light7 absolute right-0' onClick={handleShowNext}>
+            <img src={edieImages[imgIndex].image} className='h-full w-full object-contain -z-10'  style={{maxWidth: deviceWidth, maxHeight: deviceHeight - heightOffset}}/>
+            <button className='flex flex-col items-center justify-center w-[80px] h-[100px] sm:h-[100px] sm:w-[80px] rounded-l-full bg-black bg-opacity-60 border border-light7/20 sm:hover:bg-opacity-100 text-light7 absolute right-0 z-10' onClick={handleShowNext}>
                 <i className='flaticon-right-arrow text-2xl sm:text-4xl'></i>
             </button>
         </div>
