@@ -13,7 +13,7 @@ export default function MediaGrid({data}) {
     <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[3px] place-items-center'>
         {typeof data === "object" && data.length > 0 ? 
           data.map((dataItem, index) => (
-            <MediaContainer4 key={index} title={dataItem.title} img={dataItem.img} roles={dataItem.roles} notes={dataItem.notes} index={index}/>
+            <MediaContainer key={index} title={dataItem.title} img={dataItem.img} roles={dataItem.roles} notes={dataItem.notes} index={index}/>
           ))
           :
           <>

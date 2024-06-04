@@ -7993,7 +7993,7 @@ export const FeaturedMedia = {
         },
         {
             title: "Michel Colombier",
-            img: '/composerImages/michelColombier.jpeg',
+            img: '/composerImages/michelColombier2.jpeg',
             roles: [],
             notes: "",
             year: '',
@@ -8881,14 +8881,6 @@ export const FeaturedMedia = {
             title: "Battle Kitty",
             img: '/creditImages/battleKitty.jpeg',
             roles: [r.Contractor],
-            notes: '',
-            year: '',
-            link: ''
-        },
-        {
-            title: "The Wonderful World of Disney",
-            img: '/creditImages/theWonderfulWorldOfDisney2.webp',
-            roles: [r.Vocalist],
             notes: '',
             year: '',
             link: ''

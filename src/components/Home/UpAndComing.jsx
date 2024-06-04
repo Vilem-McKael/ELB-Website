@@ -13,7 +13,7 @@ export default function UpAndComing() {
             <div className='py-4 px-4 sm:px-16 font-semibold flex text-start items-center text-4xl text-black/75 w-full max-w-[1100px]'>
                 <div className='h-[20px] w-[20px] rounded-full border-green bg-green/50 border-[2px] mr-4'></div>
                 <div>
-                Up & Coming
+                Up & Coming / Current
                 </div>
             </div>
         </div>
@@ -34,7 +34,7 @@ export default function UpAndComing() {
                         <span className='font-bold'>IMDB: </span>Star Wars series that takes viewers into a galaxy of shadowy secrets and emerging dark-side powers in the final days of the High Republic era.
                     </div>
                     <div className='md:ml-8 text-sm pt-4 flex flex-col md:flex-row w-full items-center'>
-                        Episode I premiers June 4, 2024 only on
+                        Episode I premieres June 4, 2024 only on
                         <img src={'/studioLogos/disneyPlus.png'} className='w-[100px] pt-2 md:pt-0 md:pl-2'/>
                     </div>
                 </div>
@@ -54,7 +54,7 @@ export default function UpAndComing() {
                         <span className='font-bold'>IMDB: </span>Many years after the reign of Caesar, a young ape goes on a journey that will lead him to question everything he's been taught about the past and make choices that will define a future for apes and humans alike.
                     </div>
                     <div className='md:ml-8 text-sm pt-4'>
-                        Premiers May 10th, 2024 in theaters nationwide
+                        In theaters nationwide on May 10, 2024
                     </div>
                 </div>
             </div>
@@ -73,7 +73,7 @@ export default function UpAndComing() {
                         <span className='font-bold'>IMDB: </span>When a rare pink and glitter-filled moment of fate makes Thelma the Pony's wish of being a unicorn come true, she rises to instant international pop-superstar stardom, but at an unexpected cost.
                     </div>
                     <div className='w-full md:ml-8 text-sm pt-4 flex flex-col md:flex-row items-center'>
-                        <div className=''>Releases on May 17, 2024, in theaters and on</div>
+                        <div className=''>Released on May 17, 2024, in theaters and on</div>
                         <img src={'/studioLogos/netflix2.png'} className='w-[100px] pt-2 md:pt-0 md:pl-2'/>
                     </div>
                 </div>

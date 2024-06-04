@@ -88,7 +88,7 @@ export default function HomeHeader() {
             {/* UP & COMING */}
             <HashLink to={'/#up-and-coming'} scroll={element => scrollWithNavbarOffset(element, document.documentElement.clientWidth >= 640 ? 150 : 80)} className='border-burntOrange5 border-b-[4px] flex flex-col items-center justify-center text-sm sm:text-lg group' >
                 <i className='flaticon-right-arrow text-xl rotate-[90deg] sm:rotate-[-90deg] transform sm:group-hover:rotate-90 sm:group-hover:text-burntOrange5 duration-200'></i>
-                <div className='transform duration-100 sm:group-hover:text-[20px] object-center'>Up & Coming</div>
+                <div className='transform duration-100 sm:group-hover:text-[20px] object-center'>Up & Coming / Current</div>
             </HashLink>
 
             {/* RECENT WORK */}

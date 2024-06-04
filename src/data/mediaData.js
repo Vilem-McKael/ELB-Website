@@ -112,388 +112,286 @@ import edie96 from '/edieImages/The Voice.jpg'
 export const edieImages = [
     {
         image: edie1,
-        description: "",
+        description: "Half of the choir for Avatar 2: The Way of Water (basses and baritones got dismissed early!)",
     },
     {
         image: edie2,
-        description: "",
+        description: "With Mike Martin from Casio at the Namm Show in Anaheim",
     },
     {
         image: edie3,
-        description: "",
+        description: "Testing a Casio Privia at the Namm Show",
     },
     {
         image: edie4,
-        description: "",
+        description: "Edie and her husband Michael at an SCL event with composers Charlie Fox and Charles Bernstein",
     },
     {
         image: edie5,
-        description: "",
+        description: "Lion King (2019) choir, with director Jon Favreau and Lebo M",
     },
     {
         image: edie6,
-        description: "",
+        description: "Edie with Recording Academy ladies",
     },
     {
         image: edie7,
-        description: "",
+        description: "ASCAP Awards honoring Women in Film",
     },
     {
         image: edie8,
-        description: "",
+        description: "Conducting the Lion King at Capitol Records",
     },
     {
         image: edie9,
-        description: "",
+        description: "Singing in her teens with Diane and Patti",
     },
     {
         image: edie10,
-        description: "",
+        description: "ASCAP Screen Music Awards honoring Germaine Franco",
     },
     {
         image: edie11,
-        description: "",
+        description: "With her beloved cockatoo Caesar in Malibu, CA",
     },
     {
         image: edie12,
-        description: "",
+        description: "With Quincy Jones at an SLC event",
     },
     {
         image: edie13,
-        description: "",
+        description: "Children's choir for Alicia Keys on the Voice",
     },
     {
         image: edie14,
-        description: "",
+        description: "The Voice Gospel Choir with Jordan Smith",
     },
     {
         image: edie15,
-        description: "",
+        description: "Grammy Event as a governor",
     },
     {
         image: edie16,
-        description: "",
+        description: "Live in Concert with The Used",
     },
     {
         image: edie17,
-        description: "",
-    },
-    {
-        image: edie18,
-        description: "",
+        description: "(Clockwise from bottom left) Bobbi Paige, Donna Medine, Sally Stevens, Joan Beal, Luana Jackman, and Edie at a vocal contractor ladies' lunch",
     },
     {
         image: edie19,
-        description: "",
+        description: "Edie and Michael at BMI awards",
     },
     {
         image: edie20,
-        description: "",
+        description: "SAG-AFTRA Singers honoring John Powell",
     },
     {
         image: edie21,
-        description: "",
+        description: "ELB Conducting The Lorax",
     },
     {
         image: edie22,
-        description: "",
+        description: "Conducting rehearsal at Disney Hall for Two Steps from Hell",
     },
     {
         image: edie23,
-        description: "",
+        description: "Conducting at Disney Hall",
     },
     {
         image: edie24,
-        description: "",
+        description: "30 Seconds to Mars with choir in the Moroccan Room at Village Recorders",
     },
     {
         image: edie25,
-        description: "",
-    },
-    {
-        image: edie26,
-        description: "",
+        description: "Choir for Amistad with Steven Spielberg and John Williams",
     },
     {
         image: edie27,
-        description: "",
-    },
-    {
-        image: edie28,
-        description: "",
-    },
-    {
-        image: edie29,
-        description: "",
+        description: "Global Choir for Angélique Kidjo",
     },
     {
         image: edie30,
-        description: "",
+        description: "Billy Eilish group Live at the Grammy's",
     },
     {
         image: edie31,
-        description: "",
+        description: "Yeah Yeah Yeahs Live at Coachella",
     },
     {
         image: edie32,
-        description: "",
+        description: "Gospel group backstage at Coachella",
     },
     {
         image: edie33,
-        description: "",
-    },
-    {
-        image: edie34,
-        description: "",
+        description: "ELB Conducting choir for Danny Elfman at the Hollywood Bowl",
     },
     {
         image: edie35,
-        description: "",
+        description: "Conducting at Disney Hall",
     },
     {
         image: edie36,
-        description: "",
-    },
-    {
-        image: edie37,
-        description: "",
+        description: "Pandemic recording and conducting for Dune with Hans Zimmer",
     },
     {
         image: edie38,
-        description: "",
+        description: "The Future is Female at the Hollywood Bowl",
     },
     {
         image: edie39,
-        description: "",
-    },
-    {
-        image: edie40,
-        description: "",
+        description: "ELB Conducting the Lion King (2019) at Sony",
     },
     {
         image: edie41,
-        description: "",
+        description: "Longterm collaboration with composer John Powell",
     },
     {
         image: edie42,
-        description: "",
+        description: "Vampire Weekend children's choir on The Late Late Show with James Corden",
     },
     {
         image: edie43,
-        description: "",
+        description: "Budweiser Superfest Tour with Quincy Jones"
     },
+
     {
         image: edie44,
-        description: "",
+        description: "Young Edie the organ in Toronto",
     },
     {
         image: edie45,
-        description: "",
+        description: "Spies in Disguise session for Theodore Shapiro",
     },
     {
         image: edie46,
-        description: "",
+        description: "ELB on piano at The Voice for Natural Woman",
     },
     {
         image: edie47,
-        description: "",
+        description: "From Buffalo newspaper",
     },
     {
         image: edie48,
-        description: "",
+        description: "ELB and Jon Favreau",
     },
     {
         image: edie49,
-        description: "",
+        description: "ELB headshot at home",
     },
     {
         image: edie50,
-        description: "",
+        description: "30 Seconds to Mars on the Ellen Show",
     },
     {
         image: edie51,
-        description: "",
+        description: "ELB with Jordan Smith and The Voice singers",
     },
     {
         image: edie52,
-        description: "",
+        description: "With Pharrell and Hans Zimmer on The Grammy's",
     },
     {
         image: edie53,
-        description: "",
+        description: "Hairspray Live! Singers",
     },
     {
         image: edie54,
-        description: "",
+        description: "Grammy rehearsal with Hans Zimmer and Ben Wallfisch",
     },
     {
         image: edie55,
-        description: "",
-    },
-    {
-        image: edie56,
-        description: "",
+        description: "Edie's Choir for Herb Alpert with Chris Walden, Richard Carpenter and engineer Al Schmitt",
     },
     {
         image: edie57,
-        description: "",
+        description: "Hidden Figures gospel choir with producers and eingeering Dennis Sands",
     },
     {
         image: edie58,
-        description: "",
+        description: "Ice Age 4 at Sony",
     },
     {
         image: edie59,
-        description: "",
+        description: "Jimmy Kimmel Live! Kid's Choir for Clairo",
     },
     {
         image: edie60,
-        description: "",
+        description: "Jimmy Kimmel Live! Kid's Choir for Clairo",
     },
     {
         image: edie61,
-        description: "",
+        description: "Children's Choir singing tweets on Jimmy Kimmel Live!",
     },
     {
         image: edie62,
-        description: "",
+        description: "Kid's Choir on Jimmy Kimmel",
     },
-    {
-        image: edie63,
-        description: "",
-    },
-    {
-        image: edie64,
-        description: "",
-    },
-    {
-        image: edie65,
-        description: "",
-    },
+
     {
         image: edie66,
-        description: "",
+        description: "Katy Perry's Instagram featuring ELB Gospel Choir, produced by Jeff Bhasker",
     },
     {
         image: edie67,
-        description: "",
+        description: `Michael Abels and children's choir for Jordan Peele's "Us"`,
     },
     {
         image: edie68,
-        description: "",
+        description: "Group for Netflix show Mr. Iglesias with composer Joseph LoDuca",
     },
     {
         image: edie69,
-        description: "",
-    },
-    {
-        image: edie70,
-        description: "",
-    },
-    {
-        image: edie71,
-        description: "",
+        description: "Quincy Jones Back on the Block Session",
     },
     {
         image: edie72,
-        description: "",
+        description: "Rosalía Motomami Boys Choir with arranger Caroline Shaw",
     },
     {
         image: edie73,
-        description: "",
+        description: "Shirley Walker at the piano, ELB conducting Quest for Camelot",
     },
     {
         image: edie74,
-        description: "",
+        description: '"At Long Last, A Leading Lady for GH\'s Scorpio"',
     },
     {
         image: edie75,
-        description: "",
-    },
-    {
-        image: edie76,
-        description: "",
-    },
-    {
-        image: edie77,
-        description: "",
-    },
-    {
-        image: edie78,
-        description: "",
+        description: "Accidental Actress",
     },
     {
         image: edie79,
-        description: "",
-    },
-    {
-        image: edie80,
-        description: "",
-    },
-    {
-        image: edie81,
-        description: "",
+        description: "With Taylor Swift at Grammy Event",
     },
     {
         image: edie82,
-        description: "",
-    },
-    {
-        image: edie83,
-        description: "",
-    },
-    {
-        image: edie84,
-        description: "",
-    },
-    {
-        image: edie85,
-        description: "",
+        description: "ELB with Hans Zimmer and Lion King choir",
     },
     {
         image: edie86,
-        description: "",
-    },
-    {
-        image: edie87,
-        description: "",
+        description: "With 'The Used' Live at Amoeba Records",
     },
     {
         image: edie88,
-        description: "",
+        description: "Rehearsing Natural Woman at The Voice",
     },
     {
         image: edie89,
-        description: "",
+        description: "ELB and choir for The Voice in 2012",
     },
     {
         image: edie90,
-        description: "",
+        description: "ELB and choir for The Voice in 2015",
     },
     {
         image: edie91,
-        description: "",
-    },
-    {
-        image: edie92,
-        description: "",
-    },
-    {
-        image: edie93,
-        description: "",
+        description: "ELB and choir for The Voice in 2012",
     },
     {
         image: edie94,
-        description: "",
+        description: "The Voice kids choir 2016 for Alicia Keys",
     },
-    {
-        image: edie95,
-        description: "",
-    },
-    {
-        image: edie96,
-        description: "",
-    }
 ]
 
 

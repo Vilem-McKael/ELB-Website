@@ -124,7 +124,7 @@ export default function AudioViewer({selectedAudioIndex, updateSelectedAudioInde
     }
 
   return (
-    <div className='flex flex-col justify-start items-center w-auto sm:w-[360px] sm:h-[650px] bg-gray-200 mb-12 border border-black m-4 sm:m-0'>
+    <div className='flex flex-col justify-start items-center w-auto sm:w-[360px] sm:h-[650px] bg-gray-200 mb-12 border border-black m-4 sm:m-0 sm:mt-12'>
 
         {/* AUDIO IMAGE */}
         <img src={audioData[selectedAudioIndex].image} className='p-4' />

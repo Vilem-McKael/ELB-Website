@@ -1,4 +1,4 @@
-import dune2 from '/creditImages/dune2.webp'
+import dune from '/creditImages/dune.jpeg'
 import hiddenFigures from '/creditImages/hiddenFigures.jpeg'
 import happyFeet from '/creditImages/happyFeet.jpeg'
 import solo from '/creditImages/solo.jpeg'
@@ -41,8 +41,8 @@ import glee from '/creditImages/glee.jpeg'
 export const selectedWorks = {
     "vocal-contractor": [
         {
-            image: dune2,
-            title: "Dune: Part Two"
+            image: dune,
+            title: "Dune"
         },
         {
             image: hiddenFigures,
