@@ -22,8 +22,6 @@ import theLionKing from '/creditImages/theLionKing2019.jpeg'
 import iceAge from '/creditImages/iceAge.jpeg'
 import harryStyles from '/creditImages/harryStyles.jpeg'
 
-import jimMessina from '/creditImages/jimMessina.jpeg'
-import vondaShepard from '/creditImages/vondaShepard.jpeg'
 import victorBorge from '/creditImages/victorBorge.jpeg'
 import generalHospital from '/creditImages/generalHospital.webp'
 
@@ -35,7 +33,15 @@ import theCasagrandes from '/creditImages/theCasagrandes.jpg'
 import iceAge4 from '/creditImages/iceAge4.jpeg'
 import leo from '/creditImages/leo.jpeg'
 
-import glee from '/creditImages/glee.jpeg'
+import shawnMendes from '/creditImages/shawnMendes2.jpeg'
+import jimmyKimmel from '/creditImages/jimmyKimmelLive.webp'
+import americanIdol from '/creditImages/americanIdol2.jpeg'
+import katyPerry from '/creditImages/pendulum.jpeg'
+import trueBlue from '/creditImages/trueBlue.jpg'
+import thirtySeconds from '/creditImages/walkOnWater.jpeg'
+
+
+
 
 
 export const selectedWorks = {
@@ -195,28 +201,28 @@ export const selectedWorks = {
     ],
     "arranger": [
         {
-            image: glee,
-            title: "glee"
+            image: shawnMendes,
+            title: "Shawn Mendes - Wonder"
         },
         {
-            image: glee,
-            title: "glee"
+            image: jimmyKimmel,
+            title: "Jimmy Kimmel Live!"
         },
         {
-            image: glee,
-            title: "glee"
+            image: katyPerry,
+            title: "Katy Perry - Pendulum"
         },
         {
-            image: glee,
-            title: "glee"
+            image: americanIdol,
+            title: "American Idol"
         },
         {
-            image: solo,
-            title: "Solo"
+            image: thirtySeconds,
+            title: "30 Seconds to Mars - Walk on Water"
         },
         {
-            image: solo,
-            title: "Solo"
+            image: trueBlue,
+            title: "Madonna - True Blue"
         },
     ]
 }

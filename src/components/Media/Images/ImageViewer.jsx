@@ -32,7 +32,7 @@ export default function ImageViewer({imgIndex, updateSelectedImageIndex, updateI
             {/* MAIN IMAGE BODY */}
             <div className='flex flex-col w-full h-full items-center justify-center cursor-pointer' onClick={handleOnClick}>
                 <img src={edieImages[imgIndex].image} className='max-h-[500px] sm:max-h-[600px]'/>
-                
+                <div className='absolute bottom-0 text-white py-2 w-full text-center bg-black/80'>{edieImages[imgIndex].description}</div>
             </div>
 
             {/* NEXT IMAGE BUTTON */}
@@ -42,7 +42,7 @@ export default function ImageViewer({imgIndex, updateSelectedImageIndex, updateI
 
         </div>
 
-        {<div>{edieImages[imgIndex].description}</div>}
+        
         
     </div>
   )

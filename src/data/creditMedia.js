@@ -9090,6 +9090,14 @@ export const FeaturedMedia = {
     ],
     Live: [
         {
+            title: "The Echo Society V",
+            img: '/creditImages/The Echo Society V.jpeg',
+            roles: [r.Performer, r.Vocalist, r.Contractor],
+            notes: "",
+            year: '',
+            link: '',
+        },
+        {
             title: "Camila Cabello: Ellen",
             img: '',
             roles: [r.Contractor],
@@ -9153,6 +9161,7 @@ export const FeaturedMedia = {
             year: '',
             link: '',
         },
+        
 
     ]
 }

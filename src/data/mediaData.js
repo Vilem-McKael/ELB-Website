@@ -100,11 +100,18 @@ import edie92 from '/edieImages/The Voice Gospel Choir Jordan Smith.jpeg'
 import edie93 from '/edieImages/The Voice Kids 2016.jpeg'
 import edie94 from '/edieImages/The Voice Kids Alicia Keys.jpeg'
 import edie95 from '/edieImages/The Voice kids choir ALicia.jpg'
-import edie96 from '/edieImages/The Voice.jpg'
-// import edie97 from '/edieImages/'
-// import edie98 from '/edieImages/'
-// import edie99 from '/edieImages/'
-// import edie100 from '/edieImages/'
+import edie96 from '/edieImages/elb&giorgio.png'
+import edie97 from '/public/edieImages/Gospel Choir Bev Hills Private party.jpg'
+import edie98 from '/public/edieImages/gwen-stefani-fix-you-the-voice-01 May 2, 2017 .jpg'
+import edie99 from '/public/edieImages/gwen-stefani-fix-you-the-voice-12 May 2, 2017 .jpg'
+import edie100 from '/edieImages/Ice Age Christmas Special Photo.jpg'
+import edie101 from '/edieImages/JHud Craig Zadan Tribute.jpg'
+import edie102 from '/edieImages/Jimmy Kimmel Kids Choir (1).jpg'
+import edie103 from '/edieImages/LaLa Land ELB & Amick HO Bowl.jpeg'
+import edie104 from '/public/edieImages/LaLa Land rehearsal pic.jpg'
+import edie105 from '/edieImages/Shawn Mendes Session Pandemic at Sol 7.jpeg'
+import edie106 from '/edieImages/Sick New World 1 (1).jpeg'
+import edie107 from '/edieImages/Sick New World 2  (1).jpeg'
 
 
 
@@ -392,6 +399,54 @@ export const edieImages = [
         image: edie94,
         description: "The Voice kids choir 2016 for Alicia Keys",
     },
+    {
+        image: edie96,
+        description: "Single cover for 'Nighttime is the Right Time' by Giorgio Moroder and Edie 'Marlena'"
+    },
+    {
+        image: edie97,
+        description: "",
+    },
+    {
+        image: edie98,
+        description: "",
+    },
+    {
+        image: edie99,
+        description: "",
+    },
+    {
+        image: edie100,
+        description: "",
+    },
+    {
+        image: edie101,
+        description: "",
+    },
+    {
+        image: edie102,
+        description: "",
+    },
+    {
+        image: edie103,
+        description: "",
+    },
+    {
+        image: edie104,
+        description: "",
+    },
+    {
+        image: edie105,
+        description: "",
+    },
+    {
+        image: edie106,
+        description: "",
+    },
+    {
+        image: edie107,
+        description: "",
+    },
 ]
 
 
@@ -450,30 +505,30 @@ export const audioData = [
         audioFile: '/audio/papaDontPreach.mp3',
         image: "/creditImages/trueBlue.jpg"
     },
-    // {
-    //     title: "",
-    //     artist: "",
-    //     album: "",
-    //     description: "",
-    //     audioFile: "",
-    //     image: ""
-    // },
-    // {
-    //     title: "",
-    //     artist: "",
-    //     album: "",
-    //     description: "",
-    //     audioFile: "",
-    //     image: ""
-    // },
-    // {
-    //     title: "",
-    //     artist: "",
-    //     album: "",
-    //     description: "",
-    //     audioFile: "",
-    //     image: ""
-    // },
+    {
+        title: "Picking Up After You",
+        artist: "Tom Waits & Edie Lehmann",
+        album: "One From The Heart OST",
+        description: "",
+        audioFile: "/audio/Duet w Tom Waits - Picking Up After You (1).mp3",
+        image: "/creditImages/oneFromTheHeart.webp"
+    },
+    {
+        title: "California Raisins Commercial Solo",
+        artist: "N/A",
+        album: "N/A",
+        description: "Official Audio from Vintage CA Raisins Commercial",
+        audioFile: "/audio/CA Raisins commercial solo (1).mp3",
+        image: "/creditImages/californiaRaisins2.jpeg"
+    },
+    {
+        title: "Gorgeous, Faithful, Classy, Smart and Sweet.mp3",
+        artist: "Robert Kraft feat. Edie Lehmann",
+        album: "",
+        description: "",
+        audioFile: "/audio/Gorgeous, Faithful, Classy, Smart and Sweet by Robert Kraft.mp3",
+        image: "/composerImages/robertKraft.webp"
+    },
     // {
     //     title: "",
     //     artist: "",

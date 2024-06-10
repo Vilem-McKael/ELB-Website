@@ -47,8 +47,8 @@ export default function BurgerBar({currentPage, updateCurrentPage, isShowingSlid
             </div>
 
             {/* OPEN MENU BUTTON */}
-            <div className='flex flex-row text-lg cursor-pointer pb-4 pr-4 transform hover:scale-110 duration-100' onClick={handleOnCLick}>
-                <div>
+            <div className='flex flex-row text-lg cursor-pointer pb-4 pr-4 group h-[40px]' onClick={handleOnCLick}>
+                <div className='transform group-hover:text-xl duration-100 origin-center'>
                     Menu
                 </div>
                 <i className='flaticon-menu w-[24px] h-[24px] pl-2 pt-[2px]'></i>

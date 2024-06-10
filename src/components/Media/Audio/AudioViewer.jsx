@@ -120,14 +120,14 @@ export default function AudioViewer({selectedAudioIndex, updateSelectedAudioInde
             handleStop()
             setPlayer(null)
         }
-        updateSelectedAudioIndex((selectedAudioIndex - 1) % audioData.length)
+        updateSelectedAudioIndex(((selectedAudioIndex + audioData.length) - 1) % audioData.length)
     }
 
   return (
     <div className='flex flex-col justify-start items-center w-auto sm:w-[360px] sm:h-[650px] bg-gray-200 mb-12 border border-black m-4 sm:m-0 sm:mt-12'>
 
         {/* AUDIO IMAGE */}
-        <img src={audioData[selectedAudioIndex].image} className='p-4' />
+        <img src={audioData[selectedAudioIndex].image} className='p-4 aspect-square object-cover' />
 
         {/* DURATION DISPLAY AND CONTROLS */}
         <div className='flex justify-between w-full px-4 items-center'>

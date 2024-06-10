@@ -9,7 +9,7 @@ export default function FeaturedCreditsList({selectedCategory, updateSelectedCat
     <div className='flex flex-col items-center'>
 
         {/* CREDIT CATEGORY SELECTOR */}
-        <div className='flex flex-col items-center sm:flex-row w-full justify-center my-8 gap-4 px-2'>
+        <div className='grid grid-cols-3 md:flex items-center sm:flex-row w-full justify-center my-8 gap-4 px-2'>
             <CategoryButton title={CreditCategory.Artists} selectedCategory={selectedCategory} updateSelectedCategory={updateSelectedCategory} bgColor={'#CC9D20'}/>
             <CategoryButton title={CreditCategory.Composers} selectedCategory={selectedCategory} updateSelectedCategory={updateSelectedCategory} bgColor={'#BB602F'}/>
             <CategoryButton title={CreditCategory.Film} selectedCategory={selectedCategory} updateSelectedCategory={updateSelectedCategory} bgColor={'#A34726'}/>
