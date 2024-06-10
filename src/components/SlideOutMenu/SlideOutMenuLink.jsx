@@ -3,7 +3,7 @@ import { Link, useNavigate } from 'react-router-dom'
 
 import '../NavBar/NavBar.css'
 
-export default function SlideOutMenuLink({title, to, iconName, tabColor, tabClass, currentPage, updateCurrentPage, updateIsShowingSlideOutMenu}) {
+export default function SlideOutMenuLink({title, to, iconName, tabColor, tabClass, currentPage, updateCurrentPage, updateIsShowingSlideOutMenu, screenSize}) {
 
   const navigate = useNavigate();
 

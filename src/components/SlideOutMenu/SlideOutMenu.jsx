@@ -8,9 +8,8 @@ export default function SlideOutMenu({screenSize, currentPage, updateCurrentPage
     }
 
   return (
-    <>
-    {isVisible ?
-    <div className={`h-full w-[150px] bg-light7 flex flex-col px-4 text-black pt-[150px]  mobileLandscape:pt-0 fixed right-0 z-40 border-l-[1px] border-black ${isVisible ? '' : 'slideOutMenuHidden'}`}>
+    
+    <div className={`h-full w-[150px] bg-light7 flex flex-col px-4 text-black pt-[150px]  mobileLandscape:pt-0 fixed right-0 z-40 border-l-[1px] border-black transform transition-transform duration-200 ${isVisible ? 'translate-x-0' : 'translate-x-full' }`}>
         <div className='mt-8 border-y-[1px] border-black w-full'>
             <SlideOutMenuLink title={"Home"} to={"/"} iconName={"home"} tabColor={'#D2AD25'} tabClass={'bgYellow'} currentPage={currentPage} updateCurrentPage={updateCurrentPage} updateIsShowingSlideOutMenu={updateIsShowingSlideOutMenu}/>
         </div>
@@ -38,9 +37,5 @@ export default function SlideOutMenu({screenSize, currentPage, updateCurrentPage
         </div>
     </div>
 
-    :
-    <></>
-    }
-    </>
   )
 }
