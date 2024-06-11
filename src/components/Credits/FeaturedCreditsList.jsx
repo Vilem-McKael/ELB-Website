@@ -24,9 +24,6 @@ export default function FeaturedCreditsList({selectedCategory, updateSelectedCat
         </div>
         <MediaGrid selectedCategory={selectedCategory} data={FeaturedMedia[selectedCategory]}/>
 
-        <HashLink smooth to="/credits/#credits-top" className='text-black bg-gray-100 sm:hover:text-white snm:hover:bg-black w-full h-[80px] flex items-center justify-center border-black border-t-[1px]'>
-        Back to Top
-        </HashLink>
     </div>
   )
 }

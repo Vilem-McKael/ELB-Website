@@ -6,14 +6,16 @@ export default {
       backgroundImage: {
         'homepage': "url('/pebbleBackground.jpeg')",
         'conducting1': "url('/edieImages/2sfh.6.14.13_1991.jpg')",
-        'searchlights': "url('/other/searchlights.jpeg')"
+        'searchlights': "url('/other/searchlights.jpeg')",
+        'derutaBg1': "url('/deruta/derutaAncientTileSingle.png')",
+        'derutaBg2': "url('/deruta/derutaAncientTileTriple.png')",
       },
       fontFamily: {
         'inter': ['Inter', 'sans-serif'],
         'montserrat': ['Montserrat', 'sans-serif'],
         'barlow': ['Barlow', 'sans-serif'],
         'zilla': ['Zilla Slab', 'serif'],
-        'abril': ['Abril Fatface', 'serif']
+        'abril': ['Abril Fatface', 'serif'],
       },
       colors: {
         'light1': '#CED0C2',

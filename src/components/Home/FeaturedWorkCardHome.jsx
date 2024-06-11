@@ -2,13 +2,13 @@ import React from 'react'
 
 export default function FeaturedWorkCardHome({image, title, work, roles}) {
   return (
-    <div className='flex flex-col w-full sm:w-[360px] md:w-[240px] lg:w-[300px] justify-start items-center font-medium'>
+    <div className='flex flex-col w-full sm:w-[360px] lg:w-[300px] justify-start items-center font-medium'>
 
       {/* WORK IMAGE */}
-      <img src={image} className='w-[360px] h-[360px] md:w-[240px] md:h-[240px] lg:h-[300px] lg:w-[300px] object-cover'/>
+      <img src={image} className='w-[360px] h-[360px] lg:h-[300px] lg:w-[300px] object-cover'/>
 
       {/* WORK DESCRIPTION */}
-      <div className='my-4 w-[360px] md:w-[240px] lg:w-[300px]'>
+      <div className='my-4 w-[360px] md:w-[360px] lg:w-[300px]'>
 
         {/* TITLE */}
         <div className='font-semibold text-2xl'>

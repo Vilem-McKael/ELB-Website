@@ -1,11 +1,11 @@
 import React, { useCallback, useEffect } from 'react'
 import { useState } from 'react'
-import CategoryButton from '../../components/Credits/CategoryButton'
-import MediaGrid from '../../components/Credits/MediaGrid'
+
 import { CreditCategory, AllMedia, FeaturedMedia } from '../../data/creditMedia'
 import AllMediaList from '../../components/Credits/AllMediaList'
 import FeaturedCreditsList from '../../components/Credits/FeaturedCreditsList'
 import Footer from '../../components/Footer/Footer'
+import { HashLink } from 'react-router-hash-link'
 
 
 const emptyFilters = {
@@ -302,6 +302,9 @@ export default function CreditsPage() {
             <AllMediaList filters={creditFilters} viewedCredits={viewedCredits} updateFilters={filterCredits} sortPreference={sortPreference} sortCredits={sortCredits}/>
             }
         </div>
+        <HashLink smooth to="/credits/#credits-top" className='text-black bg-gray-100 sm:hover:text-white snm:hover:bg-black w-full h-[80px] flex items-center justify-center border-black border-t-[1px]'>
+        Back to Top
+        </HashLink>
         <Footer />
     </div>
   )

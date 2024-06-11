@@ -16,7 +16,7 @@ export default function VideoList({updateSelectedVideo}) {
     }
 
   return (
-    <table className='w-full h-full font-barlow sm:w-[800px] lg:w-[1100px] border-t border-black'>
+    <table className='w-full h-full font-barlow sm:w-[800px] lg:w-[1000px] border-t border-black'>
 
         {/* VIDEO LIST */}
         <tbody>
