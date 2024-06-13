@@ -20,6 +20,12 @@ function App() {
   const [isShowingSlideOutMenu, setIsShowingSlideOutMenu] = useState(false)
   const [screenSize, setScreenSize] = useState(null)
 
+  // audio player
+  const [player, setPlayer] = useState(null)
+
+  const handleSetPlayer = useCallback((playerObject) => {
+    setPlayer(playerObject)
+  }, [player])
   
 
   const burgerWidthBoundary = 800
@@ -65,13 +71,13 @@ function App() {
     switch(screenSize) {
       case 'large':
         closeSlideOutMenu()
-        return <NavBar currentPage={currentPage} updateCurrentPage={updateCurrentPage} updateIsShowingSlideOutMenu={updateIsShowingSlideOutMenu}/>
+        return <NavBar currentPage={currentPage} updateCurrentPage={updateCurrentPage} updateIsShowingSlideOutMenu={updateIsShowingSlideOutMenu} player={player} handleSetPlayer={handleSetPlayer}/>
       case 'medium':
-        return <BurgerBar currentPage={currentPage} updateCurrentPage={updateCurrentPage} isShowingSlideOutMenu={isShowingSlideOutMenu} updateIsShowingSlideOutMenu={updateIsShowingSlideOutMenu}/>
+        return <BurgerBar currentPage={currentPage} updateCurrentPage={updateCurrentPage} isShowingSlideOutMenu={isShowingSlideOutMenu} updateIsShowingSlideOutMenu={updateIsShowingSlideOutMenu} player={player} handleSetPlayer={handleSetPlayer}/>
       case 'mobileLandscape':
         return <LandscapeMobileMenu currentPage={currentPage} updateCurrentPage={updateCurrentPage} isShowingSlideOutMenu={isShowingSlideOutMenu} updateIsShowingSlideOutMenu={updateIsShowingSlideOutMenu}/>
       case 'mobile':
-        return <MobileBurgerMenu currentPage={currentPage} updateCurrentPage={updateCurrentPage} isShowingSlideOutMenu={isShowingSlideOutMenu} updateIsShowingSlideOutMenu={updateIsShowingSlideOutMenu}/>
+        return <MobileBurgerMenu currentPage={currentPage} updateCurrentPage={updateCurrentPage} isShowingSlideOutMenu={isShowingSlideOutMenu} updateIsShowingSlideOutMenu={updateIsShowingSlideOutMenu} player={player} handleSetPlayer={handleSetPlayer}/>
       default:
         return null
     }
@@ -112,7 +118,7 @@ function App() {
                 <Route path='/*' element={<HomePage />}/>
                 <Route path='/about' element={<AboutPage />}/>
                 <Route path='/credits' element={<CreditsPage />}/>
-                <Route path='/media' element={<MediaPage screenSize={screenSize}/>}/> 
+                <Route path='/media' element={<MediaPage screenSize={screenSize} player={player} handleSetPlayer={handleSetPlayer}/>}/> 
                 <Route path='/contact' element={<ContactPage />} />
               </Routes>
             </div>

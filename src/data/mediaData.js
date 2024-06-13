@@ -112,6 +112,8 @@ import edie104 from '/public/edieImages/LaLa Land rehearsal pic.jpg'
 import edie105 from '/edieImages/Shawn Mendes Session Pandemic at Sol 7.jpeg'
 import edie106 from '/edieImages/Sick New World 1 (1).jpeg'
 import edie107 from '/edieImages/Sick New World 2  (1).jpeg'
+import edie108 from '/edieImages/2018-AfrChoir-CR-1458.jpg'
+import edie109 from '/edieImages/2018-AfrChoir-CR-1709.jpg'
 
 
 
@@ -447,6 +449,14 @@ export const edieImages = [
         image: edie107,
         description: "",
     },
+    {
+        image: edie108,
+        description: "",
+    },
+    {
+        image: edie109,
+        description: ""
+    }
 ]
 
 
@@ -469,6 +479,29 @@ export const videoData = [
         videoId: "Ge8peK70N2g"
     },
     {
+        title: "Company - Robert Scorpio & Katherine Delafield, General Hospital",
+        description: `Twenty years later on YT, Kate leaving and the story of Robert & Katherine ending was just as hard.  I hadn't remembered this song from my first watching in the '80's, and loved it when I heard it during the retelling of the storyline (and thanks to itunes, now own the original version as well...).
+
+The song was composed/written by Rickie Lee Jones & Alfred Johnson.  This version was performed by Edie Lehmann on General Hospital in April of 1989.`,
+        vidoeId: "RsQC6F9d6JE"
+    },
+    {
+        title: "Mike Oldfield ( Tubular bells II - Live in Edinburgh Castle 1992 )",
+        description: `Tubular Bells II, The Performance Live at Edinburgh Castle is a live concert video by Mike Oldfield released in 1992.
+The video is a full faithful performance from the premiere concert of the Tubular Bells II album at Edinburgh Castle. The tour continued until the following October. John Gordon Sinclair performed the part of the Master of Ceremonies at the concert; on the album Alan Rickman was the Master of Ceremonies. The concert finishes with a reprise of "The Bell". Eight thousand people were at the concert in Edinburgh, Scotland.`,
+        videoId: "fF8dlKs3rd0"
+    },
+    {
+        title: "Steve Martin's: All Commercials Comedy Special w/ Paul Reubens",
+        description: "Backing Vocals for Intro Musical Number includes Edie Lehmann.",
+        videoId: "pqPoDtKJddg"
+    },
+    {
+        title: "Quincy Jones - Special Live In Seattle (1983)",
+        description: "One hour live special for Quincy Jones' 60th Birthday, featuring ELB onstage singing backing vocals.",
+        videoId: "ZbREHPDI6tc"
+    },
+    {
         title: "Edie Lehmann Boddicker Buffalo Music Hall of Fame Class of 2021",
         description: "The Official video marking Edie's induction into the Buffalo Music Hall of Fame.",
         videoId: "NSisNc8nZT4"
@@ -480,7 +513,7 @@ export const videoData = [
     },
     {
         title: "Living with a Genius",
-        description: "",
+        description: 'This video is about musician Edie Lehmann Boddicker',
         videoId: "0JKbHNXpq3M"
     },
 ]
@@ -528,6 +561,46 @@ export const audioData = [
         description: "",
         audioFile: "/audio/Gorgeous, Faithful, Classy, Smart and Sweet by Robert Kraft.mp3",
         image: "/composerImages/robertKraft.webp"
+    },
+    {
+        title: "Night Time Is The Right Time",
+        artist: "Giorgio Moroder feat. Edie Marlena",
+        album: "Innovisions",
+        description: "",
+        audioFile: "/audio/Giorgio Moroder - Night Time Is The Right Time [Innovisions] (HD).mp3",
+        image: "/edieImages/elb&giorgio.png",
+    },
+    {
+        title: "United Together",
+        artist: "Aretha Franklin",
+        album: "United Together",
+        description: "",
+        audioFile: "/audio/Aretha Franklin - United Together.mp3",
+        image: "/creditImages/unitedTogether.png"
+    },
+    {
+        title: "La Isla Bonita",
+        artist: "Madonna",
+        album: "True Blue",
+        description: "",
+        audioFile: "/audio/La Isla Bonita.mp3",
+        image: "/creditImages/trueBlue.jpg"
+    },
+    {
+        title: "Motor Mouth",
+        artist: "Herbie Hancock",
+        album: "Lite Me Up",
+        description: "",
+        audioFile: "/audio/HERBIE HANCOCK - Motor mouth (1982).mp3",
+        image: "/creditImages/liteMeUp.jpg"
+    },
+    {
+        title: "Wee B. Dooinit",
+        artist: "Quincy Jones",
+        album: "Back on the Block",
+        description: "",
+        audioFile: "/audio/Quincy Jones  Wee B.DoinIt 1989.mp3",
+        image: "/creditImages/backOnTheBlock.png"
     },
     // {
     //     title: "",

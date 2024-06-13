@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-export default function MobileBurgerMenu({currentPage, updateCurrentPage, isShowingSlideOutMenu, updateIsShowingSlideOutMenu}) {
+export default function MobileBurgerMenu({currentPage, updateCurrentPage, isShowingSlideOutMenu, updateIsShowingSlideOutMenu, player, handleSetPlayer}) {
 
     function handleOnCLick() {
         let toggleVal = !isShowingSlideOutMenu
@@ -15,7 +15,12 @@ export default function MobileBurgerMenu({currentPage, updateCurrentPage, isShow
     //     </div>
     // </div>//nice
     <div className='w-full h-[80px] bg-light7 fixed flex flex-row justify-between items-center px-2 z-50 border-b border-black'>
-      <Link to='/' className='flex flex-row items-end'>
+      <Link to='/' className='flex flex-row items-end' onClick={() => {
+        if (player) {
+          player.stop()
+          handleSetPlayer(null)
+        }
+      }}>
             <img src={'/deruta/deruta tile.webp'} className='w-[58px] h-[58px]'/>
             <div className='flex-col justify-end text-md text-black text-leading leading-[0.7] bg-opacity-95 font-normal pl-4 w-full h-[55px]'>
                 <div className=''>

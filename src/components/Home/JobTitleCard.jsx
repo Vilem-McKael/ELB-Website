@@ -16,7 +16,7 @@ export default function JobTitleCard({bgColor, alignment, title, tag, descriptio
                 <div className='flex flex-col h-full w-full md:w-[400px] lg:w-[500px] xl:w-[600px] flex-shrink-0 justify-between items-center md:items-end p-8 mb-16 sm:mb-0'>
 
                     {/* ROLE TITLE AND DESCRIPTION */}
-                    <div className='mb-4 sm:mb-0'>
+                    <div className='mb-4 sm:mb-0 text-justify'>
 
                         <div className='text-2xl font-semibold text-black'>
                             {title}
@@ -27,7 +27,7 @@ export default function JobTitleCard({bgColor, alignment, title, tag, descriptio
                     </div>
 
                     {/* SELECTED WORKS FOR THIS ROLE */}
-                    <div className='flex flex-col items-center'>
+                    <div className='flex flex-col items-center w-full'>
                         <SelectedWorks works={selectedWorks[tag]} />
                     </div>
                 </div>
@@ -57,7 +57,7 @@ export default function JobTitleCard({bgColor, alignment, title, tag, descriptio
                 <div className='flex flex-col h-full w-full md:w-[400px] lg:w-[500px] xl:w-[600px] justify-between flex-shrink-0 items-center md:items-start p-8 mb-16 sm:mb-0'>
 
                     {/* ROLE TITLE AND DESCRIPTION */}
-                    <div className='mb-4 sm:mb-0'>
+                    <div className='mb-4 sm:mb-0 text-justify'>
                         <div className='text-2xl font-semibold text-black'>
                             {title}
                         </div>
@@ -67,7 +67,7 @@ export default function JobTitleCard({bgColor, alignment, title, tag, descriptio
                     </div>
 
                     {/* SELECTED WORKS FOR THIS ROLE */}
-                    <div className='flex flex-col items-center'>
+                    <div className='flex flex-col items-center w-full'>
                         <SelectedWorks works={selectedWorks[tag]} />
                     </div>
                 </div>

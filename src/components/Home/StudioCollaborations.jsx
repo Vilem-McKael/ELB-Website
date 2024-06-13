@@ -6,12 +6,10 @@ export default function StudioCollaborations() {
     <div id='studio-collaborations' className='w-full flex flex-col items-center bg-searchlights bg-cover bg-center'>
 
         {/* SECTION TITLE: STUDIO COLLABORATIONS */}
-        <div className='flex px-4 smLpx-16 w-full items-center justify-center border-b-[8px] border-gold bg-light7'>
-          <div className='flex items-center justify-center w-full px-4 sm:px-16 py-4 h-full bg-light7/90'>
-              <div className='h-[20px] w-[20px] rounded-full border-gold border-[2px] bg-gold/50 shrink-0 mr-4'></div>
-              <div className='wlg text-2xl md:text-4xl flex justify-start text-start text-black font-semibold'>
-                  Studio Collaborations
-              </div>
+        <div className='flex py-4 px-4 sm:px-16 w-full items-center justify-center border-b-[8px] border-gold bg-light7 h-full'>
+            <div className='h-[20px] w-[20px] rounded-full border-gold border-[2px] bg-gold/50 shrink-0 mr-4'></div>
+            <div className='w-full max-w-[1100px] text-2xl md:text-4xl flex justify-start text-start text-black font-semibold'>
+                Studio Collaborations
             </div>
         </div>
         <div className='bg-light7/90 bg-opacity-[93%] w-full h-full flex flex-col items-center'>

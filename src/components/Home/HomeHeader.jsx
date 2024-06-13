@@ -50,11 +50,13 @@ export default function HomeHeader() {
                         {/* VOCAL CONTRACTOR */}
                         <HashLink to={'/#vocal-contractor'} scroll={element => scrollWithNavbarOffset(element, document.documentElement.clientWidth >= 640 ? 150 : 80)} className='w-full h-[60px] border-yellow2 border-8 flex items-center justify-center transform sm:hover:scale-105 sm:hover:font-semibold duration-150 origin-top'>Vocal Contractor</HashLink>
 
-                        {/* MUSICIAN */}
-                        <HashLink to={'/#conductor'} scroll={element => scrollWithNavbarOffset(element, document.documentElement.clientWidth >= 640 ? 150 : 80)} className='w-full h-[60px] border-gold2 border-8 flex items-center justify-center transform sm:hover:scale-105 sm:hover:font-semibold duration-150 origin-top'>Conductor</HashLink>
-
                         {/* CONDUCTOR */}
-                        <HashLink to={'/#vocalist'} scroll={element => scrollWithNavbarOffset(element, document.documentElement.clientWidth >= 640 ? 150 : 80)} className='w-full h-[60px] border-terracotta border-8 flex items-center justify-center transform sm:hover:scale-105 sm:hover:font-semibold duration-150 origin-top'>Vocalist</HashLink>
+                        <HashLink to={'/#vocalist'} scroll={element => scrollWithNavbarOffset(element, document.documentElement.clientWidth >= 640 ? 150 : 80)} className='w-full h-[60px] border-gold2 border-8 flex items-center justify-center transform sm:hover:scale-105 sm:hover:font-semibold duration-150 origin-top'>Vocalist</HashLink>
+
+                        {/* MUSICIAN */}
+                        <HashLink to={'/#conductor'} scroll={element => scrollWithNavbarOffset(element, document.documentElement.clientWidth >= 640 ? 150 : 80)} className='w-full h-[60px] border-terracotta border-8 flex items-center justify-center transform sm:hover:scale-105 sm:hover:font-semibold duration-150 origin-top'>Conductor</HashLink>
+
+                        
 
                         {/* VOCALIST */}
                         <HashLink to={'/#vocal-coach'} scroll={element => scrollWithNavbarOffset(element, document.documentElement.clientWidth >= 640 ? 150 : 80)} className='w-full h-[60px] border-teal2 border-8 flex items-center justify-center transform sm:hover:scale-105 sm:hover:font-semibold duration-150 origin-top'>Vocal Coach</HashLink>
@@ -77,7 +79,7 @@ export default function HomeHeader() {
         </div>
 
         {/* HASHLINKS TO SECTIONS OF HOMEPAGE */}
-        <div className='w-full sm:h-[150px] md:h-[150px] max-w-[1100px] flex flex-col gap-4 sm:flex-row md:flex-row items-center justify-evenly text-sm font-barlow pt-4 font-default mb-8'>
+        <div className='w-full sm:h-[150px] md:h-[150px] max-w-[1100px] gap-4 flex flex-col sm:flex-row md:flex-row items-center justify-evenly text-sm font-barlow pt-4 font-default mb-8 px-2'>
 
             {/* STUDIO COLLABORATIONS */}
             <HashLink to={'/#studio-collaborations'} scroll={element => scrollWithNavbarOffset(element, document.documentElement.clientWidth >= 640 ? 150 : 80)} className='border-teal4 border-b-[4px] flex flex-col items-center justify-center text-sm sm:text-lg group' >

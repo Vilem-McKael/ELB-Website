@@ -40,7 +40,7 @@ export default function FeaturedCredits() {
             {/* SECTION TITLE: RECENT WORK */}
             <div className='flex px-4 sm:px-16 py-4 mb-12 w-full items-center justify-center border-b-[8px] bg-light7 border-terracotta'>
                 <div className='h-[20px] w-[20px] rounded-full border-terracotta border-[2px] bg-terracotta/50 shrink-0 mr-4'></div>
-                <div className='wlg text-4xl flex justify-start text-start text-black font-semibold'>
+                <div className='w-full max-w-[1100px] text-4xl flex justify-start text-start text-black font-semibold'>
                     Recent Work
                 </div>
             </div>
@@ -65,7 +65,7 @@ export default function FeaturedCredits() {
             {/* SECTION TITLE: CLASSIC CREDITS */}
             <div className='flex px-4 sm:px-16 py-4 mb-12 w-full items-center justify-center border-b-[8px] border-darkBlue3'>
                 <div className='h-[20px] w-[20px] rounded-full border-darkBlue3 border-[2px] bg-darkBlue3/50 shrink-0 mr-4'></div>
-                <div className='wlg text-4xl flex justify-start text-start text-black font-semibold'>
+                <div className='w-full max-w-[1100px] text-4xl flex justify-start text-start text-black font-semibold'>
                     Classic Credits
                 </div>
             </div>

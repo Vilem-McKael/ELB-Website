@@ -1,12 +1,11 @@
 import React, {useEffect, useState} from 'react'
-import useSound from 'use-sound'
 import { Howl } from 'howler'
 import { audioData } from '../../../data/mediaData'
 
-export default function AudioViewer({selectedAudioIndex, updateSelectedAudioIndex}) {
+export default function AudioViewer({selectedAudioIndex, updateSelectedAudioIndex, player, handleSetPlayer}) {
 
     const [selectedAudio, setSelectedAudio] = useState(audioData[selectedAudioIndex])
-    const [player, setPlayer] = useState(null)
+    
     const [isPlaying, setIsPlaying] = useState(false)
     // const [songPosition, setSongPosition] = useState(0)
     const [timeDisplay, setTimeDisplay] = useState('0:00')
@@ -15,10 +14,10 @@ export default function AudioViewer({selectedAudioIndex, updateSelectedAudioInde
     // USE EFFECT TO CANCEL PLAYBACK ON LEAVING PAGE
     useEffect(() => {
         return () => {
-            if (player) {
+            // if (player) {
                 handleStop()
-                setPlayer(null)
-            }
+                handleSetPlayer(null)
+            // }
         }
     }, [])
 
@@ -35,7 +34,7 @@ export default function AudioViewer({selectedAudioIndex, updateSelectedAudioInde
             const newPlayer = new Howl({
                 src: [selectedAudio.audioFile],
                 html5: true,
-                volume: 0.5,
+                volume: 0.7,
                 onplay: () => {
                     console.log("Playing audio")
                     setIsPlaying(true)
@@ -61,7 +60,7 @@ export default function AudioViewer({selectedAudioIndex, updateSelectedAudioInde
             })
 
             newPlayer.play();
-            setPlayer(newPlayer)
+            handleSetPlayer(newPlayer)
         }
     }
 
@@ -109,7 +108,7 @@ export default function AudioViewer({selectedAudioIndex, updateSelectedAudioInde
     const handleShowNext = () => {
         if (player) {
             handleStop()
-            setPlayer(null)
+            handleSetPlayer(null)
         }
         updateSelectedAudioIndex((selectedAudioIndex + 1) % audioData.length )
     }
@@ -118,7 +117,7 @@ export default function AudioViewer({selectedAudioIndex, updateSelectedAudioInde
     const handleShowPrev = () => {
         if (player) {
             handleStop()
-            setPlayer(null)
+            handleSetPlayer(null)
         }
         updateSelectedAudioIndex(((selectedAudioIndex + audioData.length) - 1) % audioData.length)
     }

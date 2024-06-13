@@ -1,12 +1,16 @@
 import React from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 
-export default function NavBarLink({title, to, iconName, tabColor, tabClass, currentPage, updateCurrentPage, updateIsShowingSlideOutMenu}) {
+export default function NavBarLink({title, to, iconName, tabColor, tabClass, currentPage, updateCurrentPage, updateIsShowingSlideOutMenu, player, handleSetPlayer}) {
 
   const navigate = useNavigate();
 
     function handleOnClick() {
         updateIsShowingSlideOutMenu(false)
+        if (player) {
+          player.stop()
+          handleSetPlayer(null)
+        }
         updateCurrentPage(title)
         navigate(to)
     }

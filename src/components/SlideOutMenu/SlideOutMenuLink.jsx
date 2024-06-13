@@ -3,12 +3,16 @@ import { Link, useNavigate } from 'react-router-dom'
 
 import '../NavBar/NavBar.css'
 
-export default function SlideOutMenuLink({title, to, iconName, tabColor, tabClass, currentPage, updateCurrentPage, updateIsShowingSlideOutMenu, screenSize}) {
+export default function SlideOutMenuLink({title, to, iconName, tabColor, tabClass, currentPage, updateCurrentPage, updateIsShowingSlideOutMenu, screenSize, player, handleSetPlayer}) {
 
   const navigate = useNavigate();
 
     function handleOnClick() {
         updateIsShowingSlideOutMenu(false)
+        if (player) {
+          player.stop()
+          handleSetPlayer(null)
+        }
         updateCurrentPage(title)
         navigate(to)
     }

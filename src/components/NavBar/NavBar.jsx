@@ -8,12 +8,17 @@ import instagram from '../../assets/socialLogos/instagramLogo.png'
 import linkedIn from '../../assets/socialLogos/linkedInLogo.png'
 import imdb from '../../assets/socialLogos/imdbLogo.webp'
 
-export default function NavBar({currentPage, updateCurrentPage, updateIsShowingSlideOutMenu}) {
+export default function NavBar({currentPage, updateCurrentPage, updateIsShowingSlideOutMenu, player, handleSetPlayer}) {
   return (
     <div className='flex w-full h-[150px] justify-between items-end fixed bg-light7 border-b-[1px] border-black text-black pl-8 pr-7 z-50'>
         
         {/* LEFT SIDE - NAME AND DECORATIVE TILE */}
-        <Link to='/' className='flex flex-row items-end pb-4'>
+        <Link to='/' className='flex flex-row items-end pb-4' onClick={() => {
+            if (player) {
+                player.stop()
+                handleSetPlayer(null)
+            }
+        }}>
             <img src={'/deruta/deruta tile.webp'} className='w-[80px] h-[80px]'/>
             <div className='flex-col justify-center text-xl text-black text-leading bg-opacity-95 font-normal pl-4 w-full h-[80px]'>
                 <div className=''>
@@ -44,22 +49,22 @@ export default function NavBar({currentPage, updateCurrentPage, updateIsShowingS
 
                 {/* HOME */}
                 <div className='w-[92px] hover:bg-yellow rounded-t-lg hover:text-light7/90'>
-                    <NavBarLink title={"Home"} to={"/"} iconName={"home"} tabColor={'#D2AD25'} tabClass={'bgYellow'} currentPage={currentPage} updateCurrentPage={updateCurrentPage} updateIsShowingSlideOutMenu={updateIsShowingSlideOutMenu}/>
+                    <NavBarLink title={"Home"} to={"/"} iconName={"home"} tabColor={'#D2AD25'} tabClass={'bgYellow'} currentPage={currentPage} updateCurrentPage={updateCurrentPage} updateIsShowingSlideOutMenu={updateIsShowingSlideOutMenu} player={player} handleSetPlayer={handleSetPlayer}/>
                 </div>
 
                 {/* ABOUT */}
                 <div className='w-[92px] hover:bg-gold rounded-t-lg hover:text-light7/90'>
-                    <NavBarLink title={"About"} to={"/about"} iconName={"info-1"} tabColor={'#D2912D'} tabClass={'bgGold'} currentPage={currentPage} updateCurrentPage={updateCurrentPage} updateIsShowingSlideOutMenu={updateIsShowingSlideOutMenu}/>
+                    <NavBarLink title={"About"} to={"/about"} iconName={"info-1"} tabColor={'#D2912D'} tabClass={'bgGold'} currentPage={currentPage} updateCurrentPage={updateCurrentPage} updateIsShowingSlideOutMenu={updateIsShowingSlideOutMenu} player={player} handleSetPlayer={handleSetPlayer}/>
                 </div>
 
                 {/* CREDITS */}
                 <div className='w-[92px] hover:bg-terracotta rounded-t-lg hover:text-light7/90'>
-                    <NavBarLink title={"Credits"} to={"/credits"} iconName={"person-1"} tabColor={'#A34726'} tabClass={'bgTerracotta'} currentPage={currentPage} updateCurrentPage={updateCurrentPage} updateIsShowingSlideOutMenu={updateIsShowingSlideOutMenu}/>
+                    <NavBarLink title={"Credits"} to={"/credits"} iconName={"person-1"} tabColor={'#A34726'} tabClass={'bgTerracotta'} currentPage={currentPage} updateCurrentPage={updateCurrentPage} updateIsShowingSlideOutMenu={updateIsShowingSlideOutMenu} player={player} handleSetPlayer={handleSetPlayer}/>
                 </div>
 
                 {/* MEDIA */}
                 <div className='w-[92px] hover:bg-teal4 rounded-t-lg hover:text-light7/90'>
-                    <NavBarLink title={"Media"} to={"/media"} iconName={"microphone-1"} tabColor={'#3E8483'} tabClass={'bgTeal'} currentPage={currentPage} updateCurrentPage={updateCurrentPage} updateIsShowingSlideOutMenu={updateIsShowingSlideOutMenu}/>
+                    <NavBarLink title={"Media"} to={"/media"} iconName={"microphone-1"} tabColor={'#3E8483'} tabClass={'bgTeal'} currentPage={currentPage} updateCurrentPage={updateCurrentPage} updateIsShowingSlideOutMenu={updateIsShowingSlideOutMenu} player={player} handleSetPlayer={handleSetPlayer}/>
                 </div>
                 
                 {/* <div className='w-[92px] hover:bg-teal4 rounded-t-lg hover:text-light7/90'>
@@ -74,7 +79,7 @@ export default function NavBar({currentPage, updateCurrentPage, updateIsShowingS
 
                 {/* CONTACT */}
                 <div className='w-[92px] hover:bg-darkBlue3 rounded-t-lg hover:text-light7/90'>
-                    <NavBarLink title={"Contact"} to={"/contact"} iconName={"contact-mail"} tabColor={'#263053'} tabClass={'bgDarkBlue'} currentPage={currentPage} updateCurrentPage={updateCurrentPage} updateIsShowingSlideOutMenu={updateIsShowingSlideOutMenu}/>
+                    <NavBarLink title={"Contact"} to={"/contact"} iconName={"contact-mail"} tabColor={'#263053'} tabClass={'bgDarkBlue'} currentPage={currentPage} updateCurrentPage={updateCurrentPage} updateIsShowingSlideOutMenu={updateIsShowingSlideOutMenu} player={player} handleSetPlayer={handleSetPlayer}/>
                 </div>
             </div>
         </div>

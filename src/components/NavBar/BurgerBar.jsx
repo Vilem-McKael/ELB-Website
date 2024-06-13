@@ -8,7 +8,7 @@ import instagram from '../../assets/socialLogos/instagramLogo.png'
 import linkedIn from '../../assets/socialLogos/linkedInLogo.png'
 import imdb from '../../assets/socialLogos/imdbLogo.webp'
 
-export default function BurgerBar({currentPage, updateCurrentPage, isShowingSlideOutMenu, updateIsShowingSlideOutMenu}) {
+export default function BurgerBar({currentPage, updateCurrentPage, isShowingSlideOutMenu, updateIsShowingSlideOutMenu, player, hadnleSetPlayer}) {
 
 
     function handleOnCLick() {
@@ -20,7 +20,12 @@ export default function BurgerBar({currentPage, updateCurrentPage, isShowingSlid
     <div id="top" className='flex w-full h-[150px] justify-between items-end fixed bg-light7 text-black pl-8 pr-4 z-50 border-b-[1px] border-black'>
             
         {/* LEFT SIDE - NAME AND DECORATIVE TILE */}
-        <Link to='/' className='flex flex-row items-end pb-4'>
+        <Link to='/' className='flex flex-row items-end pb-4' onClick={() => {
+            if (player) {
+                player.stop()
+                hadnleSetPlayer(null)
+            }
+        }}>
             <img src={'/deruta/deruta tile.webp'} className='w-[80px] h-[80px]'/>
             <div className='flex-col justify-center text-xl text-black text-leading bg-opacity-95 font-normal pl-4 w-full h-[80px]'>
                 <div className=''>

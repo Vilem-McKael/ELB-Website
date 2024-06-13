@@ -15,7 +15,7 @@ const defaultVideoParams = {
   videoId: "NBTVF8ehlkw"
 }
 
-export default function MediaPage({screenSize}) {
+export default function MediaPage({screenSize, player, handleSetPlayer}) {
 
   const [selectedMediaType, setSelectedMediaType] = useState('images')
   const [selectedImageIndex, setSelectedImageIndex] = useState(0)
@@ -27,6 +27,10 @@ export default function MediaPage({screenSize}) {
 
   const handleUpdateSelectedMediaType = (newMediaType) => {
     setSelectedMediaType(newMediaType)
+    if (player) {
+      player.stop()
+      handleSetPlayer(null)
+    }
   }
 
   const updateSelectedImageIndex = useCallback((imgIndex) => {
@@ -57,7 +61,7 @@ export default function MediaPage({screenSize}) {
             <>
               {!isShowingImageFullScreen ?
                 <>
-                  <div className='flex flex-col items-center sm:w-[640px] md:w-[800px] lg:w-[1100px]'>
+                  <div className='flex flex-col items-center sm:w-[640px] md:w-[800px] lg:w-[1000px]'>
                     <MediaSelector selectedMediaType={selectedMediaType} handleUpdateSelectedMediaType={handleUpdateSelectedMediaType} />
                     <ImageViewer imgIndex={selectedImageIndex} updateSelectedImageIndex={updateSelectedImageIndex} updateIsShowingImageFullScreen={updateIsShowingImageFullScreen}/>
                     <button className='w-[200px] hover:bg-black hover:text-light7 py-2 my-8 border-black border rounded-md' onClick={toggleIsShowingAllImages}>{isShowingAllImages ? 'Hide All' : 'Show All'}</button>
@@ -88,16 +92,18 @@ export default function MediaPage({screenSize}) {
               <Footer />
             </div>
             :
+            <>
             <div className='flex flex-col items-center'>
               <MediaSelector selectedMediaType={selectedMediaType} handleUpdateSelectedMediaType={handleUpdateSelectedMediaType} />
-              <AudioViewer selectedAudioIndex={selectedAudioIndex} updateSelectedAudioIndex={updateSelectedAudioIndex}/>
+              <AudioViewer selectedAudioIndex={selectedAudioIndex} updateSelectedAudioIndex={updateSelectedAudioIndex} player={player} handleSetPlayer={handleSetPlayer}/>
               {/* key={selectedAudioIndex}  */}
               {/* <MediaSelector handleUpdateSelectedMediaType={handleUpdateSelectedMediaType} /> */}
               <AudioList updateSelectedAudioIndex={updateSelectedAudioIndex} />
-              <Footer />
+              
 
             </div>
-            
+            <Footer />
+            </>
             }
           
         </div>
