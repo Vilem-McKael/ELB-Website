@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function QuoteEndOfPage() {
   return (
-    <div className='w-full h-[300px] flex flex-col justify-center items-center'>
+    <div className='w-full h-[300px] mt-16 flex flex-col justify-center items-center'>
 
         {/* QUOTE CONTENTS */}
         <div className='flex items-center justify-center text-lg sm:text-xl italic px-8 md:px-0 w-full md:w-[500px] bg-derutaBg1 bg-contain bg-center rounded-xl border'>

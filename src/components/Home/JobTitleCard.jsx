@@ -4,7 +4,7 @@ import {selectedWorks} from '../../data/homePageCredits.js'
 
 export default function JobTitleCard({bgColor, alignment, title, tag, description, image, imageDescription, featuredWorks}) {
   return (
-    <div id={tag} className={`flex flex-row md:h-[540px] w-full border-b-black border-b-[1px]`}>
+    <div id={tag} className={`flex flex-row md:h-[540px] w-full`}>
         {alignment === 'left' ?
 
         <div className='flex flex-col-reverse md:flex-row h-full w-full'> 
