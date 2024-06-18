@@ -266,7 +266,7 @@ export const edieImages = [
 
     {
         image: edie44,
-        description: "Young Edie the organ in Toronto",
+        description: "Young Edie at the organ in Toronto",
     },
     {
         image: edie45,
@@ -314,7 +314,7 @@ export const edieImages = [
     },
     {
         image: edie57,
-        description: "Hidden Figures gospel choir with producers and eingeering Dennis Sands",
+        description: "Hidden Figures gospel choir with producers and engineer Dennis Sands",
     },
     {
         image: edie58,
@@ -330,11 +330,11 @@ export const edieImages = [
     },
     {
         image: edie61,
-        description: "Children's Choir singing tweets on Jimmy Kimmel Live!",
+        description: "Jimmy Kimmel Live! Kid's Choir for Clairo",
     },
     {
         image: edie62,
-        description: "Kid's Choir on Jimmy Kimmel",
+        description: "Children's Choir singing tweets on Jimmy Kimmel Live!",
     },
 
     {
@@ -407,7 +407,7 @@ export const edieImages = [
     },
     {
         image: edie97,
-        description: "",
+        description: "Private event in Beverly Hills with gospel choir",
     },
     {
         image: edie98,
@@ -477,6 +477,11 @@ export const videoData = [
         description: `Edie Lehmann Boddicker returns to Passionate Living for part 2 of an in-depth look into her vocal life and star-filled journey into hollywood music!\n
         If you're a fan of big blockbusters like Dune or Encanto, you won't want to miss this behind-the-scenes action.`,
         videoId: "Ge8peK70N2g"
+    },
+    {
+        title: "Jack Wagner & Edie Lehmann - Straight To My Heart",
+        description: "Performed on General Hospital - March 1990.",
+        videoId: "ag21zPg2ZG4"
     },
     {
         title: "Company - Robert Scorpio & Katherine Delafield, General Hospital",
@@ -557,7 +562,7 @@ export const audioData = [
     {
         title: "Gorgeous, Faithful, Classy, Smart and Sweet.mp3",
         artist: "Robert Kraft feat. Edie Lehmann",
-        album: "",
+        album: "N/A",
         description: "",
         audioFile: "/audio/Gorgeous, Faithful, Classy, Smart and Sweet by Robert Kraft.mp3",
         image: "/composerImages/robertKraft.webp"
@@ -574,7 +579,7 @@ export const audioData = [
         title: "United Together",
         artist: "Aretha Franklin",
         album: "United Together",
-        description: "",
+        description: "Backing vocals featured during the choruses (0:57, 1:55, 2:50)",
         audioFile: "/audio/Aretha Franklin - United Together.mp3",
         image: "/creditImages/unitedTogether.png"
     },
@@ -582,7 +587,7 @@ export const audioData = [
         title: "La Isla Bonita",
         artist: "Madonna",
         album: "True Blue",
-        description: "",
+        description: "Backing vocals throughout",
         audioFile: "/audio/La Isla Bonita.mp3",
         image: "/creditImages/trueBlue.jpg"
     },
@@ -590,7 +595,7 @@ export const audioData = [
         title: "Motor Mouth",
         artist: "Herbie Hancock",
         album: "Lite Me Up",
-        description: "",
+        description: "Backing vocals, solo vocals & vocoder",
         audioFile: "/audio/HERBIE HANCOCK - Motor mouth (1982).mp3",
         image: "/creditImages/liteMeUp.jpg"
     },
@@ -598,9 +603,17 @@ export const audioData = [
         title: "Wee B. Dooinit",
         artist: "Quincy Jones",
         album: "Back on the Block",
-        description: "",
+        description: "Vocal sample, backing vocals throughout",
         audioFile: "/audio/Quincy Jones  Wee B.DoinIt 1989.mp3",
         image: "/creditImages/backOnTheBlock.png"
+    },
+    {
+        title: "You Just Can't Smile It Away",
+        artist: "Bill Withers",
+        album: "Watching You Watching Me",
+        description: "Backing vocals featured during the choruses (1:13, 2:09)",
+        audioFile: "/audio/You Just Can't Smile It Away.mp3",
+        image: "/creditImages/watchingYouWatchingMe.jpeg"
     },
     // {
     //     title: "",

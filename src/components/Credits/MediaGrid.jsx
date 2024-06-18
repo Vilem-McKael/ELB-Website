@@ -4,21 +4,27 @@ import MediaContainer2 from './MediaContainer2'
 import MediaContainer3 from './MediaContainer3'
 import MediaContainer4 from './MediaContainer4'
 import MediaContainer5 from './MediaContainer5'
+import NewMediaContainer from './NewMediaContainer'
 
 export default function MediaGrid({data}) {
 
     const [creditData, setCreditData] = useState(data)
 
   return (
-    <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[3px] place-items-center'>
+    <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 place-items-start-center '>
         {typeof data === "object" && data.length > 0 ? 
           data.map((dataItem, index) => (
-            <MediaContainer key={index} title={dataItem.title} img={dataItem.img} roles={dataItem.roles} notes={dataItem.notes} index={index}/>
+            <div className='mb-2'>
+            <NewMediaContainer key={index} image={dataItem.img} title={dataItem.title} roles={dataItem.roles} work={dataItem.notes} index={index}/>
+            </div>
           ))
+          
           :
           <>
           </>
         }
+
+        {/* <MediaContainer key={index} title={dataItem.title} img={dataItem.img} roles={dataItem.roles} notes={dataItem.notes} index={index}/> */}
     </div>
   )
 }

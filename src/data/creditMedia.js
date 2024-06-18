@@ -7609,7 +7609,7 @@ export const FeaturedMedia = {
         },
         {
             title: "Aretha Franklin",
-            img: '/creditImages/arethaFranklin.webp',
+            img: '/creditImages/arethaFranklin.jpeg',
             roles: [r.Vocalist, r.Contractor, r.Arranger],
             notes: "",
             year: '',
@@ -7645,6 +7645,7 @@ export const FeaturedMedia = {
         { title: "Tower of Power", img: '/creditImages/towerOfPower.webp', roles: [r.Vocalist], notes: '', year: '', link: '' },
         { title: "Herbie Hancock", img: '/creditImages/herbieHancock2.jpeg', roles: [r.Vocalist, r.Vocoder], notes: '', year: '', link: '' },
         { title: "Ray Charles", img: '/creditImages/rayCharles.jpeg', roles: [r.Vocalist], notes: '', year: '', link: '' },
+        { title: "Don Henley", img:'/creditImages/donHenley2.jpeg', roles: [r.Vocalist], notes: '', year: '', link: ''},
         { title: "Jaco Pastorius", img: '/creditImages/jaco3.jpeg', roles: [r.Vocalist], notes: '', year: '', link: '' },
         { title: "Matthew Wilder", img: '/creditImages/matthewWilder.webp', roles: [r.Vocalist], notes: '', year: '', link: '' },
         { title: "James Ingram", img: '/creditImages/jamesIngram.webp', roles: [r.Vocalist], notes: '', year: '', link: '' },
@@ -7665,9 +7666,9 @@ export const FeaturedMedia = {
         { title: "Vonda Shepherd", img: '/creditImages/vondaShepard.jpeg', roles: [r.Vocalist], notes: '', year: '', link: '' },
         { title: "Patti Austin", img: '/creditImages/pattiAustin.jpeg', roles: [r.Vocalist], notes: '', year: '', link: '' },
         { title: "Vampire Weekend", img: '/creditImages/vampireWeekend2.png', roles: [r.Contractor], notes: '', year: '', link: '' },
-        { title: "The Used", img: '/creditImages/theUsed.webp', roles: [r.Vocalist], notes: '', year: '', link: '' },
+        { title: "The Used", img: '/creditImages/theUsed.webp', roles: [r.Vocalist, r.Arranger], notes: '', year: '', link: '' },
         { title: "Katy Perry", img: '/creditImages/katyPerry.jpeg', roles: [r.Contractor, r.Arranger, r.Vocalist, r.Conductor], notes: '', year: '', link: '' },
-        { title: "Rufus du Sol", img: '/creditImages/rufusDuSOl.jpeg', roles: [r.Vocalist], notes: '', year: '', link: ''},
+        { title: "Rüfüs du Sol", img: '/creditImages/rufusDuSOl.jpeg', roles: [r.Vocalist], notes: '', year: '', link: ''},
         { title: "Shawn Mendes", img: '/creditImages/shawnMendes2.jpeg', roles: [r.Contractor, r.Arranger, r.Vocalist], notes: '', year: '', link: '' },
         { title: "Camila Cabello", img: '/creditImages/camilaCabello.jpeg', roles: [r.Vocalist], notes: '', year: '', link: '' },
         { title: "Harry Styles", img: '/creditImages/harryStyles.jpeg', roles: [r.Contractor, r.Conductor], notes: '', year: '', link: '' },
@@ -7768,6 +7769,14 @@ export const FeaturedMedia = {
             link: ''
         },
         {
+            title: "BennettSalvay2",
+            img: '/composerImages/bennetSalvay.jpeg',
+            roles: [],
+            notes: "",
+            year: '',
+            link: ''
+        },
+        {
             title: "Bill Conti",
             img: '/composerImages/billConti.jpeg',
             roles: [],
@@ -7786,6 +7795,14 @@ export const FeaturedMedia = {
         {
             title: "Carmine Coppola",
             img: '/composerImages/carmineCoppola.jpeg',
+            roles: [],
+            notes: "",
+            year: '',
+            link: ''
+        },
+        {
+            title: "Charles Fox",
+            img: '/composerImages/charlesFox.jpeg',
             roles: [],
             notes: "",
             year: '',
@@ -7904,6 +7921,14 @@ export const FeaturedMedia = {
             link: ''
         },
         {
+            title: "Jesse Frederick",
+            img: '/composerImages/jesseFrederick.jpg',
+            roles: [],
+            notes: "",
+            year: '',
+            link: ''
+        },
+        {
             title: "John Debney",
             img: '/composerImages/johnDebney.webp',
             roles: [],
@@ -7954,6 +7979,14 @@ export const FeaturedMedia = {
         {
             title: "Marvin Hamlisch",
             img: '/composerImages/marvinHamlisch2.jpeg',
+            roles: [],
+            notes: "",
+            year: '',
+            link: ''
+        },
+        {
+            title: "Matthew Wilder",
+            img: '/composerImages/matthewWilder.jpeg',
             roles: [],
             notes: "",
             year: '',
@@ -8024,8 +8057,32 @@ export const FeaturedMedia = {
             link: ''
         },
         {
+            title: "Robert Kraft",
+            img: '/composerImages/robertKraft.webp',
+            roles: [],
+            notes: "",
+            year: '',
+            link: ''
+        },
+        {
             title: "Shirley Walker",
             img: '/composerImages/shirleyWalker.jpeg',
+            roles: [],
+            notes: "",
+            year: '',
+            link: ''
+        },
+        {
+            title: "Steven Price",
+            img: '/composerImages/stevenPrice3.webp',
+            roles: [],
+            notes: "",
+            year: '',
+            link: ''
+        },
+        {
+            title: "Theodore Shapiro",
+            img: '/composerImages/theodoreShapiro.webp',
             roles: [],
             notes: "",
             year: '',
@@ -8046,7 +8103,8 @@ export const FeaturedMedia = {
             notes: "",
             year: '',
             link: ''
-        }
+        },
+        
     ],
     Film: [
         {
@@ -8300,7 +8358,7 @@ export const FeaturedMedia = {
         { 
             title: "Ice Age: The Meltdown",
             img: '/creditImages/iceAge2.jpeg',
-            roles: [r.Contractor],
+            roles: [r.Contractor, r.Soloist, r.Vocalist],
             notes: '',
             year: '',
             link: ''
@@ -8420,7 +8478,7 @@ export const FeaturedMedia = {
         { 
             title: "Diary of a Wimpy Kid: Rodrick Rules",
             img: '/creditImages/diaryOfAWimpyKidRodrick.jpeg',
-            roles: [r.Vocalist],
+            roles: [r.Contractor],
             notes: '',
             year: '',
             link: ''
@@ -8428,7 +8486,7 @@ export const FeaturedMedia = {
         { 
             title: "Avatar",
             img: '/creditImages/avatarOne.jpeg',
-            roles: [r.Vocalist],
+            roles: [r.Contractor, r.Vocalist],
             notes: '',
             year: '',
             link: ''
@@ -8500,7 +8558,7 @@ export const FeaturedMedia = {
         { 
             title: "Robots",
             img: '/creditImages/robots.jpeg',
-            roles: [r.Contractor],
+            roles: [r.Contractor, r.Conductor, r.Vocalist],
             notes: '',
             year: '',
             link: ''
@@ -8682,7 +8740,7 @@ export const FeaturedMedia = {
         {
             title: "Family Guy",
             img: '/creditImages/familyguy2.webp',
-            roles: [r.Contractor, r.Vocalist],
+            roles: [r.Vocalist],
             notes: "",
             year: '',
             link: ''
@@ -8712,8 +8770,16 @@ export const FeaturedMedia = {
         {
             title: "Rugrats",
             img: '/creditImages/rugrats.png',
-            roles: [r.Conductor, r.Vocalist],
+            roles: [r.Vocalist],
             notes: '',
+            year: '',
+            link: ''
+        },
+        {
+            title: "Full House",
+            img: '/creditImages/fullHouse.jpg',
+            roles: [r.Theme],
+            notes: "",
             year: '',
             link: ''
         },
@@ -8760,7 +8826,7 @@ export const FeaturedMedia = {
         {
             title: "Self Made: Madam C.J. Walker",
             img: '/creditImages/selfMade3.jpeg',
-            roles: [r.Contractor],
+            roles: [r.Contractor, r.Vocalist],
             notes: '',
             year: '',
             link: ''
@@ -8770,6 +8836,14 @@ export const FeaturedMedia = {
             img: '/creditImages/angelsInAmerica2.jpeg',
             roles: [r.Vocalist],
             notes: '',
+            year: '',
+            link: ''
+        },
+        {
+            title: "Perfect Strangers",
+            img: '/creditImages/perfectStrangers.jpeg',
+            roles: [r.Theme],
+            notes: "",
             year: '',
             link: ''
         },
@@ -8808,7 +8882,7 @@ export const FeaturedMedia = {
         {
             title: "Back at the Barnyard",
             img: '/creditImages/backAtTheBarnyard3.jpeg',
-            roles: [],
+            roles: [r.Contractor],
             notes: '',
             year: '',
             link: ''
@@ -8833,6 +8907,14 @@ export const FeaturedMedia = {
             title: "The Snorks",
             img: '/creditImages/snorks.jpeg',
             roles: [r.Vocalist],
+            notes: '',
+            year: '',
+            link: ''
+        },
+        {
+            title: 'Animaniacs',
+            img: '/creditImages/animaniacs2.jpeg',
+            roles: [r.Theme],
             notes: '',
             year: '',
             link: ''
@@ -8904,7 +8986,7 @@ export const FeaturedMedia = {
         {
             title: "Altered Carbon",
             img: '/creditImages/alteredCarbon2.jpeg',
-            roles: [],
+            roles: [r.Prep],
             notes: "",
             year: '',
             link: ''
@@ -8912,7 +8994,7 @@ export const FeaturedMedia = {
         {
             title: "Deal or No Deal",
             img: '/creditImages/dealOrNoDeal.webp',
-            roles: [],
+            roles: [r.Vocalist],
             notes: "",
             year: '',
             link: ''
@@ -8920,7 +9002,7 @@ export const FeaturedMedia = {
         {
             title: "227",
             img: '/creditImages/227.jpeg',
-            roles: [r.Theme],
+            roles: [r.Theme, r.Vocalist],
             notes: "",
             year: '',
             link: ''
@@ -8952,7 +9034,7 @@ export const FeaturedMedia = {
         {
             title: "General Hospital",
             img: '/creditImages/generalHospital2.webp',
-            roles: [r.Actress, r.Musician],
+            roles: [r.Actress, r.Vocalist, r.Musician],
             notes: "",
             year: '',
             link: ''
@@ -9000,7 +9082,7 @@ export const FeaturedMedia = {
         {
             title: "The Ellen Show",
             img: '/creditImages/theEllenShow.jpeg',
-            roles: [],
+            roles: [r.Vocalist, r.Contractor],
             notes: "",
             year: '',
             link: ''
@@ -9008,7 +9090,7 @@ export const FeaturedMedia = {
         {
             title: "Steven Spielberg’s Amazing Stories",
             img: '/creditImages/amazingStories2.jpg',
-            roles: [],
+            roles: [r.Voclaist],
             notes: "",
             year: '',
             link: ''
@@ -9016,7 +9098,7 @@ export const FeaturedMedia = {
         {
             title: "Mr. Robot",
             img: '/creditImages/mrRobot2.jpeg',
-            roles: [],
+            roles: [r.Prep],
             notes: "",
             year: '',
             link: ''
@@ -9034,7 +9116,7 @@ export const FeaturedMedia = {
         {
             title: "Magic: The Gathering Arena",
             img: '/creditImages/mtgArena.avif',
-            roles: [r.Vocalist],
+            roles: [r. Contractor, r.Vocalist],
             notes: "",
             year: '',
             link: '',
@@ -9058,7 +9140,7 @@ export const FeaturedMedia = {
         {
             title: "The Walking Dead: Road to Survival",
             img: '/creditImages/twdRoad.jpeg',
-            roles: [r.Vocalist],
+            roles: [r. Contractor, r.Vocalist],
             notes: "",
             year: '',
             link: '',
@@ -9100,7 +9182,7 @@ export const FeaturedMedia = {
         {
             title: "Camila Cabello: Ellen",
             img: '',
-            roles: [r.Contractor],
+            roles: [r.Contractor, r.Arranger, r.Vocalist],
             notes: "",
             year: '',
             link: '',
@@ -9108,7 +9190,7 @@ export const FeaturedMedia = {
         {
             title: "The Used Live",
             img: '',
-            roles: [r.Contractor],
+            roles: [r.Contractor, r.Arranger],
             notes: "",
             year: '',
             link: '',

@@ -2,9 +2,9 @@ import React from 'react'
 import SelectedWorks from './SelectedWorks'
 import {selectedWorks} from '../../data/homePageCredits.js'
 
-export default function JobTitleCard({bgColor, alignment, title, tag, description, image, imageDescription, featuredWorks}) {
+export default function JobTitleCard({bgColor, alignment, title, tag, description, image, imageDescription, featuredWorks, imageOrigin}) {
   return (
-    <div id={tag} className={`flex flex-row md:h-[540px] w-full`}>
+    <div id={tag} className={`flex flex-row md:h-[560px] w-full`}>
         {alignment === 'left' ?
 
         <div className='flex flex-col-reverse md:flex-row h-full w-full'> 
@@ -36,7 +36,7 @@ export default function JobTitleCard({bgColor, alignment, title, tag, descriptio
             {/* FEATURED IMAGE */}
             <div className='w-full h-full' style={{backgroundColor: bgColor}}>
                 <div className='flex flex-col justify-evenly items-center w-full h-full'>
-                    <img src={image} className='object-cover h-full w-full object-left'/>
+                    <img src={image} className={`object-cover h-full w-full object-${imageOrigin}`}/>
                 </div>
             </div>
         </div>
@@ -48,7 +48,7 @@ export default function JobTitleCard({bgColor, alignment, title, tag, descriptio
             {/* FEATURED IMAGE */}
             <div className='w-full h-full' style={{backgroundColor: bgColor}}>
                 <div className='flex flex-col justify-evenly items-center w-full h-full'>
-                    <img src={image} className='object-cover h-full w-full object-right'/>
+                    <img src={image} className={`object-cover h-full w-full object-${imageOrigin}`}/>
                 </div>
             </div>
 

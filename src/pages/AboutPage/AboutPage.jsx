@@ -82,16 +82,16 @@ export default function AboutPage() {
                 </div>
                 <br />
                 <div>
-                Edie prioritizes serving the singer community and was repeatedly elected to Screen Actors Guild and AFTRA Boards of Directors for over eighteen years and served on the NARAS (Grammy) Board of Governors for four years.<br />
+                Edie prioritizes serving the singer community and was repeatedly elected to Screen Actors Guild and AFTRA Boards of Directors for over eighteen years and is currently serving her 3rd term on the NARAS (Grammy) Board of Governors.<br />
                 </div>
                 <br />
                 <div>
-                She continues singing, casting, conducting, coaching, arranging, consulting, and producing on hundreds of projects including albums, television shows, TV themes, live concerts, live broadcast productions and feature films.<br />
+                She continues singing, casting, conducting, coaching, arranging, consulting, and producing on hundreds of projects including albums, television shows, animation, TV themes, live concerts, live broadcast productions and feature films.<br />
               </div>
               <br />
               <div>
               <img src='/edieImages/The Lion King Capitol Records.jpg' className='w-full sm:w-auto sm:h-[200px] lg:h-[300px] sm:float-left mr-6 my-4'/>
-                Some of her recent work with esteemed composers Hans Zimmer, John Powell, Danny Elfman, Michael Abels, Germaine Franco includes Dune (2021), Encanto, Us, The Grinch (2018), The Lion King (2019), Hidden Figures, Solo - A Star Wars Story, The Call of the Wild (2020), La La Land, and many more. Additional projects include works for Netflix Animation, Nickelodeon, The Grammy Awards, The Voice, American Idol, Jimmy Kimmel and James Corden.<br />
+                Some of her recent work with esteemed composers Hans Zimmer, John Powell, Danny Elfman, Michael Abels, Germaine Franco includes Dune, Dune 2, Encanto, Us, Nope, The Grinch, Jon Favreau's The Lion King, Hidden Figures, Solo - A Star Wars Story, Migragion, The Call of the Wild, La La Land, and many more. Additional projects include works for Netflix Animation, Nickelodeon, The Grammy Awards, The Voice, American Idol, Jimmy Kimmel and James Corden.<br />
                 </div>
                 <br />
                 <div>

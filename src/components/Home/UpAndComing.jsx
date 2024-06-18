@@ -23,7 +23,7 @@ export default function UpAndComing() {
             <div className='flex flex-col items-center md:flex-row text-wrap w-full sm:w-[640px] md:w-full lg:w-[900px] xl:w-[1100px] md:h-[500px] pb-8'>
                 
                 <img src={theAcolyte} className='h-full w-full sm:w-[400px] md:w-[400px] object-cover object-top'/>
-                <div className='flex flex-col w-full sm:w-[400px] md:w-full h-full justify-center items-start p-4 sm:px-0 md:py-0 md:px-8 md:border-y-[1px] lg:border-r-[1px] border-black'>
+                <div className='flex flex-col w-full sm:w-[400px] md:w-full h-full justify-center items-start p-4 sm:px-0 md:py-0 md:px-8 '>
                     <div className='text-4xl font-semibold'>
                         The Acolyte
                     </div>
@@ -43,7 +43,7 @@ export default function UpAndComing() {
             {/* 2: KINGDOM OF THE PLANET OF THE APES */}
             <div className='flex flex-col items-center md:flex-row text-wrap w-full sm:w-[640px] md:w-full lg:w-[900px] xl:w-[1100px] md:h-[500px] pb-8'>
                 <img src={kingdom} className='h-full w-full sm:w-[400px] md:w-[400px] object-cover object-top'/>
-                <div className='flex flex-col w-full sm:w-[400px] md:w-full h-full justify-center items-start p-4 sm:px-0 md:py-0 md:px-8 md:border-y-[1px] lg:border-r-[1px] border-black object-left-top'>
+                <div className='flex flex-col w-full sm:w-[400px] md:w-full h-full justify-center items-start p-4 sm:px-0 md:py-0 md:px-8 object-left-top'>
                     <div className='text-4xl font-semibold'>
                         Kingdom of the Planet of the Apes
                     </div>
@@ -62,7 +62,7 @@ export default function UpAndComing() {
             {/* 3: THELMA THE UNICORN */}
             <div className='flex flex-col items-center md:flex-row text-wrap w-full sm:w-[640px] md:w-full lg:w-[900px] xl:w-[1100px] md:h-[500px] pb-8'>
                 <img src={thelmaTheUnicorn} className='h-full w-full sm:w-[400px] md:w-[400px] object-cover object-top'/>
-                <div className='flex flex-col w-full sm:w-[400px] md:w-full h-full justify-center items-start p-4 sm:px-0 md:py-0 md:px-8 md:border-y-[1px] lg:border-r-[1px] border-black object-left-top'>
+                <div className='flex flex-col w-full sm:w-[400px] md:w-full h-full justify-center items-start p-4 sm:px-0 md:py-0 md:px-8 object-left-top'>
                     <div className='text-4xl font-semibold'>
                         Thelma the Unicorn
                     </div>

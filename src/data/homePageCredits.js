@@ -8,7 +8,7 @@ import encanto from '/creditImages/encanto.webp'
 
 import theSimpsons from '/creditImages/thesimpsons.webp'
 import rio from '/creditImages/rio.jpeg'
-import aretha from '/creditImages/arethaFranklin.webp'
+import aretha from '/creditImages/arethaFranklin.jpeg'
 import codbo4 from '/creditImages/codBlackOps4.jpeg'
 import billWithers from '/creditImages/billWithers.webp'
 import whitneyHouston from '/creditImages/whitneyHouston.webp'
@@ -39,6 +39,8 @@ import americanIdol from '/creditImages/americanIdol2.jpeg'
 import katyPerry from '/creditImages/pendulum.jpeg'
 import trueBlue from '/creditImages/trueBlue.jpg'
 import thirtySeconds from '/creditImages/walkOnWater.jpeg'
+
+import liteMeUp from '/creditImages/liteMeUp.jpg'
 
 
 
@@ -169,8 +171,8 @@ export const selectedWorks = {
             title: "The Voice - Natural Woman"
         },
         {
-            image: theVoice,
-            title: "The Voice"
+            image: liteMeUp,
+            title: "Herbie Hancock (Vocoder, Motor Mouth)"
         },
     ],
     "vocal-coach": [

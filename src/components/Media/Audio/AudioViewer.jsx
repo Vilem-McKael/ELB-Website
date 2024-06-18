@@ -123,7 +123,7 @@ export default function AudioViewer({selectedAudioIndex, updateSelectedAudioInde
     }
 
   return (
-    <div className='flex flex-col justify-start items-center w-auto sm:w-[360px] sm:h-[650px] bg-gray-200 mb-12 border border-black m-4 sm:m-0 sm:mt-12'>
+    <div className='flex flex-col justify-start items-center w-auto sm:w-[320px] sm:h-[560px] bg-gray-200 mb-12 border border-black m-4 sm:m-0 sm:mt-12'>
 
         {/* AUDIO IMAGE */}
         <img src={audioData[selectedAudioIndex].image} className='p-4 aspect-square object-cover' />
@@ -146,7 +146,7 @@ export default function AudioViewer({selectedAudioIndex, updateSelectedAudioInde
 
             {/* REWIND ICON */}
             <div>
-                <i className='flaticon-rewind text-xl sm:text-2xl pt-2'></i>
+                <i className='flaticon-rewind text-xl pt-2'></i>
             </div>
 
             {/* TRACK DURATION DISPLAY */}
@@ -156,7 +156,7 @@ export default function AudioViewer({selectedAudioIndex, updateSelectedAudioInde
 
             {/* FAST FORWARD ICON */}
             <div>
-                <i className='flaticon-fast-forward-1 text-xl sm:text-2xl pt-2'></i>
+                <i className='flaticon-fast-forward-1 text-xl pt-2'></i>
             </div>
 
             {/* FAST FORWARD BUTTONS */}
@@ -175,11 +175,11 @@ export default function AudioViewer({selectedAudioIndex, updateSelectedAudioInde
         </div>
 
         {/* START & STOP, NEXT & PREVIOUS BUTTONS */}
-        <div className='flex justify-between w-full px-4 pt-3 items-center text-4xl sm:text-5xl'>
+        <div className='flex justify-between w-full px-4 pt-3 items-center text-4xl'>
             
             {/* PREVIOUS AUDIO FILE BUTTON */}
             <button onClick={handleShowPrev} className='mb-1'>
-                <i className='flaticon-left-arrow text-center text-3xl sm:text-4xl'></i>
+                <i className='flaticon-left-arrow text-center text-3xl'></i>
             </button>
 
             {/* START, PAUSE, AND STOP BUTTONS */}
@@ -204,22 +204,22 @@ export default function AudioViewer({selectedAudioIndex, updateSelectedAudioInde
 
             {/* NEXT AUDIO FILE BUTTON */}
             <button onClick={handleShowNext} className='mb-1'>
-                <i className='flaticon-right-arrow text-center text-3xl sm:text-4xl'></i>
+                <i className='flaticon-right-arrow text-center text-3xl'></i>
             </button>
 
         </div>
 
         {/* AUDIO DESCRIPTION */}
-        <div className='p-4'>
+        <div className='px-8 py-4 w-full'>
 
             {/* TITLE */}
-            <div className='font-semibold text-lg'>{audioData[selectedAudioIndex].title}</div>
+            <div className='font-semibold text-md'>{audioData[selectedAudioIndex].title}</div>
 
             {/* ARTIST & ALBUM */}
-            <div className='text-lg'>{audioData[selectedAudioIndex].artist} - {audioData[selectedAudioIndex].album}</div>
+            <div className='text-md'>{audioData[selectedAudioIndex].artist} - {audioData[selectedAudioIndex].album}</div>
 
             {/* DESCRIPTION */}
-            <div className='pt-4'>{audioData[selectedAudioIndex].description}</div>
+            <div className='pt-4 text-sm'>{audioData[selectedAudioIndex].description}</div>
 
         </div>
     </div>
