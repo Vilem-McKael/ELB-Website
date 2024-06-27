@@ -9,6 +9,7 @@ export default {
         'searchlights': "url('/other/searchlights.jpeg')",
         'derutaBg1': "url('/deruta/derutaAncientTileSingle.png')",
         'derutaBg2': "url('/deruta/derutaAncientTileTriple.png')",
+        'audioBg': "url('/other/aluminumTexture.jpeg')",
       },
       fontFamily: {
         'inter': ['Inter', 'sans-serif'],

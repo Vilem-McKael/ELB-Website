@@ -2,13 +2,12 @@ import React, {useEffect, useState} from 'react'
 import { Howl } from 'howler'
 import { audioData } from '../../../data/mediaData'
 
-export default function AudioViewer({selectedAudioIndex, updateSelectedAudioIndex, player, handleSetPlayer}) {
+export default function AudioViewer({selectedAudioIndex, updateSelectedAudioIndex, player, handleSetPlayer, timeDisplay, handleSetTimeDisplay}) {
 
     const [selectedAudio, setSelectedAudio] = useState(audioData[selectedAudioIndex])
     
     const [isPlaying, setIsPlaying] = useState(false)
     // const [songPosition, setSongPosition] = useState(0)
-    const [timeDisplay, setTimeDisplay] = useState('0:00')
 
     // ****************** FIX THIS SO THAT SONG STOPS PLAYING AFTER EXITING
     // USE EFFECT TO CANCEL PLAYBACK ON LEAVING PAGE
@@ -54,7 +53,7 @@ export default function AudioViewer({selectedAudioIndex, updateSelectedAudioInde
                     console.log("Audio finished")
                     clearInterval(newPlayer._interval)
                     // setSongPosition(0)
-                    setTimeDisplay('0:00')
+                    handleSetTimeDisplay('0:00')
                     setIsPlaying(false)
                 },
             })
@@ -78,7 +77,7 @@ export default function AudioViewer({selectedAudioIndex, updateSelectedAudioInde
             player.stop()
             clearInterval(player._interval)
             // setSongPosition(0)
-            setTimeDisplay('0:00')
+            handleSetTimeDisplay('0:00')
             setIsPlaying(false)
         }
     }
@@ -101,7 +100,7 @@ export default function AudioViewer({selectedAudioIndex, updateSelectedAudioInde
         let minutes = Math.floor(currentPosition / 60)
         let seconds = Math.floor(currentPosition % 60)
         seconds = seconds < 10 ? '0' + `${seconds}` : seconds.toString()
-        setTimeDisplay(`${minutes}:${seconds}`)
+        handleSetTimeDisplay(`${minutes}:${seconds}`)
     }
     
     // NEXT AUDIO
@@ -123,16 +122,16 @@ export default function AudioViewer({selectedAudioIndex, updateSelectedAudioInde
     }
 
   return (
-    <div className='flex flex-col justify-start items-center w-auto sm:w-[320px] sm:h-[560px] bg-gray-200 mb-12 border border-black m-4 sm:m-0 sm:mt-12'>
+    <div className='flex flex-col justify-start items-center w-auto sm:w-[320px] sm:h-[590px] bg-audioBg mb-12 border border-black m-4 sm:m-0 sm:mt-12 rounded-xl shadow-black shadow-sm'>
 
         {/* AUDIO IMAGE */}
-        <img src={audioData[selectedAudioIndex].image} className='p-4 aspect-square object-cover' />
+        <img src={audioData[selectedAudioIndex].image} className='p-4 aspect-square object-cover bg-black/80 rounded-t-xl' />
 
         {/* DURATION DISPLAY AND CONTROLS */}
-        <div className='flex justify-between w-full px-4 items-center'>
+        <div className='flex justify-between mx-4 px-2 items-center py-1 mt-2 bg-light7/60 rounded-lg'>
 
             {/* REWIND BUTTONS */}
-            <div className='flex flex-row gap-2 sm:gap-3 pb-2 text-sm sm:text-md'>
+            <div className='flex flex-row gap-3 pb-1 text-md sm:text-sm sm:text-md'>
                 <button onClick={() => handleSkip(-60)}>
                     1m
                 </button>
@@ -145,9 +144,9 @@ export default function AudioViewer({selectedAudioIndex, updateSelectedAudioInde
             </div>
 
             {/* REWIND ICON */}
-            <div>
-                <i className='flaticon-rewind text-xl pt-2'></i>
-            </div>
+            <button onClick={() => handleSkip(-5)}>
+                <i className='flaticon-rewind text-xl pt-2 px-2'></i>
+            </button>
 
             {/* TRACK DURATION DISPLAY */}
             <div className='flex justify-center w-[60px] sm:w-[76px] text-2xl sm:pb-1 bg-black text-light7 px-2 rounded-md'>
@@ -155,12 +154,12 @@ export default function AudioViewer({selectedAudioIndex, updateSelectedAudioInde
             </div>
 
             {/* FAST FORWARD ICON */}
-            <div>
-                <i className='flaticon-fast-forward-1 text-xl pt-2'></i>
-            </div>
+            <button onClick={() => handleSkip(5)}>
+                <i className='flaticon-fast-forward-1 text-2xl sm:text-xl pt-2 px-2'></i>
+            </button>
 
             {/* FAST FORWARD BUTTONS */}
-            <div className='flex flex-row gap-2 sm:gap-3 pb-2 text-sm sm:text-md'>
+            <div className='flex flex-row gap-3 pb-1 text-md sm:text-sm sm:text-md'>
                 <button onClick={() => handleSkip(15)}>
                     15
                 </button>
@@ -175,11 +174,11 @@ export default function AudioViewer({selectedAudioIndex, updateSelectedAudioInde
         </div>
 
         {/* START & STOP, NEXT & PREVIOUS BUTTONS */}
-        <div className='flex justify-between w-full px-4 pt-3 items-center text-4xl'>
+        <div className='flex justify-between w-full px-4 pt-3 items-center text-5xl sm:text-4xl'>
             
             {/* PREVIOUS AUDIO FILE BUTTON */}
             <button onClick={handleShowPrev} className='mb-1'>
-                <i className='flaticon-left-arrow text-center text-3xl'></i>
+                <i className='flaticon-left-arrow text-center text-4xl sm:text-3xl'></i>
             </button>
 
             {/* START, PAUSE, AND STOP BUTTONS */}
@@ -204,13 +203,13 @@ export default function AudioViewer({selectedAudioIndex, updateSelectedAudioInde
 
             {/* NEXT AUDIO FILE BUTTON */}
             <button onClick={handleShowNext} className='mb-1'>
-                <i className='flaticon-right-arrow text-center text-3xl'></i>
+                <i className='flaticon-right-arrow text-center text-4xl sm:text-3xl'></i>
             </button>
 
         </div>
 
         {/* AUDIO DESCRIPTION */}
-        <div className='px-8 py-4 w-full'>
+        <div className='px-8 py-4 w-full h-full'>
 
             {/* TITLE */}
             <div className='font-semibold text-md'>{audioData[selectedAudioIndex].title}</div>

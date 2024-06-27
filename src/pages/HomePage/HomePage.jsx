@@ -17,10 +17,10 @@ export default function HomePage() {
   return (
     <div className="flex flex-col w-full items-center bg-light7">
         <HomeHeader />
-        <StudioCollaborations />
         <UpAndComing />
-        <FeaturedCredits />
         <RolesAndHighlights />
+        <FeaturedCredits />
+        <StudioCollaborations />
         <QuoteEndOfPage />
         <HashLink smooth to="/#home-header" className='text-black bg-gray-100 sm:hover:text-white snm:hover:bg-black w-full h-[80px] flex items-center justify-center border-black border-t-[1px]'>
         Back to Top

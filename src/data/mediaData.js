@@ -565,7 +565,7 @@ export const audioData = [
         album: "N/A",
         description: "",
         audioFile: "/audio/Gorgeous, Faithful, Classy, Smart and Sweet by Robert Kraft.mp3",
-        image: "/composerImages/robertKraft.webp"
+        image: "/composerImages/robertKraft.jpg"
     },
     {
         title: "Night Time Is The Right Time",

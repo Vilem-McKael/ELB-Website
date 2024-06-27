@@ -5,10 +5,10 @@ export default function FeaturedWorkCardHome({image, title, work, roles}) {
     <div className='flex flex-col w-full sm:w-[240px] md:w-[280px] justify-start items-center font-medium'>
 
       {/* WORK IMAGE */}
-      <img src={image} className='sm:w-[240px] md:w-[280px] sm:h-[240px] lg:w-[320px] object-cover'/>
+      <img src={image} className='sm:w-[240px] md:w-[280px] lg:w-[320px] aspect-square object-cover'/>
 
       {/* WORK DESCRIPTION */}
-      <div className='my-4 w-[280px] lg:w-[300px]'>
+      <div className='my-4 w-full pl-4 md:pl-0'>
 
         {/* TITLE */}
         <div className='font-semibold text-2xl'>

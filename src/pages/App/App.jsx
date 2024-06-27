@@ -13,12 +13,14 @@ import SlideOutMenu from '../../components/SlideOutMenu/SlideOutMenu'
 import MobileBurgerMenu from '../../components/NavBar/MobileBurgerMenu'
 import MediaPage from '../MediaPage/MediaPage'
 import LandscapeMobileMenu from '../../components/NavBar/LandscapeMobileMenu'
+import ScrollToTopButton from '../../components/ScrollToTopButton/ScrollToTopButton'
 
 function App() {
 
   const [currentPage, setCurrentPage] = useState("Home")
   const [isShowingSlideOutMenu, setIsShowingSlideOutMenu] = useState(false)
   const [screenSize, setScreenSize] = useState(null)
+  const [isShowingScrollToTop, setIsShowingScrollToTop] = useState(false)
 
   // audio player
   const [player, setPlayer] = useState(null)
@@ -39,6 +41,24 @@ function App() {
   const updateIsShowingSlideOutMenu = useCallback((bool) => {
     setIsShowingSlideOutMenu(bool)
   }, [])
+
+
+
+  const scrollToTop = useCallback(() => {
+    window.scroll({
+      top: 0,
+      left: 0,
+      behavior: "smooth"
+  })
+  })
+
+  const updateIsShowingScrollToTop = useCallback(() => {
+    if (!isShowingScrollToTop && window.scrollY > 100) {
+      setIsShowingScrollToTop(true)
+    } else if (window.scrollY === 0) {
+      setIsShowingScrollToTop(false)
+    }
+  } )
 
 
 
@@ -95,12 +115,18 @@ function App() {
 
   useEffect(() => {
 
-    const listener = () => checkScreenSize()
-    window.addEventListener('resize', listener)
+    const resizeListener = () => checkScreenSize()
+    window.addEventListener('resize', resizeListener)
+
+    const scrollListener = () => updateIsShowingScrollToTop()
+    window.addEventListener('scroll', scrollListener)
 
     checkScreenSize()
 
-    return () => window.removeEventListener('resize', listener)
+    return () => {
+      window.removeEventListener('resize', resizeListener)
+      window.removeEventListener('scroll', scrollListener)
+    }
   }, [checkScreenSize])
 
   return (
@@ -123,6 +149,10 @@ function App() {
               </Routes>
             </div>
             <SlideOutMenu screenSize={screenSize} currentPage={currentPage} updateCurrentPage={updateCurrentPage} isVisible={isShowingSlideOutMenu} updateIsShowingSlideOutMenu={updateIsShowingSlideOutMenu} />
+
+            <ScrollToTopButton isShowingScrollToTop={isShowingScrollToTop}/>
+
+            
           </div>
         </div>
       </main>

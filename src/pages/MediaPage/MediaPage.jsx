@@ -25,6 +25,8 @@ export default function MediaPage({screenSize, player, handleSetPlayer}) {
   const [isShowingAllImages, setIsShowingAllImages] = useState(false)
   const [isShowingImageFullScreen, setIsShowingImageFullScreen] = useState(false)
 
+  const [timeDisplay, setTimeDisplay] = useState('0:00')
+
   const handleUpdateSelectedMediaType = (newMediaType) => {
     setSelectedMediaType(newMediaType)
     if (player) {
@@ -51,10 +53,15 @@ export default function MediaPage({screenSize, player, handleSetPlayer}) {
 
   const updateIsShowingImageFullScreen = useCallback((bool) => {
     setIsShowingImageFullScreen(bool)
-  })
+  }, [isShowingImageFullScreen])
+
+  const handleSetTimeDisplay = useCallback((newTime) => {
+    setTimeDisplay(newTime)
+  }, [timeDisplay])
 
   return (
     <div className='flex w-full flex-col items-center'>
+      <div id='media-top' className='h-0 w-0 invisible'></div>
       {/* <MediaSelector selectedMediaType={selectedMediaType} handleUpdateSelectedMediaType={handleUpdateSelectedMediaType} /> */}
         <div className='w-full flex flex-col items-center font-barlow'>
             {selectedMediaType === 'images' ?
@@ -95,10 +102,10 @@ export default function MediaPage({screenSize, player, handleSetPlayer}) {
             <>
             <div className='flex flex-col items-center'>
               <MediaSelector selectedMediaType={selectedMediaType} handleUpdateSelectedMediaType={handleUpdateSelectedMediaType} />
-              <AudioViewer selectedAudioIndex={selectedAudioIndex} updateSelectedAudioIndex={updateSelectedAudioIndex} player={player} handleSetPlayer={handleSetPlayer}/>
+              <AudioViewer selectedAudioIndex={selectedAudioIndex} updateSelectedAudioIndex={updateSelectedAudioIndex} player={player} handleSetPlayer={handleSetPlayer} timeDisplay={timeDisplay} handleSetTimeDisplay={handleSetTimeDisplay}/>
               {/* key={selectedAudioIndex}  */}
               {/* <MediaSelector handleUpdateSelectedMediaType={handleUpdateSelectedMediaType} /> */}
-              <AudioList updateSelectedAudioIndex={updateSelectedAudioIndex} />
+              <AudioList updateSelectedAudioIndex={updateSelectedAudioIndex} player={player} handleSetPlayer={handleSetPlayer} handleSetTimeDisplay={handleSetTimeDisplay} />
               
 
             </div>

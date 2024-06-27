@@ -7768,8 +7768,17 @@ export const FeaturedMedia = {
             year: '',
             link: ''
         },
+    
         {
-            title: "BennettSalvay2",
+            title: "Benjamin Wallfisch",
+            img: '/composerImages/benWallfisch.jpg',
+            roles: [],
+            notes: "",
+            year: '',
+            link: ''
+        },
+        {
+            title: "Bennett Salvay",
             img: '/composerImages/bennetSalvay.jpeg',
             roles: [],
             notes: "",
@@ -7811,6 +7820,14 @@ export const FeaturedMedia = {
         {
             title: "Danny Elfman",
             img: '/composerImages/dannyElfman.jpeg',
+            roles: [],
+            notes: "",
+            year: '',
+            link: ''
+        },
+        {
+            title: "David Fleming",
+            img: '/composerImages/davidFleming.jpeg',
             roles: [],
             notes: "",
             year: '',
@@ -8058,7 +8075,7 @@ export const FeaturedMedia = {
         },
         {
             title: "Robert Kraft",
-            img: '/composerImages/robertKraft.webp',
+            img: '/composerImages/robertKraft.jpg',
             roles: [],
             notes: "",
             year: '',
@@ -8434,6 +8451,14 @@ export const FeaturedMedia = {
             notes: '',
             year: '',
             link: ''
+        },
+        {
+            title: "The Sea Beast",
+            img: '/creditImages/theSeaBeast.jpeg',
+            roles: [r.Vocalist, r.Contractor],
+            notes: '',
+            year: '',
+            link: '',
         },
         { 
             title: "Thor",
@@ -9196,7 +9221,7 @@ export const FeaturedMedia = {
             link: '',
         },
         {
-            title: "Vampire Weekend: The Late Late Show with James Cordon",
+            title: "Vampire Weekend - The Late Late Show with James Cordon",
             img: '',
             roles: [r.Contractor],
             notes: "",
@@ -9204,7 +9229,7 @@ export const FeaturedMedia = {
             link: '',
         },
         {
-            title: "Hans Zimmer in Concert",
+            title: "Hans Zimmer at the Hollywood Bowl",
             img: '',
             roles: [r.Performer, r.Vocalist, r.Contractor],
             notes: "",
@@ -9218,6 +9243,22 @@ export const FeaturedMedia = {
             notes: "",
             year: '',
             link: '',
+        },
+        {
+            title: "Dreamworks Animation In Concert - Celebrating 20 Years",
+            img: "",
+            roles: [],
+            notes: "",
+            year: '',
+            link: ''
+        },
+        {
+            title: "Open Paths - Fundraiser",
+            img: "",
+            roles: [],
+            notes: "",
+            year: '',
+            link: ''
         },
         {
             title: "The Yeah Yeah Yeahs - Coachella",
@@ -9237,6 +9278,30 @@ export const FeaturedMedia = {
         },
         {
             title: "Danny Elfman's Nightmare Before Christmas at the Hollywood Bowl",
+            img: '',
+            roles: [r.Performer, r.Vocalist, r.Contractor],
+            notes: "",
+            year: '',
+            link: '',
+        },
+        {
+            title: "Awolnation - The Late Late Show with James Corden",
+            img: '',
+            roles: [r.Performer, r.Vocalist, r.Contractor],
+            notes: "",
+            year: '',
+            link: '',
+        },
+        {
+            title: "Tubular Bells 2 Live at Edinburgh Castle - Mike Oldfield",
+            img: '',
+            roles: [r.Performer, r.Vocalist, r.Contractor],
+            notes: "",
+            year: '',
+            link: '',
+        },
+        {
+            title: "Danny Elfman - Sick New World at the Las Vegas Festival Grounds",
             img: '',
             roles: [r.Performer, r.Vocalist, r.Contractor],
             notes: "",

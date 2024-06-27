@@ -82,15 +82,15 @@ export default function HomeHeader() {
         <div className='w-full sm:h-[150px] md:h-[150px] max-w-[1100px] gap-4 flex flex-col sm:flex-row md:flex-row items-center justify-evenly text-sm font-barlow pt-4 font-default mb-8 px-2'>
 
             {/* STUDIO COLLABORATIONS */}
-            <HashLink to={'/#studio-collaborations'} scroll={element => scrollWithNavbarOffset(element, document.documentElement.clientWidth >= 640 ? 150 : 80)} className='border-teal4 border-b-[4px] flex flex-col items-center justify-center text-sm sm:text-lg group' >
+            <HashLink to={'/#up-and-coming'} scroll={element => scrollWithNavbarOffset(element, document.documentElement.clientWidth >= 640 ? 150 : 80)} className='border-teal4 border-b-[4px] flex flex-col items-center justify-center text-sm sm:text-lg group' >
                 <i className='flaticon-right-arrow text-xl rotate-[90deg] sm:rotate-[-90deg] transform sm:group-hover:rotate-90 sm:group-hover:text-teal4 duration-200'></i>
-                <div className='transform duration-100 sm:group-hover:text-xl object-center'>Studio Collaborations</div>
+                <div className='transform duration-100 sm:group-hover:text-xl object-center'>Up & Coming</div>
             </HashLink>
 
             {/* UP & COMING */}
-            <HashLink to={'/#up-and-coming'} scroll={element => scrollWithNavbarOffset(element, document.documentElement.clientWidth >= 640 ? 150 : 80)} className='border-burntOrange5 border-b-[4px] flex flex-col items-center justify-center text-sm sm:text-lg group' >
+            <HashLink to={'/#roles-&-highlights'} scroll={element => scrollWithNavbarOffset(element, document.documentElement.clientWidth >= 640 ? 150 : 80)} className='border-burntOrange5 border-b-[4px] flex flex-col items-center justify-center text-sm sm:text-lg group' >
                 <i className='flaticon-right-arrow text-xl rotate-[90deg] sm:rotate-[-90deg] transform sm:group-hover:rotate-90 sm:group-hover:text-burntOrange5 duration-200'></i>
-                <div className='transform duration-100 sm:group-hover:text-[20px] object-center'>Up & Coming / Current</div>
+                <div className='transform duration-100 sm:group-hover:text-[20px] object-center'>Roles & Highlights</div>
             </HashLink>
 
             {/* RECENT WORK */}
@@ -106,9 +106,9 @@ export default function HomeHeader() {
             </HashLink>
 
             {/* ROLES & HIGHLIGHTS */}
-            <HashLink to={'/#roles-&-highlights'} scroll={element => scrollWithNavbarOffset(element, document.documentElement.clientWidth >= 640 ? 150 : 80)} className='border-terracotta border-b-[4px] flex flex-col items-center justify-center text-sm sm:text-lg group' >
+            <HashLink to={'/#studio-collaborations'} scroll={element => scrollWithNavbarOffset(element, document.documentElement.clientWidth >= 640 ? 150 : 80)} className='border-terracotta border-b-[4px] flex flex-col items-center justify-center text-sm sm:text-lg group' >
                 <i className='flaticon-right-arrow text-xl rotate-[90deg] sm:rotate-[-90deg] transform sm:group-hover:rotate-90 sm:group-hover:text-terracotta duration-200'></i>
-                <div className='transform duration-100 sm:group-hover:text-xl object-center'>Roles & Highlights</div>
+                <div className='transform duration-100 sm:group-hover:text-xl object-center'>Studio Collaborations</div>
             </HashLink>
 
         </div>

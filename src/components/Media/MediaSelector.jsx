@@ -6,7 +6,7 @@ export default function MediaSelector({selectedMediaType, handleUpdateSelectedMe
     // <button onClick={() => handleUpdateSelectedMediaType('images')} className='h-[80px] flex flex-col items-center justify-center p-4 border-r border-black rounded-l-xl hover:text-4xl duration-150' style={{backgroundColor: selectedMediaType === 'images' ? 'rgb(86 102 50)' : '#A8A8A1', width: selectedMediaType === 'images' ? '160px' : '120px'}}></button>
 
   return (
-    <div className="flex flex-row justify-center items-center text-3xl sm:mt-16 border-b mobileLandscape:border-0 sm:border-t sm:border-x border-black text-light7 mx-2 w-full sm:w-auto z-10">
+    <div id="media-selector" className="flex flex-row justify-center items-center text-3xl sm:mt-16 border-b mobileLandscape:border-0 sm:border-t sm:border-x border-black text-light7 sm:mx-2 w-full sm:w-auto z-10">
 
           {/* IMAGES BUTTON */}
           <button onClick={() => handleUpdateSelectedMediaType('images')} className={`h-[80px] flex flex-col items-center justify-center p-4 border-r border-black hover:text-4xl transform duration-150`} style={{backgroundColor: selectedMediaType === 'images' ? '#566632' : 'transparent', color: selectedMediaType === 'images' ? '#f8f8f1' : 'black', width: selectedMediaType === 'images' ? '160px' : '120px'}}>

@@ -11,7 +11,7 @@ export default function MediaGrid({data}) {
     const [creditData, setCreditData] = useState(data)
 
   return (
-    <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 place-items-start-center '>
+    <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 place-items-start-center gap-[1px]'>
         {typeof data === "object" && data.length > 0 ? 
           data.map((dataItem, index) => (
             <div className='mb-2'>
