@@ -13,6 +13,10 @@ export default function NavBarLink({title, to, iconName, tabColor, tabClass, cur
         }
         updateCurrentPage(title)
         navigate(to)
+        window.scroll({
+          top: 0,
+          left: 0,
+        })
     }
     // className='flex flex-row items-center'
     

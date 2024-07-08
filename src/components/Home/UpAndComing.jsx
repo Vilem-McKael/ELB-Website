@@ -6,7 +6,7 @@ import kingdom from '/creditImages/kingdom2.webp'
 
 export default function UpAndComing() {
   return (
-    <div id='up-and-coming' className='flex flex-col w-full items-center'>
+    <div id='up-and-coming' className='flex flex-col w-full items-center mx-8'>
 
         {/* SECTION TITLE: UP & COMING */}
         <div className='sticky top-[80px] mobileLandscape:top-0 sm:top-[150px] w-full border-b-[8px] flex justify-center items-center px-4 py-4 sm:px-16 border-green bg-light7 mb-8 md:mb-16'>
@@ -20,7 +20,7 @@ export default function UpAndComing() {
         
         {/* 1: THE ACOLYTE */}
         <div className='flex flex-col w-full sm:w-[640px] md:w-full lg:w-[900px] xl:w-[1100px] items-center'>
-            <div className='flex flex-col items-center md:flex-row text-wrap w-full sm:w-[640px] md:w-full lg:w-[900px] xl:w-[1100px] md:h-[500px] pb-8'>
+            <div className='flex flex-col items-center md:flex-row text-wrap w-full sm:w-[640px] md:w-full lg:w-[900px] xl:w-[1100px] md:h-[500px] mb-8 md:shadow-lg md:shadow-black'>
                 
                 <img src={theAcolyte} className='h-full w-full sm:w-[400px] md:w-[400px] object-cover object-top'/>
                 <div className='flex flex-col w-full sm:w-[400px] md:w-full h-full justify-center items-start p-4 sm:px-0 md:py-0 md:px-8 '>
@@ -41,7 +41,7 @@ export default function UpAndComing() {
             </div>
 
             {/* 2: KINGDOM OF THE PLANET OF THE APES */}
-            <div className='flex flex-col items-center md:flex-row text-wrap w-full sm:w-[640px] md:w-full lg:w-[900px] xl:w-[1100px] md:h-[500px] pb-8'>
+            <div className='flex flex-col items-center md:flex-row text-wrap w-full sm:w-[640px] md:w-full lg:w-[900px] xl:w-[1100px] md:h-[500px] mb-8 md:shadow-lg md:shadow-black'>
                 <img src={kingdom} className='h-full w-full sm:w-[400px] md:w-[400px] object-cover object-top'/>
                 <div className='flex flex-col w-full sm:w-[400px] md:w-full h-full justify-center items-start p-4 sm:px-0 md:py-0 md:px-8 object-left-top'>
                     <div className='text-4xl font-semibold'>
@@ -60,7 +60,7 @@ export default function UpAndComing() {
             </div>
 
             {/* 3: THELMA THE UNICORN */}
-            <div className='flex flex-col items-center md:flex-row text-wrap w-full sm:w-[640px] md:w-full lg:w-[900px] xl:w-[1100px] md:h-[500px] pb-8'>
+            <div className='flex flex-col items-center md:flex-row text-wrap w-full sm:w-[640px] md:w-full lg:w-[900px] xl:w-[1100px] md:h-[500px] mb-8 md:shadow-lg md:shadow-black'>
                 <img src={thelmaTheUnicorn} className='h-full w-full sm:w-[400px] md:w-[400px] object-cover object-top'/>
                 <div className='flex flex-col w-full sm:w-[400px] md:w-full h-full justify-center items-start p-4 sm:px-0 md:py-0 md:px-8 object-left-top'>
                     <div className='text-4xl font-semibold'>

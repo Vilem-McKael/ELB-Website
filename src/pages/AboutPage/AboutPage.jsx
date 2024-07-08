@@ -20,7 +20,7 @@ export default function AboutPage() {
           </div>
 
           {/* CONTENT BODY */}
-          <div className='w-full flex flex-col items-center bg-light7 bg-opacity-85'>
+          <div className='w-full flex flex-col items-center bg-light7 bg-opacity-95'>
           <div className='mt-16 text-md w-full px-4 sm:px-0 sm:w-[600px] md:w-[800px] lg:w-[1000px] leading-relaxed indent-8 font-barlow'>
             <div>
               <img src='/edieImages/edie21.jpeg' className='sm:h-[214px] lg:h-[321px] w-full sm:w-auto sm:float-right sm:ml-6 my-4'/>

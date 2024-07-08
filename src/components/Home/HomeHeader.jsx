@@ -18,15 +18,15 @@ export default function HomeHeader() {
 
             {/* HEADSHOT & IMAGE DESCRIPTION // COL */}
             <div className='w-full h-full flex justify-center md:justify-end bg-green/25 px-8'>
-                <div className='w-full sm:w-[400px] md:w-[300px] flex flex-col justify-start items-center md:items-end'>
-                    <img src={'/edieImages/elbHeadshot2.jpeg'} className='object-cover object-left-top h-[500px] w-[400px] md:h-[400px] md:w-[300px] lg:h-[500px] lg:w-[400px]  mt-12'/>
+                <div className='w-full sm:w-[400px] md:w-[300px] lg:max-w-[400px] flex flex-col justify-start items-center md:items-end'>
+                    <img src={'/edieImages/elbHeadshot2.jpeg'} className='object-cover object-left-top w-full h-full max-h-[500px] max-w-[400px] md:max-h-[400px] md:max-w-[300px] lg:max-h-[500px] lg:max-w-[400px] mt-12'/>
                     <div className='font-light text-md text-gray-500 italic mt-4 sm:w-[400px] text-center md:text-end pb-4 md:pb-0'>Edie Lehmann Boddicker in her backyard<br />photo by Cody Burdette</div>
                 </div>
             </div>
 
             {/* MAIN HEADER BODY // COL */}
             <div className='w-full h-full sm:flex-col items-start justify-start'>
-                <div className='w-full md:w-[500px] lg:w-[700px] flex flex-col items-center justify-center md:justify-start px-8 sm:px-16 pt-4'>
+                <div className='w-full md:w-[500px] lg:w-[700px] flex flex-col items-center justify-center md:justify-center px-8 sm:px-16 pt-4'>
 
                     {/* STYLIZED NAME AND DECORATIVE TILE */}
                     <div className='flex w-full flex-row justify-center sm:justify-between items-center mb-8'>
@@ -45,7 +45,7 @@ export default function HomeHeader() {
                     </div>
 
                     {/* LIST OF ROLES & LINKS TO ROLE SECTIONS */}
-                    <div className='w-full h-[120px] grid grid-cols-2 sm:grid-cols-3 gap-2 text-center text-base lg:text-lg font-medium mb-8 lg:mb-24 text-black'>
+                    <div className='w-full h-[120px] grid grid-cols-2 sm:grid-cols-3 gap-2 text-center text-base lg:text-lg font-medium mb-8 lg:mb-16 text-black'>
 
                         {/* VOCAL CONTRACTOR */}
                         <HashLink to={'/#vocal-contractor'} scroll={element => scrollWithNavbarOffset(element, document.documentElement.clientWidth >= 640 ? 150 : 80)} className='w-full h-[60px] border-yellow2 border-8 flex items-center justify-center transform sm:hover:scale-105 sm:hover:font-semibold duration-150 origin-top'>Vocal Contractor</HashLink>
@@ -70,8 +70,9 @@ export default function HomeHeader() {
                     </div>
 
                     {/* HEADER BIO */}
-                    <div className=' font-barlow text-[14px] md:text-[16px] w-full font-light text-justify mt-16 sm:mt-0 mb-8'>
-                        A multifaceted vocalist, vocal contractor and musician residing in Los Angeles, California, Edie Lehmann Boddicker's credits include over one thousand works, including hundreds of films & albums, as well as dozens of TV Shows and live performances. She has worked with some of the biggest names in the industry; whether working on scores for  Hans Zimmer, Danny Elfman, or Michael Abels, or singing background vocals for Michael Jackson, Aretha Franklin, or Madonna, you most likely hear the impact Edie has had - and continues to have - on the music industry more often than you'd think.
+
+                    <div className=' font-barlow text-[14px] md:text-[16px] w-full font-normal text-justify mt-16 sm:mt-0 mb-8'>
+                        <span className='font-medium'>One of LA's foremost vocal contractors,</span> Edie Lehmann Boddicker's career spans multiple decades and <span className='font-medium'>over one thousand works</span>, including hundreds of films & albums, dozens of TV Shows and numerous live performances. She has collaborated with some of the biggest names in the industry, having worked on scores with <span className='font-medium'>John Powell</span>, <span className='font-medium'>Hans Zimmer</span>, <span className='font-medium'>Germaine Franco</span>, and <span className='font-medium'>Michael Abels</span>, and singing background vocals for the likes of <span className='font-medium'>Michael Jackson</span>, <span className='font-medium'>Aretha Franklin</span>, and <span className='font-medium'>Madonna</span>.
                     </div>
 
                 </div>

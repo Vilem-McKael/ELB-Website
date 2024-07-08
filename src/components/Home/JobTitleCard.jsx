@@ -18,10 +18,10 @@ export default function JobTitleCard({bgColor, alignment, title, tag, descriptio
                     {/* ROLE TITLE AND DESCRIPTION */}
 
 
-                    <div className='text-4xl font-normal text-black px-4 py-2'>
+                    <div className='text-4xl font-normal text-black px-4 mb-8 mt-4 md:mt-8'>
                         {title}
                     </div>
-                    <div className='text-sm pb-4 text-justify'>
+                    <div className='text-sm pb-4 text-justify h-full flex items-start'>
                         {description}
                     </div>
 
@@ -59,10 +59,10 @@ export default function JobTitleCard({bgColor, alignment, title, tag, descriptio
 
                     {/* ROLE TITLE AND DESCRIPTION */}
 
-                    <div className='text-4xl font-normal text-black mt-8'>
+                    <div className='text-4xl font-normal text-black mb-8 mt-4 md:mt-8'>
                         {title}
                     </div>
-                    <div className='text-sm pb-4'>
+                    <div className='text-sm pb-4 h-full text-justify flex items-start'>
                         {description}
                     </div>
 

@@ -34,8 +34,9 @@ export default function MobileBurgerMenu({currentPage, updateCurrentPage, isShow
                 </div>
             </div>
         </Link>
-      <div className='w-' onClick={handleOnCLick}>
-        <div className='bg-teal4 text-light7 px-2 pt-1 rounded-md'>
+      <div className='cursor-pointer mr-2' onClick={handleOnCLick}>
+        <div className='bg-teal4 text-light7 px-2 pt-1 rounded-md flex items-center'>
+          <div className='pb-1 pr-2 text-lg'>Menu</div>
           <i className='flaticon-menu-2 z-50 text-xl'></i>
         </div>
       </div>

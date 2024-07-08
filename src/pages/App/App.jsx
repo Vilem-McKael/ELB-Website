@@ -20,7 +20,7 @@ function App() {
   const [currentPage, setCurrentPage] = useState("Home")
   const [isShowingSlideOutMenu, setIsShowingSlideOutMenu] = useState(false)
   const [screenSize, setScreenSize] = useState(null)
-  const [isShowingScrollToTop, setIsShowingScrollToTop] = useState(false)
+
 
   // audio player
   const [player, setPlayer] = useState(null)
@@ -41,26 +41,6 @@ function App() {
   const updateIsShowingSlideOutMenu = useCallback((bool) => {
     setIsShowingSlideOutMenu(bool)
   }, [])
-
-
-
-  const scrollToTop = useCallback(() => {
-    window.scroll({
-      top: 0,
-      left: 0,
-      behavior: "smooth"
-  })
-  })
-
-  const updateIsShowingScrollToTop = useCallback(() => {
-    if (!isShowingScrollToTop && window.scrollY > 100) {
-      setIsShowingScrollToTop(true)
-    } else if (window.scrollY === 0) {
-      setIsShowingScrollToTop(false)
-    }
-  } )
-
-
 
   const checkScreenSize = useCallback(() => {
       const width = document.documentElement.clientWidth
@@ -118,14 +98,12 @@ function App() {
     const resizeListener = () => checkScreenSize()
     window.addEventListener('resize', resizeListener)
 
-    const scrollListener = () => updateIsShowingScrollToTop()
-    window.addEventListener('scroll', scrollListener)
 
     checkScreenSize()
 
     return () => {
       window.removeEventListener('resize', resizeListener)
-      window.removeEventListener('scroll', scrollListener)
+      
     }
   }, [checkScreenSize])
 
@@ -148,9 +126,9 @@ function App() {
                 <Route path='/contact' element={<ContactPage />} />
               </Routes>
             </div>
-            <SlideOutMenu screenSize={screenSize} currentPage={currentPage} updateCurrentPage={updateCurrentPage} isVisible={isShowingSlideOutMenu} updateIsShowingSlideOutMenu={updateIsShowingSlideOutMenu} />
+            <SlideOutMenu screenSize={screenSize} currentPage={currentPage} updateCurrentPage={updateCurrentPage} isVisible={isShowingSlideOutMenu} updateIsShowingSlideOutMenu={updateIsShowingSlideOutMenu} player={player} handleSetPlayer={handleSetPlayer}/>
 
-            <ScrollToTopButton isShowingScrollToTop={isShowingScrollToTop}/>
+            <ScrollToTopButton/>
 
             
           </div>

@@ -37,15 +37,15 @@ export default function MediaPage({screenSize, player, handleSetPlayer}) {
 
   const updateSelectedImageIndex = useCallback((imgIndex) => {
     setSelectedImageIndex(imgIndex)
-  })
+  }, [])
 
   const updateSelectedVideo = useCallback((video) => {
     setSelectedVideo({...video})
-  })
+  }, [])
 
   const updateSelectedAudioIndex = useCallback((audioIndex) => {
     setSelectedAudioIndex(audioIndex)
-  })
+  }, [])
 
   const toggleIsShowingAllImages = () => {
     setIsShowingAllImages(!isShowingAllImages)

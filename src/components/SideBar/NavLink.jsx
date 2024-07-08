@@ -1,10 +1,21 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 
-export default function NavLink({title, to, iconName, currentPage, updateCurrentPage}) {
+export default function NavLink({title, to, iconName, updateCurrentPage, player, handleSetPlayer}) {
+
+    const navigate = useNavigate();
 
     function handleOnClick() {
+        if (player) {
+          player.stop()
+          handleSetPlayer(null)
+        }
         updateCurrentPage(title)
+        navigate(to)
+        window.scroll({
+          top: 0,
+          left: 0,
+        })
     }
     // className='flex flex-row items-center'
     
